@@ -3,6 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google Analytics 4 (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D9KDBHZ2KX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-D9KDBHZ2KX');
+  window.track = function(name, params){ try { gtag('event', name, params || {}); } catch(e){} };
+</script>
 <title>Practice Exam – WineExamPrep</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M20 8h24v4c0 11-5 18-10 22v10h8v4H22v-4h8V34C25 30 20 23 20 12V8z' fill='%23722f37'/%3E%3Cpath d='M24 12c0 8 4 14 8 17 4-3 8-9 8-17H24z' fill='%23c5a46e'/%3E%3C/svg%3E">
 <script src="https://cdn.tailwindcss.com"></script>
@@ -348,6 +357,7 @@ function startExam() {
     examStarted: true, examFinished: false, warningShown: false
   };
   saveState();
+  if (window.track) track('exam_start', { exam_id: testId, level: level });
   beginExam();
 }
 
@@ -508,6 +518,7 @@ function showResults() {
   document.getElementById('gradeLabel').textContent = grade;
   document.getElementById('scoreDetail').textContent = `${correct} out of ${questions.length} correct`;
   document.getElementById('scoreCircle').className = `w-36 h-36 mx-auto rounded-full border-4 ${borderColor} flex flex-col items-center justify-center my-6`;
+  if (window.track) track('exam_complete', { exam_id: testId, level: level, score: pct, grade: grade });
 }
 
 function showReview() {

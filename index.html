@@ -3,6 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google Analytics 4 (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D9KDBHZ2KX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-D9KDBHZ2KX');
+  window.track = function(name, params){ try { gtag('event', name, params || {}); } catch(e){} };
+</script>
 <title>Wine Exam Prep – WSET Level 1, 2 & 3 Practice Exams</title>
 <meta name="description" content="Prepare for your WSET wine certification with 60 full-length practice exams. Level 1, 2 & 3 mock tests with instant scoring and detailed explanations.">
 <link rel="canonical" href="https://wineexamprep.com">
@@ -35,301 +44,301 @@ h1,h2,h3,h4,.brand{font-family:'Playfair Display',serif}
 
 <!-- Promo Banner -->
 <div id="promoBanner" class="hidden bg-[#2c2528] py-2.5 px-4 text-center text-sm font-medium z-[60] relative">
-  <div class="max-w-4xl mx-auto flex items-center justify-center gap-3 flex-wrap">
-    <span class="promo-pulse">&#128293;</span>
-    <span>INTRODUCTORY OFFER: <strong>50% off</strong> Level 2 & 3 bundles!</span>
-    <span class="font-mono bg-black/30 px-2.5 py-0.5 rounded-md text-[#e8d5c4] font-bold tracking-wider" id="promoTimerBanner">10:00</span>
-    <a href="#bundles" class="underline underline-offset-2 text-[#e8d5c4] hover:text-white transition-colors">Claim now &rarr;</a>
-  </div>
+<div class="max-w-4xl mx-auto flex items-center justify-center gap-3 flex-wrap">
+<span class="promo-pulse">&#128293;</span>
+<span>INTRODUCTORY OFFER: <strong>50% off</strong> Level 2 & 3 bundles!</span>
+<span class="font-mono bg-black/30 px-2.5 py-0.5 rounded-md text-[#e8d5c4] font-bold tracking-wider" id="promoTimerBanner">10:00</span>
+<a href="#bundles" class="underline underline-offset-2 text-[#e8d5c4] hover:text-white transition-colors">Claim now &rarr;</a>
+</div>
 </div>
 
 <!-- Promo Expired Banner -->
 <div id="promoExpiredBanner" class="hidden bg-[#1f1a1d] py-2 px-4 text-center text-sm text-[#8b6f6a] z-[60] relative border-b border-white/[0.04]">
-  Introductory offer has expired. Check back tomorrow for another chance.
+Introductory offer has expired. Check back tomorrow for another chance.
 </div>
 
 <!-- Nav -->
 <nav class="sticky top-0 w-full z-50 border-b border-white/[0.06] bg-[#181315]/90 backdrop-blur-xl">
-  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-    <a href="/" class="flex items-center gap-3">
-      <div class="w-9 h-9 rounded-full bg-[#722f37] flex items-center justify-center text-lg">&#127863;</div>
-      <span class="brand text-lg font-semibold text-[#c5a46e]">WineExamPrep</span>
-    </a>
-    <div class="flex items-center gap-4">
-      <div class="hidden sm:flex items-center gap-6 text-sm text-[#8b6f6a]">
-        <a href="#features" class="hover:text-[#c5a46e] transition-colors">Features</a>
-        <a href="#bundles" class="hover:text-[#c5a46e] transition-colors">Pricing</a>
-        <a href="#faq" class="hover:text-[#c5a46e] transition-colors">FAQ</a>
-      </div>
-      <div class="relative">
-        <button id="loginBtn" onclick="handleLogin()" class="px-4 py-1.5 rounded-lg bg-[#2c2528] hover:bg-[#722f37] text-sm font-medium transition-colors border border-white/[0.06]">
-          Sign In
-        </button>
-        <div id="userMenu" class="hidden absolute right-0 top-full mt-2 w-64 bg-[#2c2528] border border-white/[0.06] rounded-xl shadow-2xl overflow-hidden z-50">
-          <div class="p-4 border-b border-white/[0.04]">
-            <p class="text-xs text-[#8b6f6a]">Signed in as</p>
-            <p class="text-sm text-[#e8d5c4] font-medium truncate" id="userMenuEmail"></p>
-          </div>
-          <div class="p-2">
-            <a href="#tests" onclick="showDashboard(); closeUserMenu();" class="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#e8d5c4] hover:bg-white/[0.05] transition-colors">
-              <span>&#128202;</span> My Dashboard
-            </a>
-            <button onclick="handleLogout(); closeUserMenu();" class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#8b6f6a] hover:bg-white/[0.05] transition-colors text-left">
-              <span>&#8594;</span> Sign Out
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+<a href="/" class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-[#722f37] flex items-center justify-center text-lg">&#127863;</div>
+<span class="brand text-lg font-semibold text-[#c5a46e]">WineExamPrep</span>
+</a>
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex items-center gap-6 text-sm text-[#8b6f6a]">
+<a href="#features" class="hover:text-[#c5a46e] transition-colors">Features</a>
+<a href="#bundles" class="hover:text-[#c5a46e] transition-colors">Pricing</a>
+<a href="#faq" class="hover:text-[#c5a46e] transition-colors">FAQ</a>
+</div>
+<div class="relative">
+<button id="loginBtn" onclick="handleLogin()" class="px-4 py-1.5 rounded-lg bg-[#2c2528] hover:bg-[#722f37] text-sm font-medium transition-colors border border-white/[0.06]">
+Sign In
+</button>
+<div id="userMenu" class="hidden absolute right-0 top-full mt-2 w-64 bg-[#2c2528] border border-white/[0.06] rounded-xl shadow-2xl overflow-hidden z-50">
+<div class="p-4 border-b border-white/[0.04]">
+<p class="text-xs text-[#8b6f6a]">Signed in as</p>
+<p class="text-sm text-[#e8d5c4] font-medium truncate" id="userMenuEmail"></p>
+</div>
+<div class="p-2">
+<a href="#tests" onclick="showDashboard(); closeUserMenu();" class="flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#e8d5c4] hover:bg-white/[0.05] transition-colors">
+<span>&#128202;</span> My Dashboard
+</a>
+<button onclick="handleLogout(); closeUserMenu();" class="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-[#8b6f6a] hover:bg-white/[0.05] transition-colors text-left">
+<span>&#8594;</span> Sign Out
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
 </nav>
 
 <!-- Hero -->
 <section class="pt-20 pb-16 px-4">
-  <div class="max-w-4xl mx-auto text-center fade-up">
-    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1f1a1d]/40 border border-[#2c2528]/40 text-[#c5a46e] text-xs font-medium mb-6">
-      <span class="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"></span>
-      2,600 exam-grade questions across 60 practice tests
-    </div>
-    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-      <span class="text-white">Pass Your</span>
-      <span class="text-[#c5a46e]"> WSET</span>
-      <span class="text-white"> Wine Exam</span>
-    </h1>
-    <p class="text-lg text-[#8b6f6a] max-w-2xl mx-auto mb-4 leading-relaxed">
-      Full-length practice exams for WSET Levels 1, 2 & 3. Realistic questions, timed conditions, and detailed explanations for every answer.
-    </p>
-    <p class="text-sm text-[#665a55] mb-8">Unlimited retakes included &middot; Instant access after purchase &middot; No subscription</p>
-    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="#bundles" class="px-8 py-4 bg-[#722f37] hover:bg-[#8a3a44] rounded-xl font-semibold text-lg transition-colors">Unlock Practice Exams</a>
-      <a href="#features" class="px-8 py-4 border border-white/[0.06] hover:bg-white/[0.03] rounded-xl font-medium text-lg transition-colors">See What's Included</a>
-    </div>
-  </div>
+<div class="max-w-4xl mx-auto text-center fade-up">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1f1a1d]/40 border border-[#2c2528]/40 text-[#c5a46e] text-xs font-medium mb-6">
+<span class="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"></span>
+2,600 exam-grade questions across 60 practice tests
+</div>
+<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+<span class="text-white">Pass Your</span>
+<span class="text-[#c5a46e]"> WSET</span>
+<span class="text-white"> Wine Exam</span>
+</h1>
+<p class="text-lg text-[#8b6f6a] max-w-2xl mx-auto mb-4 leading-relaxed">
+Full-length practice exams for WSET Levels 1, 2 & 3. Realistic questions, timed conditions, and detailed explanations for every answer.
+</p>
+<p class="text-sm text-[#665a55] mb-8">Unlimited retakes included &middot; Instant access after purchase &middot; No subscription</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a href="#bundles" class="px-8 py-4 bg-[#722f37] hover:bg-[#8a3a44] rounded-xl font-semibold text-lg transition-colors">Unlock Practice Exams</a>
+<a href="#features" class="px-8 py-4 border border-white/[0.06] hover:bg-white/[0.03] rounded-xl font-medium text-lg transition-colors">See What's Included</a>
+</div>
+</div>
 </section>
 
 <!-- Stats -->
 <section class="pb-16 px-4">
-  <div class="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-4 fade-up">
-    <div class="glass rounded-2xl p-6 text-center"><div class="text-3xl font-bold text-[#c5a46e]">60</div><div class="text-sm text-[#8b6f6a] mt-1">Practice Tests</div></div>
-    <div class="glass rounded-2xl p-6 text-center"><div class="text-3xl font-bold text-[#c5a46e]">2,600</div><div class="text-sm text-[#8b6f6a] mt-1">Unique Questions</div></div>
-    <div class="glass rounded-2xl p-6 text-center"><div class="text-3xl font-bold text-[#c5a46e]">3</div><div class="text-sm text-[#8b6f6a] mt-1">WSET Levels</div></div>
-    <div class="glass rounded-2xl p-6 text-center"><div class="text-3xl font-bold text-[#c5a46e]">&#8734;</div><div class="text-sm text-[#8b6f6a] mt-1">Retakes Included</div></div>
-  </div>
+<div class="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-4 fade-up">
+<div class="glass rounded-2xl p-6 text-center"><div class="text-3xl font-bold text-[#c5a46e]">60</div><div class="text-sm text-[#8b6f6a] mt-1">Practice Tests</div></div>
+<div class="glass rounded-2xl p-6 text-center"><div class="text-3xl font-bold text-[#c5a46e]">2,600</div><div class="text-sm text-[#8b6f6a] mt-1">Unique Questions</div></div>
+<div class="glass rounded-2xl p-6 text-center"><div class="text-3xl font-bold text-[#c5a46e]">3</div><div class="text-sm text-[#8b6f6a] mt-1">WSET Levels</div></div>
+<div class="glass rounded-2xl p-6 text-center"><div class="text-3xl font-bold text-[#c5a46e]">&#8734;</div><div class="text-sm text-[#8b6f6a] mt-1">Retakes Included</div></div>
+</div>
 </section>
 
 <!-- Features -->
 <section id="features" class="py-16 px-4">
-  <div class="max-w-5xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-12 brand text-[#c5a46e] fade-up">Why WineExamPrep?</h2>
-    <div class="grid md:grid-cols-3 gap-6 fade-up">
-      <div class="glass rounded-2xl p-6 card-hover">
-        <div class="w-12 h-12 rounded-xl bg-[#1f1a1d]/60 flex items-center justify-center text-xl mb-4">&#128209;</div>
-        <h3 class="text-lg font-semibold mb-2 brand">Exam-Realistic Format</h3>
-        <p class="text-sm text-[#8b6f6a] leading-relaxed">Questions match the real WSET exam format, difficulty, and topic weighting. L1: 30 MCQs in 45 min. L2: 50 MCQs in 60 min. L3: 50 MCQs in 70 min.</p>
-      </div>
-      <div class="glass rounded-2xl p-6 card-hover">
-        <div class="w-12 h-12 rounded-xl bg-[#1f1a1d]/60 flex items-center justify-center text-xl mb-4">&#9201;</div>
-        <h3 class="text-lg font-semibold mb-2 brand">Timed & Graded</h3>
-        <p class="text-sm text-[#8b6f6a] leading-relaxed">Real countdown timer, instant grading with Pass/Merit/Distinction thresholds, and full question-by-question review after submission.</p>
-      </div>
-      <div class="glass rounded-2xl p-6 card-hover">
-        <div class="w-12 h-12 rounded-xl bg-[#1f1a1d]/60 flex items-center justify-center text-xl mb-4">&#128218;</div>
-        <h3 class="text-lg font-semibold mb-2 brand">Learn From Every Answer</h3>
-        <p class="text-sm text-[#8b6f6a] leading-relaxed">Every question includes a detailed explanation of the correct answer. Retake as many times as you need — your purchase never expires.</p>
-      </div>
-    </div>
-  </div>
+<div class="max-w-5xl mx-auto">
+<h2 class="text-3xl font-bold text-center mb-12 brand text-[#c5a46e] fade-up">Why WineExamPrep?</h2>
+<div class="grid md:grid-cols-3 gap-6 fade-up">
+<div class="glass rounded-2xl p-6 card-hover">
+<div class="w-12 h-12 rounded-xl bg-[#1f1a1d]/60 flex items-center justify-center text-xl mb-4">&#128209;</div>
+<h3 class="text-lg font-semibold mb-2 brand">Exam-Realistic Format</h3>
+<p class="text-sm text-[#8b6f6a] leading-relaxed">Questions match the real WSET exam format, difficulty, and topic weighting. L1: 30 MCQs in 45 min. L2: 50 MCQs in 60 min. L3: 50 MCQs in 70 min.</p>
+</div>
+<div class="glass rounded-2xl p-6 card-hover">
+<div class="w-12 h-12 rounded-xl bg-[#1f1a1d]/60 flex items-center justify-center text-xl mb-4">&#9201;</div>
+<h3 class="text-lg font-semibold mb-2 brand">Timed & Graded</h3>
+<p class="text-sm text-[#8b6f6a] leading-relaxed">Real countdown timer, instant grading with Pass/Merit/Distinction thresholds, and full question-by-question review after submission.</p>
+</div>
+<div class="glass rounded-2xl p-6 card-hover">
+<div class="w-12 h-12 rounded-xl bg-[#1f1a1d]/60 flex items-center justify-center text-xl mb-4">&#128218;</div>
+<h3 class="text-lg font-semibold mb-2 brand">Learn From Every Answer</h3>
+<p class="text-sm text-[#8b6f6a] leading-relaxed">Every question includes a detailed explanation of the correct answer. Retake as many times as you need — your purchase never expires.</p>
+</div>
+</div>
+</div>
 </section>
 
 <!-- Bundle Pricing -->
 <section id="bundles" class="py-16 px-4">
-  <div class="max-w-5xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-3 brand text-[#c5a46e] fade-up">Choose Your Level</h2>
-    <p class="text-center text-[#8b6f6a] text-sm mb-10 fade-up">Each bundle unlocks 10 full-length practice exams. Buy once, retake forever.</p>
+<div class="max-w-5xl mx-auto">
+<h2 class="text-3xl font-bold text-center mb-3 brand text-[#c5a46e] fade-up">Choose Your Level</h2>
+<p class="text-center text-[#8b6f6a] text-sm mb-10 fade-up">Each bundle unlocks 10 full-length practice exams. Buy once, retake forever.</p>
 
-    <!-- Promo countdown inline -->
-    <div id="promoInline" class="hidden max-w-lg mx-auto mb-8 text-center fade-up">
-      <div class="glass rounded-2xl p-4 border border-[#722f37]/40">
-        <p class="text-sm text-[#c5a46e] mb-1">&#128293; Introductory pricing ends in</p>
-        <p class="text-3xl font-mono font-bold text-white" id="promoTimerInline">10:00</p>
-        <p class="text-xs text-[#665a55] mt-1">50% off Level 2 & 3 bundles</p>
-      </div>
-    </div>
+<!-- Promo countdown inline -->
+<div id="promoInline" class="hidden max-w-lg mx-auto mb-8 text-center fade-up">
+<div class="glass rounded-2xl p-4 border border-[#722f37]/40">
+<p class="text-sm text-[#c5a46e] mb-1">&#128293; Introductory pricing ends in</p>
+<p class="text-3xl font-mono font-bold text-white" id="promoTimerInline">10:00</p>
+<p class="text-xs text-[#665a55] mt-1">50% off Level 2 & 3 bundles</p>
+</div>
+</div>
 
-    <div class="grid md:grid-cols-3 gap-6 fade-up">
-      <!-- Level 1 -->
-      <div class="glass rounded-2xl overflow-hidden card-hover">
-        <div class="bg-[#1f1a1d]/60 p-6">
-          <div class="text-xs font-medium text-[#c5a46e] mb-1">Beginner</div>
-          <h3 class="text-xl font-bold brand">Level 1</h3>
-          <p class="text-xs text-[#8b6f6a] mt-2">30 questions per test &middot; 45 min &middot; 70% to pass</p>
-        </div>
-        <div class="p-6">
-          <div class="text-center mb-4">
-            <div class="text-4xl font-bold text-white">$5</div>
-            <div class="text-xs text-[#8b6f6a] mt-1">per 10 exams &middot; $0.50/test</div>
-          </div>
-          <ul class="text-sm text-gray-300 space-y-2 mb-6">
-            <li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> 300 unique questions</li>
-            <li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> Unlimited retakes</li>
-            <li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> Full explanations</li>
-            <li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> Instant access</li>
-          </ul>
-          <div id="l1-pack1-cta"></div>
-          <div id="l1-pack2-cta" class="mt-3"></div>
-        </div>
-      </div>
+<div class="grid md:grid-cols-3 gap-6 fade-up">
+<!-- Level 1 -->
+<div class="glass rounded-2xl overflow-hidden card-hover">
+<div class="bg-[#1f1a1d]/60 p-6">
+<div class="text-xs font-medium text-[#c5a46e] mb-1">Beginner</div>
+<h3 class="text-xl font-bold brand">Level 1</h3>
+<p class="text-xs text-[#8b6f6a] mt-2">30 questions per test &middot; 45 min &middot; 70% to pass</p>
+</div>
+<div class="p-6">
+<div class="text-center mb-4">
+<div class="text-4xl font-bold text-white">$5</div>
+<div class="text-xs text-[#8b6f6a] mt-1">per 10 exams &middot; $0.50/test</div>
+</div>
+<ul class="text-sm text-gray-300 space-y-2 mb-6">
+<li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> 300 unique questions</li>
+<li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> Unlimited retakes</li>
+<li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> Full explanations</li>
+<li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> Instant access</li>
+</ul>
+<div id="l1-pack1-cta"></div>
+<div id="l1-pack2-cta" class="mt-3"></div>
+</div>
+</div>
 
-      <!-- Level 2 -->
-      <div class="glass rounded-2xl overflow-hidden card-hover border border-[#722f37]/40 relative">
-        <div class="absolute top-3 right-3 bg-[#722f37] text-xs px-2.5 py-1 rounded-full font-semibold">Most Popular</div>
-        <div class="bg-[#2c2528]/60 p-6">
-          <div class="text-xs font-medium text-[#c5a46e] mb-1">Intermediate</div>
-          <h3 class="text-xl font-bold brand">Level 2</h3>
-          <p class="text-xs text-[#8b6f6a] mt-2">50 questions per test &middot; 60 min &middot; 55% to pass</p>
-        </div>
-        <div class="p-6">
-          <div class="text-center mb-4">
-            <div id="l2-price" class="text-4xl font-bold text-white">$10</div>
-            <div id="l2-price-sub" class="text-xs text-[#8b6f6a] mt-1">per 10 exams &middot; $1.00/test</div>
-          </div>
-          <ul class="text-sm text-gray-300 space-y-2 mb-6">
-            <li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> 500 unique questions</li>
-            <li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> Unlimited retakes</li>
-            <li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> Full explanations</li>
-            <li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> Instant access</li>
-          </ul>
-          <div id="l2-pack1-cta"></div>
-          <div id="l2-pack2-cta" class="mt-3"></div>
-        </div>
-      </div>
+<!-- Level 2 -->
+<div class="glass rounded-2xl overflow-hidden card-hover border border-[#722f37]/40 relative">
+<div class="absolute top-3 right-3 bg-[#722f37] text-xs px-2.5 py-1 rounded-full font-semibold">Most Popular</div>
+<div class="bg-[#2c2528]/60 p-6">
+<div class="text-xs font-medium text-[#c5a46e] mb-1">Intermediate</div>
+<h3 class="text-xl font-bold brand">Level 2</h3>
+<p class="text-xs text-[#8b6f6a] mt-2">50 questions per test &middot; 60 min &middot; 55% to pass</p>
+</div>
+<div class="p-6">
+<div class="text-center mb-4">
+<div id="l2-price" class="text-4xl font-bold text-white">$10</div>
+<div id="l2-price-sub" class="text-xs text-[#8b6f6a] mt-1">per 10 exams &middot; $1.00/test</div>
+</div>
+<ul class="text-sm text-gray-300 space-y-2 mb-6">
+<li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> 500 unique questions</li>
+<li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> Unlimited retakes</li>
+<li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> Full explanations</li>
+<li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> Instant access</li>
+</ul>
+<div id="l2-pack1-cta"></div>
+<div id="l2-pack2-cta" class="mt-3"></div>
+</div>
+</div>
 
-      <!-- Level 3 -->
-      <div class="glass rounded-2xl overflow-hidden card-hover">
-        <div class="bg-[#1f1a1d]/60 p-6">
-          <div class="text-xs font-medium text-[#c5a46e] mb-1">Advanced</div>
-          <h3 class="text-xl font-bold brand">Level 3</h3>
-          <p class="text-xs text-[#8b6f6a] mt-2">50 questions per test &middot; 70 min &middot; 55% to pass</p>
-        </div>
-        <div class="p-6">
-          <div class="text-center mb-4">
-            <div id="l3-price" class="text-4xl font-bold text-white">$10</div>
-            <div id="l3-price-sub" class="text-xs text-[#8b6f6a] mt-1">per 10 exams &middot; $1.00/test</div>
-          </div>
-          <ul class="text-sm text-gray-300 space-y-2 mb-6">
-            <li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> 500 unique questions</li>
-            <li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> Unlimited retakes</li>
-            <li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> Full explanations</li>
-            <li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> Instant access</li>
-          </ul>
-          <div id="l3-pack1-cta"></div>
-          <div id="l3-pack2-cta" class="mt-3"></div>
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- Level 3 -->
+<div class="glass rounded-2xl overflow-hidden card-hover">
+<div class="bg-[#1f1a1d]/60 p-6">
+<div class="text-xs font-medium text-[#c5a46e] mb-1">Advanced</div>
+<h3 class="text-xl font-bold brand">Level 3</h3>
+<p class="text-xs text-[#8b6f6a] mt-2">50 questions per test &middot; 70 min &middot; 55% to pass</p>
+</div>
+<div class="p-6">
+<div class="text-center mb-4">
+<div id="l3-price" class="text-4xl font-bold text-white">$10</div>
+<div id="l3-price-sub" class="text-xs text-[#8b6f6a] mt-1">per 10 exams &middot; $1.00/test</div>
+</div>
+<ul class="text-sm text-gray-300 space-y-2 mb-6">
+<li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> 500 unique questions</li>
+<li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> Unlimited retakes</li>
+<li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> Full explanations</li>
+<li class="flex items-center gap-2"><span class="text-green-400">&#10003;</span> Instant access</li>
+</ul>
+<div id="l3-pack1-cta"></div>
+<div id="l3-pack2-cta" class="mt-3"></div>
+</div>
+</div>
+</div>
+</div>
 </section>
 
 <!-- Test Catalog (expandable after purchase) -->
 <section id="tests" class="py-16 px-4">
-  <div class="max-w-5xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-4 brand text-[#c5a46e] fade-up">Your Tests</h2>
-    <p class="text-center text-[#8b6f6a] text-sm mb-8 fade-up">Purchase a bundle above to unlock exams. Purchased tests appear here.</p>
+<div class="max-w-5xl mx-auto">
+<h2 class="text-3xl font-bold text-center mb-4 brand text-[#c5a46e] fade-up">Your Tests</h2>
+<p class="text-center text-[#8b6f6a] text-sm mb-8 fade-up">Purchase a bundle above to unlock exams. Purchased tests appear here.</p>
 
-    <!-- Level tabs -->
-    <div class="flex justify-center gap-2 mb-8">
-      <button onclick="showLevel('l1')" id="tab-l1" class="level-tab px-6 py-2.5 rounded-xl text-sm font-medium transition-colors border border-white/[0.06] hover:bg-white/[0.03]">Level 1</button>
-      <button onclick="showLevel('l2')" id="tab-l2" class="level-tab px-6 py-2.5 rounded-xl text-sm font-medium transition-colors bg-[#722f37] text-white">Level 2</button>
-      <button onclick="showLevel('l3')" id="tab-l3" class="level-tab px-6 py-2.5 rounded-xl text-sm font-medium transition-colors border border-white/[0.06] hover:bg-white/[0.03]">Level 3</button>
-    </div>
+<!-- Level tabs -->
+<div class="flex justify-center gap-2 mb-8">
+<button onclick="showLevel('l1')" id="tab-l1" class="level-tab px-6 py-2.5 rounded-xl text-sm font-medium transition-colors border border-white/[0.06] hover:bg-white/[0.03]">Level 1</button>
+<button onclick="showLevel('l2')" id="tab-l2" class="level-tab px-6 py-2.5 rounded-xl text-sm font-medium transition-colors bg-[#722f37] text-white">Level 2</button>
+<button onclick="showLevel('l3')" id="tab-l3" class="level-tab px-6 py-2.5 rounded-xl text-sm font-medium transition-colors border border-white/[0.06] hover:bg-white/[0.03]">Level 3</button>
+</div>
 
-    <div id="test-list-l1" class="test-list hidden"></div>
-    <div id="test-list-l2" class="test-list"></div>
-    <div id="test-list-l3" class="test-list hidden"></div>
-  </div>
+<div id="test-list-l1" class="test-list hidden"></div>
+<div id="test-list-l2" class="test-list"></div>
+<div id="test-list-l3" class="test-list hidden"></div>
+</div>
 </section>
 
 <!-- FAQ -->
 <section id="faq" class="py-16 px-4">
-  <div class="max-w-3xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-10 brand text-[#c5a46e] fade-up">Frequently Asked Questions</h2>
-    <div class="space-y-4 fade-up">
-      <details class="glass rounded-xl group">
-        <summary class="p-5 cursor-pointer text-sm font-medium flex justify-between items-center">How realistic are these practice exams?<span class="text-[#c5a46e] group-open:rotate-45 transition-transform text-xl">+</span></summary>
-        <div class="px-5 pb-5 text-sm text-[#8b6f6a] leading-relaxed">Our questions match the exact format, difficulty, and topic weighting of the official WSET exams. Each question has four options with one correct answer. All content is based on publicly available WSET syllabus materials and learning outcomes.</div>
-      </details>
-      <details class="glass rounded-xl group">
-        <summary class="p-5 cursor-pointer text-sm font-medium flex justify-between items-center">What do I get when I purchase a bundle?<span class="text-[#c5a46e] group-open:rotate-45 transition-transform text-xl">+</span></summary>
-        <div class="px-5 pb-5 text-sm text-[#8b6f6a] leading-relaxed">Each bundle gives you instant access to 10 full-length practice exams for your chosen level. You can retake every exam as many times as you like, with no time limit on access. Every question includes a detailed explanation of the correct answer.</div>
-      </details>
-      <details class="glass rounded-xl group">
-        <summary class="p-5 cursor-pointer text-sm font-medium flex justify-between items-center">What payment methods do you accept?<span class="text-[#c5a46e] group-open:rotate-45 transition-transform text-xl">+</span></summary>
-        <div class="px-5 pb-5 text-sm text-[#8b6f6a] leading-relaxed">We accept all major credit and debit cards (Visa, Mastercard, Amex) through Stripe. Your payment information is handled securely by Stripe and never stored on our servers.</div>
-      </details>
-      <details class="glass rounded-xl group">
-        <summary class="p-5 cursor-pointer text-sm font-medium flex justify-between items-center">Can I access my tests on different devices?<span class="text-[#c5a46e] group-open:rotate-45 transition-transform text-xl">+</span></summary>
-        <div class="px-5 pb-5 text-sm text-[#8b6f6a] leading-relaxed">Sign in with your account to sync your purchases across devices. Your purchase history is linked to your account, so you can start on your laptop and continue on your phone.</div>
-      </details>
-      <details class="glass rounded-xl group">
-        <summary class="p-5 cursor-pointer text-sm font-medium flex justify-between items-center">What does Level 3 cover?<span class="text-[#c5a46e] group-open:rotate-45 transition-transform text-xl">+</span></summary>
-        <div class="px-5 pb-5 text-sm text-[#8b6f6a] leading-relaxed">Our Level 3 tests cover the 50-question multiple-choice theory portion of the exam. The real Level 3 also includes short-answer questions and a blind tasting, which cannot be replicated online.</div>
-      </details>
-      <details class="glass rounded-xl group">
-        <summary class="p-5 cursor-pointer text-sm font-medium flex justify-between items-center">Is this affiliated with WSET?<span class="text-[#c5a46e] group-open:rotate-45 transition-transform text-xl">+</span></summary>
-        <div class="px-5 pb-5 text-sm text-[#8b6f6a] leading-relaxed">No. WineExamPrep is an independent study resource. We are not affiliated with, endorsed by, or connected to the Wine & Spirit Education Trust (WSET). All questions are based on publicly available syllabus materials.</div>
-      </details>
-    </div>
-  </div>
+<div class="max-w-3xl mx-auto">
+<h2 class="text-3xl font-bold text-center mb-10 brand text-[#c5a46e] fade-up">Frequently Asked Questions</h2>
+<div class="space-y-4 fade-up">
+<details class="glass rounded-xl group">
+<summary class="p-5 cursor-pointer text-sm font-medium flex justify-between items-center">How realistic are these practice exams?<span class="text-[#c5a46e] group-open:rotate-45 transition-transform text-xl">+</span></summary>
+<div class="px-5 pb-5 text-sm text-[#8b6f6a] leading-relaxed">Our questions match the exact format, difficulty, and topic weighting of the official WSET exams. Each question has four options with one correct answer. All content is based on publicly available WSET syllabus materials and learning outcomes.</div>
+</details>
+<details class="glass rounded-xl group">
+<summary class="p-5 cursor-pointer text-sm font-medium flex justify-between items-center">What do I get when I purchase a bundle?<span class="text-[#c5a46e] group-open:rotate-45 transition-transform text-xl">+</span></summary>
+<div class="px-5 pb-5 text-sm text-[#8b6f6a] leading-relaxed">Each bundle gives you instant access to 10 full-length practice exams for your chosen level. You can retake every exam as many times as you like, with no time limit on access. Every question includes a detailed explanation of the correct answer.</div>
+</details>
+<details class="glass rounded-xl group">
+<summary class="p-5 cursor-pointer text-sm font-medium flex justify-between items-center">What payment methods do you accept?<span class="text-[#c5a46e] group-open:rotate-45 transition-transform text-xl">+</span></summary>
+<div class="px-5 pb-5 text-sm text-[#8b6f6a] leading-relaxed">We accept all major credit and debit cards (Visa, Mastercard, Amex) through Stripe. Your payment information is handled securely by Stripe and never stored on our servers.</div>
+</details>
+<details class="glass rounded-xl group">
+<summary class="p-5 cursor-pointer text-sm font-medium flex justify-between items-center">Can I access my tests on different devices?<span class="text-[#c5a46e] group-open:rotate-45 transition-transform text-xl">+</span></summary>
+<div class="px-5 pb-5 text-sm text-[#8b6f6a] leading-relaxed">Sign in with your account to sync your purchases across devices. Your purchase history is linked to your account, so you can start on your laptop and continue on your phone.</div>
+</details>
+<details class="glass rounded-xl group">
+<summary class="p-5 cursor-pointer text-sm font-medium flex justify-between items-center">What does Level 3 cover?<span class="text-[#c5a46e] group-open:rotate-45 transition-transform text-xl">+</span></summary>
+<div class="px-5 pb-5 text-sm text-[#8b6f6a] leading-relaxed">Our Level 3 tests cover the 50-question multiple-choice theory portion of the exam. The real Level 3 also includes short-answer questions and a blind tasting, which cannot be replicated online.</div>
+</details>
+<details class="glass rounded-xl group">
+<summary class="p-5 cursor-pointer text-sm font-medium flex justify-between items-center">Is this affiliated with WSET?<span class="text-[#c5a46e] group-open:rotate-45 transition-transform text-xl">+</span></summary>
+<div class="px-5 pb-5 text-sm text-[#8b6f6a] leading-relaxed">No. WineExamPrep is an independent study resource. We are not affiliated with, endorsed by, or connected to the Wine & Spirit Education Trust (WSET). All questions are based on publicly available syllabus materials.</div>
+</details>
+</div>
+</div>
 </section>
 
 <!-- Footer -->
 <footer class="border-t border-white/[0.06] py-10 px-4">
-  <div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
-    <div class="flex items-center gap-3">
-      <div class="w-7 h-7 rounded-full bg-[#2c2528] flex items-center justify-center text-sm">&#127863;</div>
-      <span class="brand text-sm text-[#c5a46e]">WineExamPrep</span>
-    </div>
-    <p class="text-xs text-[#665a55] text-center">Practice exam resource only. Not affiliated with WSET. Questions based on publicly available materials.</p>
-    <p class="text-xs text-[#665a55]">&copy; 2026 Simplicity Limited</p>
-  </div>
+<div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+<div class="flex items-center gap-3">
+<div class="w-7 h-7 rounded-full bg-[#2c2528] flex items-center justify-center text-sm">&#127863;</div>
+<span class="brand text-sm text-[#c5a46e]">WineExamPrep</span>
+</div>
+<p class="text-xs text-[#665a55] text-center">Practice exam resource only. Not affiliated with WSET. Questions based on publicly available materials.</p>
+<p class="text-xs text-[#665a55]">&copy; 2026 Simplicity Limited</p>
+</div>
 </footer>
 
 <!-- Registration Modal -->
 <div id="regModal" class="hidden fixed inset-0 z-[70] flex items-center justify-center bg-[#181315]/90 backdrop-blur-sm">
-  <div class="glass rounded-2xl p-8 max-w-md w-full mx-4">
-    <h3 class="text-xl font-semibold text-[#c5a46e] mb-2 brand">Complete Your Registration</h3>
-    <p class="text-sm text-[#8b6f6a] mb-6">Tell us a bit about yourself to get started.</p>
-    <form id="regForm" class="space-y-4" onsubmit="submitRegistration(event)">
-      <div class="grid grid-cols-2 gap-3">
-        <div>
-          <label class="block text-xs text-[#8b6f6a] mb-1">First Name *</label>
-          <input type="text" id="regFirstName" required class="w-full px-3 py-2 bg-[#1f1a1d] border border-white/[0.06] rounded-lg text-sm text-[#e8d5c4] focus:outline-none focus:ring-1 focus:ring-[#722f37]" placeholder="First name">
-        </div>
-        <div>
-          <label class="block text-xs text-[#8b6f6a] mb-1">Last Name *</label>
-          <input type="text" id="regLastName" required class="w-full px-3 py-2 bg-[#1f1a1d] border border-white/[0.06] rounded-lg text-sm text-[#e8d5c4] focus:outline-none focus:ring-1 focus:ring-[#722f37]" placeholder="Last name">
-        </div>
-      </div>
-      <div>
-        <label class="block text-xs text-[#8b6f6a] mb-1">City</label>
-        <input type="text" id="regCity" class="w-full px-3 py-2 bg-[#1f1a1d] border border-white/[0.06] rounded-lg text-sm text-[#e8d5c4] focus:outline-none focus:ring-1 focus:ring-[#722f37]" placeholder="City">
-      </div>
-      <div class="grid grid-cols-2 gap-3">
-        <div>
-          <label class="block text-xs text-[#8b6f6a] mb-1">Country</label>
-          <select id="regCountry" class="w-full px-3 py-2 bg-[#1f1a1d] border border-white/[0.06] rounded-lg text-sm text-[#e8d5c4] focus:outline-none focus:ring-1 focus:ring-[#722f37]">
-            <option value="">Select country</option>
-          </select>
-        </div>
-        <div>
-          <label class="block text-xs text-[#8b6f6a] mb-1">Zip / Postal Code</label>
-          <input type="text" id="regZipCode" class="w-full px-3 py-2 bg-[#1f1a1d] border border-white/[0.06] rounded-lg text-sm text-[#e8d5c4] focus:outline-none focus:ring-1 focus:ring-[#722f37]" placeholder="Zip code">
-        </div>
-      </div>
-      <div id="regError" class="hidden text-sm text-red-400"></div>
-      <button type="submit" id="regSubmitBtn" class="w-full py-3 bg-[#722f37] hover:bg-[#8a3a44] rounded-xl font-semibold transition-colors">Create Account</button>
-    </form>
-  </div>
+<div class="glass rounded-2xl p-8 max-w-md w-full mx-4">
+<h3 class="text-xl font-semibold text-[#c5a46e] mb-2 brand">Complete Your Registration</h3>
+<p class="text-sm text-[#8b6f6a] mb-6">Tell us a bit about yourself to get started.</p>
+<form id="regForm" class="space-y-4" onsubmit="submitRegistration(event)">
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block text-xs text-[#8b6f6a] mb-1">First Name *</label>
+<input type="text" id="regFirstName" required class="w-full px-3 py-2 bg-[#1f1a1d] border border-white/[0.06] rounded-lg text-sm text-[#e8d5c4] focus:outline-none focus:ring-1 focus:ring-[#722f37]" placeholder="First name">
+</div>
+<div>
+<label class="block text-xs text-[#8b6f6a] mb-1">Last Name *</label>
+<input type="text" id="regLastName" required class="w-full px-3 py-2 bg-[#1f1a1d] border border-white/[0.06] rounded-lg text-sm text-[#e8d5c4] focus:outline-none focus:ring-1 focus:ring-[#722f37]" placeholder="Last name">
+</div>
+</div>
+<div>
+<label class="block text-xs text-[#8b6f6a] mb-1">City</label>
+<input type="text" id="regCity" class="w-full px-3 py-2 bg-[#1f1a1d] border border-white/[0.06] rounded-lg text-sm text-[#e8d5c4] focus:outline-none focus:ring-1 focus:ring-[#722f37]" placeholder="City">
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block text-xs text-[#8b6f6a] mb-1">Country</label>
+<select id="regCountry" class="w-full px-3 py-2 bg-[#1f1a1d] border border-white/[0.06] rounded-lg text-sm text-[#e8d5c4] focus:outline-none focus:ring-1 focus:ring-[#722f37]">
+<option value="">Select country</option>
+</select>
+</div>
+<div>
+<label class="block text-xs text-[#8b6f6a] mb-1">Zip / Postal Code</label>
+<input type="text" id="regZipCode" class="w-full px-3 py-2 bg-[#1f1a1d] border border-white/[0.06] rounded-lg text-sm text-[#e8d5c4] focus:outline-none focus:ring-1 focus:ring-[#722f37]" placeholder="Zip code">
+</div>
+</div>
+<div id="regError" class="hidden text-sm text-red-400"></div>
+<button type="submit" id="regSubmitBtn" class="w-full py-3 bg-[#722f37] hover:bg-[#8a3a44] rounded-xl font-semibold transition-colors">Create Account</button>
+</form>
+</div>
 </div>
 
 <script>
@@ -337,12 +346,12 @@ h1,h2,h3,h4,.brand{font-family:'Playfair Display',serif}
 // BUNDLE CONFIGURATION
 // ============================================================
 const levelInfo = {
-  l1: { name:'Level 1', questions:30, time:45, pass:70, price:500, promoPrice:null,
-    topics:'Wine types & styles, grape varieties, winemaking, service & pairing' },
-  l2: { name:'Level 2', questions:50, time:60, pass:55, price:1000, promoPrice:500,
-    topics:'Environmental influences, winemaking, principal & regional grapes, sparkling & fortified' },
-  l3: { name:'Level 3', questions:50, time:70, pass:55, price:1000, promoPrice:500,
-    topics:'Factors affecting style/quality/price, world wine regions, sparkling & fortified' }
+l1: { name:'Level 1', questions:30, time:45, pass:70, price:500, promoPrice:null,
+topics:'Wine types & styles, grape varieties, winemaking, service & pairing' },
+l2: { name:'Level 2', questions:50, time:60, pass:55, price:1000, promoPrice:500,
+topics:'Environmental influences, winemaking, principal & regional grapes, sparkling & fortified' },
+l3: { name:'Level 3', questions:50, time:70, pass:55, price:1000, promoPrice:500,
+topics:'Factors affecting style/quality/price, world wine regions, sparkling & fortified' }
 };
 
 function bundleId(level, pack) { return `${level}-pack${pack}`; }
@@ -355,236 +364,245 @@ const PROMO_DURATION = 10 * 60 * 1000; // 10 minutes
 const PROMO_COOLDOWN = 24 * 60 * 60 * 1000; // 24 hours
 
 function getPromoState() {
-  const now = Date.now();
-  let start = parseInt(localStorage.getItem('wep_promo_start') || '0');
-  const expired = parseInt(localStorage.getItem('wep_promo_expired') || '0');
+const now = Date.now();
+let start = parseInt(localStorage.getItem('wep_promo_start') || '0');
+const expired = parseInt(localStorage.getItem('wep_promo_expired') || '0');
 
-  // Never started — start now
-  if (!start) {
-    localStorage.setItem('wep_promo_start', now.toString());
-    return { active: true, timeLeft: PROMO_DURATION };
-  }
+// Never started — start now
+if (!start) {
+localStorage.setItem('wep_promo_start', now.toString());
+return { active: true, timeLeft: PROMO_DURATION };
+}
 
-  const elapsed = now - start;
+const elapsed = now - start;
 
-  // Still within 10 min window
-  if (elapsed < PROMO_DURATION) {
-    return { active: true, timeLeft: PROMO_DURATION - elapsed };
-  }
+// Still within 10 min window
+if (elapsed < PROMO_DURATION) {
+return { active: true, timeLeft: PROMO_DURATION - elapsed };
+}
 
-  // Expired — mark it if not already
-  if (!expired) {
-    localStorage.setItem('wep_promo_expired', now.toString());
-    return { active: false, timeLeft: 0 };
-  }
+// Expired — mark it if not already
+if (!expired) {
+localStorage.setItem('wep_promo_expired', now.toString());
+return { active: false, timeLeft: 0 };
+}
 
-  // Check if 24h cooldown has passed
-  if (now - expired >= PROMO_COOLDOWN) {
-    localStorage.setItem('wep_promo_start', now.toString());
-    localStorage.removeItem('wep_promo_expired');
-    return { active: true, timeLeft: PROMO_DURATION };
-  }
+// Check if 24h cooldown has passed
+if (now - expired >= PROMO_COOLDOWN) {
+localStorage.setItem('wep_promo_start', now.toString());
+localStorage.removeItem('wep_promo_expired');
+return { active: true, timeLeft: PROMO_DURATION };
+}
 
-  return { active: false, timeLeft: 0 };
+return { active: false, timeLeft: 0 };
 }
 
 let promoInterval = null;
 
 function startPromoTimer() {
-  const state = getPromoState();
-  if (!state.active) {
-    document.getElementById('promoBanner').classList.add('hidden');
-    document.getElementById('promoExpiredBanner').classList.remove('hidden');
-    document.getElementById('promoInline').classList.add('hidden');
-    updatePricing(false);
-    return;
-  }
+const state = getPromoState();
+if (!state.active) {
+document.getElementById('promoBanner').classList.add('hidden');
+document.getElementById('promoExpiredBanner').classList.remove('hidden');
+document.getElementById('promoInline').classList.add('hidden');
+updatePricing(false);
+return;
+}
 
-  document.getElementById('promoBanner').classList.remove('hidden');
-  document.getElementById('promoExpiredBanner').classList.add('hidden');
-  document.getElementById('promoInline').classList.remove('hidden');
-  updatePricing(true);
+document.getElementById('promoBanner').classList.remove('hidden');
+document.getElementById('promoExpiredBanner').classList.add('hidden');
+document.getElementById('promoInline').classList.remove('hidden');
+updatePricing(true);
 
-  function tick() {
-    const s = getPromoState();
-    if (!s.active) {
-      clearInterval(promoInterval);
-      document.getElementById('promoBanner').classList.add('hidden');
-      document.getElementById('promoExpiredBanner').classList.remove('hidden');
-      document.getElementById('promoInline').classList.add('hidden');
-      updatePricing(false);
-      renderBundleCTAs();
-      return;
-    }
-    const totalSec = Math.ceil(s.timeLeft / 1000);
-    const m = Math.floor(totalSec / 60);
-    const sec = totalSec % 60;
-    const display = `${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`;
-    document.getElementById('promoTimerBanner').textContent = display;
-    document.getElementById('promoTimerInline').textContent = display;
-  }
-  tick();
-  promoInterval = setInterval(tick, 1000);
+function tick() {
+const s = getPromoState();
+if (!s.active) {
+clearInterval(promoInterval);
+document.getElementById('promoBanner').classList.add('hidden');
+document.getElementById('promoExpiredBanner').classList.remove('hidden');
+document.getElementById('promoInline').classList.add('hidden');
+updatePricing(false);
+renderBundleCTAs();
+return;
+}
+const totalSec = Math.ceil(s.timeLeft / 1000);
+const m = Math.floor(totalSec / 60);
+const sec = totalSec % 60;
+const display = `${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`;
+document.getElementById('promoTimerBanner').textContent = display;
+document.getElementById('promoTimerInline').textContent = display;
+}
+tick();
+promoInterval = setInterval(tick, 1000);
 }
 
 function updatePricing(promoActive) {
-  if (promoActive) {
-    document.getElementById('l2-price').innerHTML = '<span class="strike text-lg text-[#665a55] mr-2">$10</span>$5';
-    document.getElementById('l2-price-sub').textContent = 'per 10 exams · $0.50/test · 50% off!';
-    document.getElementById('l3-price').innerHTML = '<span class="strike text-lg text-[#665a55] mr-2">$10</span>$5';
-    document.getElementById('l3-price-sub').textContent = 'per 10 exams · $0.50/test · 50% off!';
-  } else {
-    document.getElementById('l2-price').textContent = '$10';
-    document.getElementById('l2-price-sub').textContent = 'per 10 exams · $1.00/test';
-    document.getElementById('l3-price').textContent = '$10';
-    document.getElementById('l3-price-sub').textContent = 'per 10 exams · $1.00/test';
-  }
+if (promoActive) {
+document.getElementById('l2-price').innerHTML = '<span class="strike text-lg text-[#665a55] mr-2">$10</span>$5';
+document.getElementById('l2-price-sub').textContent = 'per 10 exams · $0.50/test · 50% off!';
+document.getElementById('l3-price').innerHTML = '<span class="strike text-lg text-[#665a55] mr-2">$10</span>$5';
+document.getElementById('l3-price-sub').textContent = 'per 10 exams · $0.50/test · 50% off!';
+} else {
+document.getElementById('l2-price').textContent = '$10';
+document.getElementById('l2-price-sub').textContent = 'per 10 exams · $1.00/test';
+document.getElementById('l3-price').textContent = '$10';
+document.getElementById('l3-price-sub').textContent = 'per 10 exams · $1.00/test';
+}
 }
 
 // ============================================================
 // PURCHASED BUNDLES (localStorage + Supabase sync)
 // ============================================================
 function getPurchasedBundles() {
-  try { return JSON.parse(localStorage.getItem('wep_bundles') || '[]'); }
-  catch { return []; }
+try { return JSON.parse(localStorage.getItem('wep_bundles') || '[]'); }
+catch { return []; }
 }
 function markBundlePurchased(bId) {
-  const b = getPurchasedBundles();
-  if (!b.includes(bId)) { b.push(bId); localStorage.setItem('wep_bundles', JSON.stringify(b)); }
+const b = getPurchasedBundles();
+if (!b.includes(bId)) { b.push(bId); localStorage.setItem('wep_bundles', JSON.stringify(b)); }
 }
 function syncBundlesFromServer(bundleIds) {
-  // Merge server bundles into localStorage
-  const local = getPurchasedBundles();
-  let changed = false;
-  bundleIds.forEach(bId => {
-    if (!local.includes(bId)) { local.push(bId); changed = true; }
-  });
-  if (changed) localStorage.setItem('wep_bundles', JSON.stringify(local));
+// Merge server bundles into localStorage
+const local = getPurchasedBundles();
+let changed = false;
+bundleIds.forEach(bId => {
+if (!local.includes(bId)) { local.push(bId); changed = true; }
+});
+if (changed) localStorage.setItem('wep_bundles', JSON.stringify(local));
 }
 function isTestUnlocked(testId) {
-  const [level, numStr] = testId.split('-');
-  const num = parseInt(numStr);
-  const pack = num <= 10 ? 1 : 2;
-  return getPurchasedBundles().includes(bundleId(level, pack));
+const [level, numStr] = testId.split('-');
+const num = parseInt(numStr);
+const pack = num <= 10 ? 1 : 2;
+return getPurchasedBundles().includes(bundleId(level, pack));
 }
 
 // ============================================================
 // PAYMENT RETURN HANDLER
 // ============================================================
 (function checkPaymentReturn() {
-  const params = new URLSearchParams(window.location.search);
-  const sessionId = params.get('session_id');
-  const bId = params.get('bundle');
-  if (sessionId && bId) {
-    fetch(`/api/verify-payment?session_id=${sessionId}`)
-      .then(r => r.json())
-      .then(data => {
-        if (data.verified) {
-          markBundlePurchased(data.bundleId || bId);
-          window.history.replaceState({}, '', '/#tests');
-          renderBundleCTAs();
-          renderTests();
-        }
-      })
-      .catch(() => {});
-  }
+const params = new URLSearchParams(window.location.search);
+const sessionId = params.get('session_id');
+const bId = params.get('bundle');
+if (sessionId && bId) {
+fetch(`/api/verify-payment?session_id=${sessionId}`)
+.then(r => r.json())
+.then(data => {
+if (data.verified) {
+const finalBundle = data.bundleId || bId;
+const lvl = (finalBundle || '').split('-')[0];
+const amount = (typeof data.amount === 'number') ? data.amount : (lvl === 'l1' ? 5 : 10);
+if (window.track) track('purchase', {
+transaction_id: sessionId,
+currency: data.currency || 'USD',
+value: amount,
+items: [{ item_id: finalBundle, item_name: `WSET ${(lvl||'').toUpperCase()} bundle`, item_category: lvl, price: amount, quantity: 1 }]
+});
+markBundlePurchased(finalBundle);
+window.history.replaceState({}, '', '/#tests');
+renderBundleCTAs();
+renderTests();
+}
+})
+.catch(() => {});
+}
 })();
 
 // ============================================================
 // RENDER BUNDLE CTAs
 // ============================================================
 function renderBundleCTAs() {
-  const purchased = getPurchasedBundles();
-  const promoActive = getPromoState().active;
+const purchased = getPurchasedBundles();
+const promoActive = getPromoState().active;
 
-  ['l1','l2','l3'].forEach(level => {
-    const info = levelInfo[level];
-    [1,2].forEach(pack => {
-      const bId = bundleId(level, pack);
-      const el = document.getElementById(`${level}-pack${pack}-cta`);
-      const [start, end] = testRange(pack);
-      const owned = purchased.includes(bId);
+['l1','l2','l3'].forEach(level => {
+const info = levelInfo[level];
+[1,2].forEach(pack => {
+const bId = bundleId(level, pack);
+const el = document.getElementById(`${level}-pack${pack}-cta`);
+const [start, end] = testRange(pack);
+const owned = purchased.includes(bId);
 
-      if (owned) {
-        el.innerHTML = `<a href="#tests" onclick="showLevel('${level}')" class="block w-full py-3 text-center bg-green-800/40 hover:bg-green-700/50 text-green-300 rounded-xl text-sm font-medium transition-colors">&#10003; Pack ${pack} Unlocked (Exams ${start}-${end})</a>`;
-      } else {
-        const price = (promoActive && info.promoPrice) ? info.promoPrice : info.price;
-        const priceLabel = '$' + (price / 100).toFixed(0);
-        const isPromo = promoActive && info.promoPrice;
-        const originalLabel = isPromo ? `<span class="strike mr-1">$${info.price/100}</span>` : '';
-        el.innerHTML = `<button onclick="buyBundle('${bId}','${level}',${pack},${promoActive})" class="w-full py-3 ${isPromo ? 'bg-gradient-to-r from-[#722f37] to-[#8a3a44] hover:from-[#8a3a44] hover:to-[#9a4a54]' : 'bg-[#722f37] hover:bg-[#8a3a44]'} rounded-xl text-sm font-semibold transition-all">${originalLabel}${priceLabel} &middot; Unlock Exams ${start}-${end}</button>`;
-      }
-    });
-  });
+if (owned) {
+el.innerHTML = `<a href="#tests" onclick="showLevel('${level}')" class="block w-full py-3 text-center bg-green-800/40 hover:bg-green-700/50 text-green-300 rounded-xl text-sm font-medium transition-colors">&#10003; Pack ${pack} Unlocked (Exams ${start}-${end})</a>`;
+} else {
+const price = (promoActive && info.promoPrice) ? info.promoPrice : info.price;
+const priceLabel = '$' + (price / 100).toFixed(0);
+const isPromo = promoActive && info.promoPrice;
+const originalLabel = isPromo ? `<span class="strike mr-1">$${info.price/100}</span>` : '';
+el.innerHTML = `<button onclick="buyBundle('${bId}','${level}',${pack},${promoActive})" class="w-full py-3 ${isPromo ? 'bg-gradient-to-r from-[#722f37] to-[#8a3a44] hover:from-[#8a3a44] hover:to-[#9a4a54]' : 'bg-[#722f37] hover:bg-[#8a3a44]'} rounded-xl text-sm font-semibold transition-all">${originalLabel}${priceLabel} &middot; Unlock Exams ${start}-${end}</button>`;
+}
+});
+});
 }
 
 // ============================================================
 // RENDER TEST LIST
 // ============================================================
 function renderTests() {
-  ['l1','l2','l3'].forEach(level => {
-    const container = document.getElementById(`test-list-${level}`);
-    const info = levelInfo[level];
-    let html = '';
+['l1','l2','l3'].forEach(level => {
+const container = document.getElementById(`test-list-${level}`);
+const info = levelInfo[level];
+let html = '';
 
-    [1,2].forEach(pack => {
-      const bId = bundleId(level, pack);
-      const owned = getPurchasedBundles().includes(bId);
-      const [start, end] = testRange(pack);
+[1,2].forEach(pack => {
+const bId = bundleId(level, pack);
+const owned = getPurchasedBundles().includes(bId);
+const [start, end] = testRange(pack);
 
-      html += `<div class="glass rounded-2xl overflow-hidden mb-4">
-        <div class="p-4 border-b border-white/[0.04] flex items-center justify-between">
-          <div>
-            <span class="text-sm font-semibold text-[#c5a46e]">${info.name} &mdash; Pack ${pack}</span>
-            <span class="text-xs text-[#665a55] ml-3">Exams ${start}-${end} &middot; ${info.questions} questions each &middot; ${info.time} min</span>
-          </div>
-          ${owned ? '<span class="text-xs bg-green-900/40 text-green-300 px-2 py-1 rounded-full">Unlocked</span>' : '<span class="text-xs bg-white/[0.03] text-[#665a55] px-2 py-1 rounded-full">Locked</span>'}
-        </div>`;
+html += `<div class="glass rounded-2xl overflow-hidden mb-4">
+<div class="p-4 border-b border-white/[0.04] flex items-center justify-between">
+<div>
+<span class="text-sm font-semibold text-[#c5a46e]">${info.name} &mdash; Pack ${pack}</span>
+<span class="text-xs text-[#665a55] ml-3">Exams ${start}-${end} &middot; ${info.questions} questions each &middot; ${info.time} min</span>
+</div>
+${owned ? '<span class="text-xs bg-green-900/40 text-green-300 px-2 py-1 rounded-full">Unlocked</span>' : '<span class="text-xs bg-white/[0.03] text-[#665a55] px-2 py-1 rounded-full">Locked</span>'}
+</div>`;
 
-      if (owned) {
-        html += '<div class="divide-y divide-white/[0.04]">';
-        for (let i = start; i <= end; i++) {
-          const testId = `${level}-${String(i).padStart(2,'0')}`;
-          html += `<div class="flex items-center justify-between p-4 hover:bg-white/[0.02] transition-colors">
-            <div class="flex items-center gap-3">
-              <span class="w-8 h-8 rounded-lg bg-green-900/40 text-green-400 flex items-center justify-center text-xs font-mono">&#10003;</span>
-              <div><div class="text-sm font-medium">Practice Exam ${i}</div>
-              <div class="text-xs text-[#665a55]">${info.questions} questions &middot; ${info.time} minutes</div></div>
-            </div>
-            <a href="/exam?test=${testId}" class="px-4 py-2 bg-[#722f37] hover:bg-[#8a3a44] rounded-lg text-xs font-medium transition-colors">Take Exam</a>
-          </div>`;
-        }
-        html += '</div>';
-      } else {
-        const promoActive = getPromoState().active;
-        const price = (promoActive && info.promoPrice) ? info.promoPrice : info.price;
-        const priceLabel = '$' + (price / 100).toFixed(0);
-        html += `<div class="p-8 text-center">
-          <div class="text-3xl mb-3">&#128274;</div>
-          <p class="text-[#8b6f6a] text-sm mb-4">Purchase this bundle to unlock 10 practice exams</p>
-          <button onclick="buyBundle('${bId}','${level}',${pack},${promoActive})" class="px-6 py-3 bg-[#722f37] hover:bg-[#8a3a44] rounded-xl text-sm font-semibold transition-colors">${priceLabel} &middot; Unlock Pack ${pack}</button>
-        </div>`;
-      }
-      html += '</div>';
-    });
+if (owned) {
+html += '<div class="divide-y divide-white/[0.04]">';
+for (let i = start; i <= end; i++) {
+const testId = `${level}-${String(i).padStart(2,'0')}`;
+html += `<div class="flex items-center justify-between p-4 hover:bg-white/[0.02] transition-colors">
+<div class="flex items-center gap-3">
+<span class="w-8 h-8 rounded-lg bg-green-900/40 text-green-400 flex items-center justify-center text-xs font-mono">&#10003;</span>
+<div><div class="text-sm font-medium">Practice Exam ${i}</div>
+<div class="text-xs text-[#665a55]">${info.questions} questions &middot; ${info.time} minutes</div></div>
+</div>
+<a href="/exam?test=${testId}" class="px-4 py-2 bg-[#722f37] hover:bg-[#8a3a44] rounded-lg text-xs font-medium transition-colors">Take Exam</a>
+</div>`;
+}
+html += '</div>';
+} else {
+const promoActive = getPromoState().active;
+const price = (promoActive && info.promoPrice) ? info.promoPrice : info.price;
+const priceLabel = '$' + (price / 100).toFixed(0);
+html += `<div class="p-8 text-center">
+<div class="text-3xl mb-3">&#128274;</div>
+<p class="text-[#8b6f6a] text-sm mb-4">Purchase this bundle to unlock 10 practice exams</p>
+<button onclick="buyBundle('${bId}','${level}',${pack},${promoActive})" class="px-6 py-3 bg-[#722f37] hover:bg-[#8a3a44] rounded-xl text-sm font-semibold transition-colors">${priceLabel} &middot; Unlock Pack ${pack}</button>
+</div>`;
+}
+html += '</div>';
+});
 
-    container.innerHTML = html;
-  });
+container.innerHTML = html;
+});
 }
 
 // ============================================================
 // LEVEL TABS
 // ============================================================
 function showLevel(level) {
-  document.querySelectorAll('.test-list').forEach(el => el.classList.add('hidden'));
-  document.querySelectorAll('.level-tab').forEach(el => {
-    el.classList.remove('bg-[#722f37]','text-white');
-    el.classList.add('border','border-white/[0.06]');
-  });
-  document.getElementById(`test-list-${level}`).classList.remove('hidden');
-  const tab = document.getElementById(`tab-${level}`);
-  tab.classList.add('bg-[#722f37]','text-white');
-  tab.classList.remove('border','border-white/[0.06]');
+document.querySelectorAll('.test-list').forEach(el => el.classList.add('hidden'));
+document.querySelectorAll('.level-tab').forEach(el => {
+el.classList.remove('bg-[#722f37]','text-white');
+el.classList.add('border','border-white/[0.06]');
+});
+document.getElementById(`test-list-${level}`).classList.remove('hidden');
+const tab = document.getElementById(`tab-${level}`);
+tab.classList.add('bg-[#722f37]','text-white');
+tab.classList.remove('border','border-white/[0.06]');
 }
 
 // ============================================================
@@ -595,42 +613,47 @@ function showLevel(level) {
 let pendingPurchase = null;
 
 function resumePendingPurchase() {
-  if (pendingPurchase && currentUser && currentUser.supabaseId) {
-    const p = pendingPurchase;
-    pendingPurchase = null;
-    buyBundle(p.bId, p.level, p.pack, p.promoActive);
-  }
+if (pendingPurchase && currentUser && currentUser.supabaseId) {
+const p = pendingPurchase;
+pendingPurchase = null;
+buyBundle(p.bId, p.level, p.pack, p.promoActive);
+}
 }
 
 async function buyBundle(bId, level, pack, promoActive) {
-  // If not signed in, don't dead-end with an alert. Remember what they wanted,
-  // launch the sign-up flow, and resume this purchase once they're signed in
-  // (see resumePendingPurchase, called after login/registration succeeds).
-  if (!currentUser || !currentUser.supabaseId) {
-    pendingPurchase = { bId, level, pack, promoActive };
-    handleLogin();
-    return;
-  }
+// If not signed in, don't dead-end with an alert. Remember what they wanted,
+// launch the sign-up flow, and resume this purchase once they're signed in
+// (see resumePendingPurchase, called after login/registration succeeds).
+if (!currentUser || !currentUser.supabaseId) {
+pendingPurchase = { bId, level, pack, promoActive };
+handleLogin();
+return;
+}
 
-  try {
-    const res = await fetch('/api/create-checkout', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        bundleId: bId, level, pack, promo: promoActive,
-        userId: currentUser.supabaseId,
-        userEmail: currentUser.email,
-      })
-    });
-    const data = await res.json();
-    if (data.url) {
-      window.location.href = data.url;
-    } else {
-      alert('Something went wrong. Please try again.');
-    }
-  } catch (err) {
-    alert('Unable to process payment. Please try again.');
-  }
+try {
+const price = (level === 'l1') ? 5 : (promoActive ? 5 : 10);
+if (window.track) track('begin_checkout', {
+currency: 'USD', value: price,
+items: [{ item_id: bId, item_name: `WSET ${level.toUpperCase()} Pack ${pack}`, item_category: level, price: price, quantity: 1 }]
+});
+const res = await fetch('/api/create-checkout', {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify({
+bundleId: bId, level, pack, promo: promoActive,
+userId: currentUser.supabaseId,
+userEmail: currentUser.email,
+})
+});
+const data = await res.json();
+if (data.url) {
+window.location.href = data.url;
+} else {
+alert('Something went wrong. Please try again.');
+}
+} catch (err) {
+alert('Unable to process payment. Please try again.');
+}
 }
 
 // ============================================================
@@ -649,240 +672,241 @@ let airBuildEnv = null;
 
 // Load AIRkit SDK dynamically from CDN
 (async function loadAirKit() {
-  try {
-    const mod = await import(AIRKIT_SDK_URL);
-    airService = new mod.AirService({ partnerId: AIRKIT_PARTNER_ID });
-    airBuildEnv = mod.BUILD_ENV;
-    console.log('AIRkit SDK loaded successfully', {
-      buildEnvKeys: airBuildEnv ? Object.keys(airBuildEnv) : null
-    });
-  } catch (err) {
-    console.error('AIRkit SDK not available:', err);
-  }
+try {
+const mod = await import(AIRKIT_SDK_URL);
+airService = new mod.AirService({ partnerId: AIRKIT_PARTNER_ID });
+airBuildEnv = mod.BUILD_ENV;
+console.log('AIRkit SDK loaded successfully', {
+buildEnvKeys: airBuildEnv ? Object.keys(airBuildEnv) : null
+});
+} catch (err) {
+console.error('AIRkit SDK not available:', err);
+}
 })();
 
 async function handleLogin() {
-  if (!airService) {
-    alert('Login service is loading. Please try again in a moment.');
-    return;
-  }
+if (!airService) {
+alert('Login service is loading. Please try again in a moment.');
+return;
+}
 
-  // Guard against a missing/changed SANDBOX build env (the original failure mode).
-  if (!airBuildEnv || !airBuildEnv.SANDBOX) {
-    console.error('AIRkit build environment is unavailable:', airBuildEnv);
-    alert('Login is temporarily unavailable due to a configuration issue. Please try again later.');
-    return;
-  }
+// Guard against a missing/changed SANDBOX build env (the original failure mode).
+if (!airBuildEnv || !airBuildEnv.SANDBOX) {
+console.error('AIRkit build environment is unavailable:', airBuildEnv);
+alert('Login is temporarily unavailable due to a configuration issue. Please try again later.');
+return;
+}
 
-  try {
-    await airService.init({ buildEnv: airBuildEnv.SANDBOX });
-    const result = await airService.login();
-    console.log('AIRkit login result:', result);
-    if (!result) return;
+try {
+await airService.init({ buildEnv: airBuildEnv.SANDBOX });
+const result = await airService.login();
+console.log('AIRkit login result:', result);
+if (!result) return;
 
-    // AIRkit (1.7.0) does NOT return the email/uuid in the login() result.
-    // Identity details live under getUserInfo().user — { id, email, abstractAccountAddress, ... }.
-    let userInfo = null;
-    try {
-      userInfo = await airService.getUserInfo();
-    } catch (e) {
-      console.warn('AIRkit getUserInfo failed:', e);
-    }
-    console.log('AIRkit user info:', userInfo);
-    const airUser = (userInfo && userInfo.user) || {};
+// AIRkit (1.7.0) does NOT return the email/uuid in the login() result.
+// Identity details live under getUserInfo().user — { id, email, abstractAccountAddress, ... }.
+let userInfo = null;
+try {
+userInfo = await airService.getUserInfo();
+} catch (e) {
+console.warn('AIRkit getUserInfo failed:', e);
+}
+console.log('AIRkit user info:', userInfo);
+const airUser = (userInfo && userInfo.user) || {};
 
-    const airkitUuid = airUser.id || (userInfo && userInfo.airId) || result.uuid || result.userId || null;
-    const email = airUser.email || result.email || result.userMetadata?.email || null;
-    const displayName = (email ? email.split('@')[0] : null) || result.displayName || null;
+const airkitUuid = airUser.id || (userInfo && userInfo.airId) || result.uuid || result.userId || null;
+const email = airUser.email || result.email || result.userMetadata?.email || null;
+const displayName = (email ? email.split('@')[0] : null) || result.displayName || null;
 
-    if (!email) {
-      alert('Could not retrieve your email from the login provider.');
-      return;
-    }
+if (!email) {
+alert('Could not retrieve your email from the login provider.');
+return;
+}
 
-    // Check if user exists in Supabase
-    const lookupUrl = airkitUuid
-      ? `/api/user-profile?airkit_uuid=${encodeURIComponent(airkitUuid)}`
-      : `/api/user-profile?email=${encodeURIComponent(email)}`;
+// Check if user exists in Supabase
+const lookupUrl = airkitUuid
+? `/api/user-profile?airkit_uuid=${encodeURIComponent(airkitUuid)}`
+: `/api/user-profile?email=${encodeURIComponent(email)}`;
 
-    const lookupRes = await fetch(lookupUrl);
-    const lookupData = await lookupRes.json();
+const lookupRes = await fetch(lookupUrl);
+const lookupData = await lookupRes.json();
 
-    if (lookupData.found) {
-      // Existing user — restore profile and purchases
-      currentUser = {
-        supabaseId: lookupData.user.id,
-        airkitUuid: airkitUuid,
-        email: lookupData.user.email,
-        firstName: lookupData.user.first_name,
-        lastName: lookupData.user.last_name,
-        displayName: `${lookupData.user.first_name} ${lookupData.user.last_name}`,
-      };
-      localStorage.setItem('wep_user', JSON.stringify(currentUser));
-      syncBundlesFromServer(lookupData.bundles);
-      updateLoginUI();
-      renderBundleCTAs();
-      renderTests();
-      resumePendingPurchase();
-    } else {
-      // New user — show registration modal
-      currentUser = { airkitUuid, email, displayName, pendingRegistration: true };
-      localStorage.setItem('wep_user', JSON.stringify(currentUser));
-      showRegistrationModal(email);
-    }
-  } catch (err) {
-    console.error('Login error:', err);
-    alert('Login failed. Please try again.');
-  }
+if (lookupData.found) {
+// Existing user — restore profile and purchases
+currentUser = {
+supabaseId: lookupData.user.id,
+airkitUuid: airkitUuid,
+email: lookupData.user.email,
+firstName: lookupData.user.first_name,
+lastName: lookupData.user.last_name,
+displayName: `${lookupData.user.first_name} ${lookupData.user.last_name}`,
+};
+localStorage.setItem('wep_user', JSON.stringify(currentUser));
+syncBundlesFromServer(lookupData.bundles);
+updateLoginUI();
+renderBundleCTAs();
+renderTests();
+resumePendingPurchase();
+} else {
+// New user — show registration modal
+currentUser = { airkitUuid, email, displayName, pendingRegistration: true };
+localStorage.setItem('wep_user', JSON.stringify(currentUser));
+showRegistrationModal(email);
+}
+} catch (err) {
+console.error('Login error:', err);
+alert('Login failed. Please try again.');
+}
 }
 
 function showRegistrationModal(email) {
-  document.getElementById('regModal').classList.remove('hidden');
-  populateCountryDropdown();
+document.getElementById('regModal').classList.remove('hidden');
+populateCountryDropdown();
 }
 
 async function submitRegistration(event) {
-  event.preventDefault();
-  const btn = document.getElementById('regSubmitBtn');
-  const errEl = document.getElementById('regError');
-  errEl.classList.add('hidden');
-  btn.textContent = 'Creating account...';
-  btn.disabled = true;
+event.preventDefault();
+const btn = document.getElementById('regSubmitBtn');
+const errEl = document.getElementById('regError');
+errEl.classList.add('hidden');
+btn.textContent = 'Creating account...';
+btn.disabled = true;
 
-  const firstName = document.getElementById('regFirstName').value.trim();
-  const lastName = document.getElementById('regLastName').value.trim();
-  const city = document.getElementById('regCity').value.trim();
-  const country = document.getElementById('regCountry').value;
-  const zipCode = document.getElementById('regZipCode').value.trim();
+const firstName = document.getElementById('regFirstName').value.trim();
+const lastName = document.getElementById('regLastName').value.trim();
+const city = document.getElementById('regCity').value.trim();
+const country = document.getElementById('regCountry').value;
+const zipCode = document.getElementById('regZipCode').value.trim();
 
-  try {
-    const res = await fetch('/api/user-profile', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        airkit_uuid: currentUser.airkitUuid || null,
-        email: currentUser.email,
-        first_name: firstName,
-        last_name: lastName,
-        city: city || null,
-        country: country || null,
-        zip_code: zipCode || null,
-      })
-    });
+try {
+const res = await fetch('/api/user-profile', {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify({
+airkit_uuid: currentUser.airkitUuid || null,
+email: currentUser.email,
+first_name: firstName,
+last_name: lastName,
+city: city || null,
+country: country || null,
+zip_code: zipCode || null,
+})
+});
 
-    const data = await res.json();
-    if (!res.ok) throw new Error(data.error || 'Registration failed');
+const data = await res.json();
+if (!res.ok) throw new Error(data.error || 'Registration failed');
 
-    // Update currentUser with Supabase data
-    currentUser = {
-      supabaseId: data.user.id,
-      airkitUuid: currentUser.airkitUuid,
-      email: data.user.email,
-      firstName: data.user.first_name,
-      lastName: data.user.last_name,
-      displayName: `${data.user.first_name} ${data.user.last_name}`,
-    };
-    localStorage.setItem('wep_user', JSON.stringify(currentUser));
-    syncBundlesFromServer(data.bundles || []);
+// Update currentUser with Supabase data
+currentUser = {
+supabaseId: data.user.id,
+airkitUuid: currentUser.airkitUuid,
+email: data.user.email,
+firstName: data.user.first_name,
+lastName: data.user.last_name,
+displayName: `${data.user.first_name} ${data.user.last_name}`,
+};
+localStorage.setItem('wep_user', JSON.stringify(currentUser));
+syncBundlesFromServer(data.bundles || []);
+if (window.track) track('sign_up', { method: 'AIRkit' });
 
-    document.getElementById('regModal').classList.add('hidden');
-    updateLoginUI();
-    renderBundleCTAs();
-    renderTests();
-    resumePendingPurchase();
-  } catch (err) {
-    errEl.textContent = err.message;
-    errEl.classList.remove('hidden');
-  } finally {
-    btn.textContent = 'Create Account';
-    btn.disabled = false;
-  }
+document.getElementById('regModal').classList.add('hidden');
+updateLoginUI();
+renderBundleCTAs();
+renderTests();
+resumePendingPurchase();
+} catch (err) {
+errEl.textContent = err.message;
+errEl.classList.remove('hidden');
+} finally {
+btn.textContent = 'Create Account';
+btn.disabled = false;
+}
 }
 
 function populateCountryDropdown() {
-  const countries = [
-    'Afghanistan','Albania','Algeria','Argentina','Australia','Austria','Bangladesh','Belgium',
-    'Brazil','Canada','Chile','China','Colombia','Czech Republic','Denmark','Egypt','Finland',
-    'France','Germany','Greece','Hong Kong','Hungary','India','Indonesia','Ireland','Israel',
-    'Italy','Japan','Kenya','Malaysia','Mexico','Netherlands','New Zealand','Nigeria','Norway',
-    'Pakistan','Peru','Philippines','Poland','Portugal','Romania','Russia','Saudi Arabia',
-    'Singapore','South Africa','South Korea','Spain','Sweden','Switzerland','Taiwan','Thailand',
-    'Turkey','UAE','United Kingdom','United States','Vietnam'
-  ];
-  const select = document.getElementById('regCountry');
-  countries.forEach(c => {
-    const opt = document.createElement('option');
-    opt.value = c;
-    opt.textContent = c;
-    select.appendChild(opt);
-  });
+const countries = [
+'Afghanistan','Albania','Algeria','Argentina','Australia','Austria','Bangladesh','Belgium',
+'Brazil','Canada','Chile','China','Colombia','Czech Republic','Denmark','Egypt','Finland',
+'France','Germany','Greece','Hong Kong','Hungary','India','Indonesia','Ireland','Israel',
+'Italy','Japan','Kenya','Malaysia','Mexico','Netherlands','New Zealand','Nigeria','Norway',
+'Pakistan','Peru','Philippines','Poland','Portugal','Romania','Russia','Saudi Arabia',
+'Singapore','South Africa','South Korea','Spain','Sweden','Switzerland','Taiwan','Thailand',
+'Turkey','UAE','United Kingdom','United States','Vietnam'
+];
+const select = document.getElementById('regCountry');
+countries.forEach(c => {
+const opt = document.createElement('option');
+opt.value = c;
+opt.textContent = c;
+select.appendChild(opt);
+});
 }
 
 function updateLoginUI() {
-  const btn = document.getElementById('loginBtn');
-  const emailEl = document.getElementById('userMenuEmail');
-  const saved = localStorage.getItem('wep_user');
-  if (saved) {
-    try {
-      currentUser = JSON.parse(saved);
-      if (currentUser.pendingRegistration) {
-        // Still pending — show Sign In
-        btn.textContent = 'Sign In';
-        btn.onclick = handleLogin;
-        return;
-      }
-      const displayName = currentUser.displayName || currentUser.firstName || currentUser.email.split('@')[0];
-      btn.textContent = displayName;
-      btn.onclick = toggleUserMenu;
-      if (emailEl) emailEl.textContent = currentUser.email;
-    } catch {}
-  } else {
-    btn.textContent = 'Sign In';
-    btn.onclick = handleLogin;
-    document.getElementById('userMenu').classList.add('hidden');
-  }
+const btn = document.getElementById('loginBtn');
+const emailEl = document.getElementById('userMenuEmail');
+const saved = localStorage.getItem('wep_user');
+if (saved) {
+try {
+currentUser = JSON.parse(saved);
+if (currentUser.pendingRegistration) {
+// Still pending — show Sign In
+btn.textContent = 'Sign In';
+btn.onclick = handleLogin;
+return;
+}
+const displayName = currentUser.displayName || currentUser.firstName || currentUser.email.split('@')[0];
+btn.textContent = displayName;
+btn.onclick = toggleUserMenu;
+if (emailEl) emailEl.textContent = currentUser.email;
+} catch {}
+} else {
+btn.textContent = 'Sign In';
+btn.onclick = handleLogin;
+document.getElementById('userMenu').classList.add('hidden');
+}
 }
 
 async function handleLogout() {
-  if (airService) {
-    try { await airService.logout(); } catch {}
-  }
-  localStorage.removeItem('wep_user');
-  currentUser = null;
-  const btn = document.getElementById('loginBtn');
-  btn.textContent = 'Sign In';
-  btn.onclick = handleLogin;
-  document.getElementById('userMenu').classList.add('hidden');
+if (airService) {
+try { await airService.logout(); } catch {}
+}
+localStorage.removeItem('wep_user');
+currentUser = null;
+const btn = document.getElementById('loginBtn');
+btn.textContent = 'Sign In';
+btn.onclick = handleLogin;
+document.getElementById('userMenu').classList.add('hidden');
 }
 
 // ============================================================
 // USER MENU
 // ============================================================
 function toggleUserMenu() {
-  const menu = document.getElementById('userMenu');
-  menu.classList.toggle('hidden');
+const menu = document.getElementById('userMenu');
+menu.classList.toggle('hidden');
 }
 function closeUserMenu() {
-  document.getElementById('userMenu').classList.add('hidden');
+document.getElementById('userMenu').classList.add('hidden');
 }
 // Close menu when clicking outside
 document.addEventListener('click', (e) => {
-  const menu = document.getElementById('userMenu');
-  const btn = document.getElementById('loginBtn');
-  if (menu && !menu.contains(e.target) && !btn.contains(e.target)) {
-    menu.classList.add('hidden');
-  }
+const menu = document.getElementById('userMenu');
+const btn = document.getElementById('loginBtn');
+if (menu && !menu.contains(e.target) && !btn.contains(e.target)) {
+menu.classList.add('hidden');
+}
 });
 function showDashboard() {
-  // Scroll to tests section
-  document.getElementById('tests').scrollIntoView({ behavior: 'smooth' });
+// Scroll to tests section
+document.getElementById('tests').scrollIntoView({ behavior: 'smooth' });
 }
 
 // ============================================================
 // SCROLL ANIMATIONS
 // ============================================================
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.1 });
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
@@ -890,27 +914,27 @@ document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 // INIT
 // ============================================================
 (async function init() {
-  updateLoginUI();
-  startPromoTimer();
-  renderBundleCTAs();
-  renderTests();
+updateLoginUI();
+startPromoTimer();
+renderBundleCTAs();
+renderTests();
 
-  // If user is logged in with a supabaseId, sync purchases from server
-  const saved = localStorage.getItem('wep_user');
-  if (saved) {
-    try {
-      const user = JSON.parse(saved);
-      if (user.supabaseId && user.airkitUuid) {
-        const res = await fetch(`/api/user-profile?airkit_uuid=${encodeURIComponent(user.airkitUuid)}`);
-        const data = await res.json();
-        if (data.found) {
-          syncBundlesFromServer(data.bundles);
-          renderBundleCTAs();
-          renderTests();
-        }
-      }
-    } catch {}
-  }
+// If user is logged in with a supabaseId, sync purchases from server
+const saved = localStorage.getItem('wep_user');
+if (saved) {
+try {
+const user = JSON.parse(saved);
+if (user.supabaseId && user.airkitUuid) {
+const res = await fetch(`/api/user-profile?airkit_uuid=${encodeURIComponent(user.airkitUuid)}`);
+const data = await res.json();
+if (data.found) {
+syncBundlesFromServer(data.bundles);
+renderBundleCTAs();
+renderTests();
+}
+}
+} catch {}
+}
 })();
 </script>
 </body>
