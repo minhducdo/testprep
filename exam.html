@@ -201,6 +201,14 @@ function markBundlePurchased(bId) {
   const b = getPurchasedBundles();
   if (!b.includes(bId)) { b.push(bId); localStorage.setItem('wep_bundles', JSON.stringify(b)); }
 }
+function syncBundlesFromServer(bundleIds) {
+  const local = getPurchasedBundles();
+  let changed = false;
+  bundleIds.forEach(bId => {
+    if (!local.includes(bId)) { local.push(bId); changed = true; }
+  });
+  if (changed) localStorage.setItem('wep_bundles', JSON.stringify(local));
+}
 function isTestUnlocked(tId) {
   const [lv, numStr] = tId.split('-');
   const num = parseInt(numStr);
@@ -211,11 +219,25 @@ function isTestUnlocked(tId) {
 // Backward compat: check old per-test purchases too
 function isTestAccessible(tId) {
   if (isTestUnlocked(tId)) return true;
-  // Also check legacy per-test purchases
   try {
     const legacy = JSON.parse(localStorage.getItem('wep_purchased') || '[]');
     return legacy.includes(tId);
   } catch { return false; }
+}
+
+// Sync purchases from Supabase if user is logged in
+async function syncPurchasesFromServer() {
+  try {
+    const saved = localStorage.getItem('wep_user');
+    if (!saved) return;
+    const user = JSON.parse(saved);
+    if (!user.supabaseId || !user.airkitUuid) return;
+    const res = await fetch(`/api/user-profile?airkit_uuid=${encodeURIComponent(user.airkitUuid)}`);
+    const data = await res.json();
+    if (data.found && data.bundles) {
+      syncBundlesFromServer(data.bundles);
+    }
+  } catch {}
 }
 
 // ============================================================
@@ -252,6 +274,9 @@ window.addEventListener('DOMContentLoaded', async () => {
       }
     } catch {}
   }
+
+  // Sync purchases from server before checking access
+  await syncPurchasesFromServer();
 
   // Check access
   if (!isTestAccessible(testId)) {

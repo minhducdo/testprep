@@ -294,6 +294,44 @@ h1,h2,h3,h4,.brand{font-family:'Playfair Display',serif}
   </div>
 </footer>
 
+<!-- Registration Modal -->
+<div id="regModal" class="hidden fixed inset-0 z-[70] flex items-center justify-center bg-[#181315]/90 backdrop-blur-sm">
+  <div class="glass rounded-2xl p-8 max-w-md w-full mx-4">
+    <h3 class="text-xl font-semibold text-[#c5a46e] mb-2 brand">Complete Your Registration</h3>
+    <p class="text-sm text-[#8b6f6a] mb-6">Tell us a bit about yourself to get started.</p>
+    <form id="regForm" class="space-y-4" onsubmit="submitRegistration(event)">
+      <div class="grid grid-cols-2 gap-3">
+        <div>
+          <label class="block text-xs text-[#8b6f6a] mb-1">First Name *</label>
+          <input type="text" id="regFirstName" required class="w-full px-3 py-2 bg-[#1f1a1d] border border-white/[0.06] rounded-lg text-sm text-[#e8d5c4] focus:outline-none focus:ring-1 focus:ring-[#722f37]" placeholder="First name">
+        </div>
+        <div>
+          <label class="block text-xs text-[#8b6f6a] mb-1">Last Name *</label>
+          <input type="text" id="regLastName" required class="w-full px-3 py-2 bg-[#1f1a1d] border border-white/[0.06] rounded-lg text-sm text-[#e8d5c4] focus:outline-none focus:ring-1 focus:ring-[#722f37]" placeholder="Last name">
+        </div>
+      </div>
+      <div>
+        <label class="block text-xs text-[#8b6f6a] mb-1">City</label>
+        <input type="text" id="regCity" class="w-full px-3 py-2 bg-[#1f1a1d] border border-white/[0.06] rounded-lg text-sm text-[#e8d5c4] focus:outline-none focus:ring-1 focus:ring-[#722f37]" placeholder="City">
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <div>
+          <label class="block text-xs text-[#8b6f6a] mb-1">Country</label>
+          <select id="regCountry" class="w-full px-3 py-2 bg-[#1f1a1d] border border-white/[0.06] rounded-lg text-sm text-[#e8d5c4] focus:outline-none focus:ring-1 focus:ring-[#722f37]">
+            <option value="">Select country</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs text-[#8b6f6a] mb-1">Zip / Postal Code</label>
+          <input type="text" id="regZipCode" class="w-full px-3 py-2 bg-[#1f1a1d] border border-white/[0.06] rounded-lg text-sm text-[#e8d5c4] focus:outline-none focus:ring-1 focus:ring-[#722f37]" placeholder="Zip code">
+        </div>
+      </div>
+      <div id="regError" class="hidden text-sm text-red-400"></div>
+      <button type="submit" id="regSubmitBtn" class="w-full py-3 bg-[#722f37] hover:bg-[#8a3a44] rounded-xl font-semibold transition-colors">Create Account</button>
+    </form>
+  </div>
+</div>
+
 <script>
 // ============================================================
 // BUNDLE CONFIGURATION
@@ -404,7 +442,7 @@ function updatePricing(promoActive) {
 }
 
 // ============================================================
-// PURCHASED BUNDLES (localStorage)
+// PURCHASED BUNDLES (localStorage + Supabase sync)
 // ============================================================
 function getPurchasedBundles() {
   try { return JSON.parse(localStorage.getItem('wep_bundles') || '[]'); }
@@ -413,6 +451,15 @@ function getPurchasedBundles() {
 function markBundlePurchased(bId) {
   const b = getPurchasedBundles();
   if (!b.includes(bId)) { b.push(bId); localStorage.setItem('wep_bundles', JSON.stringify(b)); }
+}
+function syncBundlesFromServer(bundleIds) {
+  // Merge server bundles into localStorage
+  const local = getPurchasedBundles();
+  let changed = false;
+  bundleIds.forEach(bId => {
+    if (!local.includes(bId)) { local.push(bId); changed = true; }
+  });
+  if (changed) localStorage.setItem('wep_bundles', JSON.stringify(local));
 }
 function isTestUnlocked(testId) {
   const [level, numStr] = testId.split('-');
@@ -435,6 +482,8 @@ function isTestUnlocked(testId) {
         if (data.verified) {
           markBundlePurchased(data.bundleId || bId);
           window.history.replaceState({}, '', '/#tests');
+          renderBundleCTAs();
+          renderTests();
         }
       })
       .catch(() => {});
@@ -542,11 +591,22 @@ function showLevel(level) {
 // BUY BUNDLE
 // ============================================================
 async function buyBundle(bId, level, pack, promoActive) {
+  // Require login before purchase
+  if (!currentUser || !currentUser.supabaseId) {
+    alert('Please sign in before purchasing.');
+    handleLogin();
+    return;
+  }
+
   try {
     const res = await fetch('/api/create-checkout', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ bundleId: bId, level, pack, promo: promoActive })
+      body: JSON.stringify({
+        bundleId: bId, level, pack, promo: promoActive,
+        userId: currentUser.supabaseId,
+        userEmail: currentUser.email,
+      })
     });
     const data = await res.json();
     if (data.url) {
@@ -560,7 +620,7 @@ async function buyBundle(bId, level, pack, promoActive) {
 }
 
 // ============================================================
-// AIRKIT LOGIN — Partner ID: 8ec22b8f-c2f2-4678-aa80-4c22a3b4b250
+// AIRKIT LOGIN + SUPABASE PROFILE
 // ============================================================
 const AIRKIT_PARTNER_ID = '8ec22b8f-c2f2-4678-aa80-4c22a3b4b250';
 let currentUser = null;
@@ -575,57 +635,168 @@ let airBuildEnv = null;
     airBuildEnv = mod.BUILD_ENV;
     console.log('AIRkit SDK loaded successfully');
   } catch (err) {
-    console.warn('AIRkit SDK not available, using fallback login:', err.message);
+    console.warn('AIRkit SDK not available:', err.message);
   }
 })();
 
 async function handleLogin() {
-  if (airService) {
-    try {
-      await airService.init({ buildEnv: airBuildEnv.SANDBOX });
-      const result = await airService.login();
-      if (result) {
-        currentUser = {
-          uuid: result.uuid || result.userId || null,
-          email: result.email || result.userMetadata?.email || null,
-          displayName: result.displayName || result.userMetadata?.displayName || null,
-          sessionToken: result.sessionToken || null
-        };
-        localStorage.setItem('wep_user', JSON.stringify(currentUser));
-        updateLoginUI();
-        return;
-      }
-    } catch (err) {
-      console.warn('AIRkit login error:', err.message);
+  if (!airService) {
+    alert('Login service is loading. Please try again in a moment.');
+    return;
+  }
+
+  try {
+    await airService.init({ buildEnv: airBuildEnv.SANDBOX });
+    const result = await airService.login();
+    if (!result) return;
+
+    const airkitUuid = result.uuid || result.userId || null;
+    const email = result.email || result.userMetadata?.email || null;
+    const displayName = result.displayName || result.userMetadata?.displayName || null;
+
+    if (!email) {
+      alert('Could not retrieve your email from the login provider.');
+      return;
     }
+
+    // Check if user exists in Supabase
+    const lookupUrl = airkitUuid
+      ? `/api/user-profile?airkit_uuid=${encodeURIComponent(airkitUuid)}`
+      : `/api/user-profile?email=${encodeURIComponent(email)}`;
+
+    const lookupRes = await fetch(lookupUrl);
+    const lookupData = await lookupRes.json();
+
+    if (lookupData.found) {
+      // Existing user — restore profile and purchases
+      currentUser = {
+        supabaseId: lookupData.user.id,
+        airkitUuid: airkitUuid,
+        email: lookupData.user.email,
+        firstName: lookupData.user.first_name,
+        lastName: lookupData.user.last_name,
+        displayName: `${lookupData.user.first_name} ${lookupData.user.last_name}`,
+      };
+      localStorage.setItem('wep_user', JSON.stringify(currentUser));
+      syncBundlesFromServer(lookupData.bundles);
+      updateLoginUI();
+      renderBundleCTAs();
+      renderTests();
+    } else {
+      // New user — show registration modal
+      currentUser = { airkitUuid, email, displayName, pendingRegistration: true };
+      localStorage.setItem('wep_user', JSON.stringify(currentUser));
+      showRegistrationModal(email);
+    }
+  } catch (err) {
+    console.warn('Login error:', err.message);
+    alert('Login failed. Please try again.');
   }
-  // Fallback: simple email login
-  const email = prompt('Enter your email to sign in:');
-  if (email && email.includes('@')) {
-    currentUser = { email };
+}
+
+function showRegistrationModal(email) {
+  document.getElementById('regModal').classList.remove('hidden');
+  populateCountryDropdown();
+}
+
+async function submitRegistration(event) {
+  event.preventDefault();
+  const btn = document.getElementById('regSubmitBtn');
+  const errEl = document.getElementById('regError');
+  errEl.classList.add('hidden');
+  btn.textContent = 'Creating account...';
+  btn.disabled = true;
+
+  const firstName = document.getElementById('regFirstName').value.trim();
+  const lastName = document.getElementById('regLastName').value.trim();
+  const city = document.getElementById('regCity').value.trim();
+  const country = document.getElementById('regCountry').value;
+  const zipCode = document.getElementById('regZipCode').value.trim();
+
+  try {
+    const res = await fetch('/api/user-profile', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        airkit_uuid: currentUser.airkitUuid || null,
+        email: currentUser.email,
+        first_name: firstName,
+        last_name: lastName,
+        city: city || null,
+        country: country || null,
+        zip_code: zipCode || null,
+      })
+    });
+
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Registration failed');
+
+    // Update currentUser with Supabase data
+    currentUser = {
+      supabaseId: data.user.id,
+      airkitUuid: currentUser.airkitUuid,
+      email: data.user.email,
+      firstName: data.user.first_name,
+      lastName: data.user.last_name,
+      displayName: `${data.user.first_name} ${data.user.last_name}`,
+    };
     localStorage.setItem('wep_user', JSON.stringify(currentUser));
+    syncBundlesFromServer(data.bundles || []);
+
+    document.getElementById('regModal').classList.add('hidden');
     updateLoginUI();
+    renderBundleCTAs();
+    renderTests();
+  } catch (err) {
+    errEl.textContent = err.message;
+    errEl.classList.remove('hidden');
+  } finally {
+    btn.textContent = 'Create Account';
+    btn.disabled = false;
   }
+}
+
+function populateCountryDropdown() {
+  const countries = [
+    'Afghanistan','Albania','Algeria','Argentina','Australia','Austria','Bangladesh','Belgium',
+    'Brazil','Canada','Chile','China','Colombia','Czech Republic','Denmark','Egypt','Finland',
+    'France','Germany','Greece','Hong Kong','Hungary','India','Indonesia','Ireland','Israel',
+    'Italy','Japan','Kenya','Malaysia','Mexico','Netherlands','New Zealand','Nigeria','Norway',
+    'Pakistan','Peru','Philippines','Poland','Portugal','Romania','Russia','Saudi Arabia',
+    'Singapore','South Africa','South Korea','Spain','Sweden','Switzerland','Taiwan','Thailand',
+    'Turkey','UAE','United Kingdom','United States','Vietnam'
+  ];
+  const select = document.getElementById('regCountry');
+  countries.forEach(c => {
+    const opt = document.createElement('option');
+    opt.value = c;
+    opt.textContent = c;
+    select.appendChild(opt);
+  });
 }
 
 function updateLoginUI() {
   const btn = document.getElementById('loginBtn');
-  const menu = document.getElementById('userMenu');
   const emailEl = document.getElementById('userMenuEmail');
   const saved = localStorage.getItem('wep_user');
   if (saved) {
     try {
       currentUser = JSON.parse(saved);
-      const email = currentUser.email || 'User';
-      const displayName = currentUser.displayName || email.split('@')[0];
-      btn.innerHTML = displayName;
+      if (currentUser.pendingRegistration) {
+        // Still pending — show Sign In
+        btn.textContent = 'Sign In';
+        btn.onclick = handleLogin;
+        return;
+      }
+      const displayName = currentUser.displayName || currentUser.firstName || currentUser.email.split('@')[0];
+      btn.textContent = displayName;
       btn.onclick = toggleUserMenu;
-      if (emailEl) emailEl.textContent = email;
+      if (emailEl) emailEl.textContent = currentUser.email;
     } catch {}
   } else {
     btn.textContent = 'Sign In';
     btn.onclick = handleLogin;
-    if (menu) menu.classList.add('hidden');
+    document.getElementById('userMenu').classList.add('hidden');
   }
 }
 
@@ -675,10 +846,29 @@ document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 // ============================================================
 // INIT
 // ============================================================
-updateLoginUI();
-startPromoTimer();
-renderBundleCTAs();
-renderTests();
+(async function init() {
+  updateLoginUI();
+  startPromoTimer();
+  renderBundleCTAs();
+  renderTests();
+
+  // If user is logged in with a supabaseId, sync purchases from server
+  const saved = localStorage.getItem('wep_user');
+  if (saved) {
+    try {
+      const user = JSON.parse(saved);
+      if (user.supabaseId && user.airkitUuid) {
+        const res = await fetch(`/api/user-profile?airkit_uuid=${encodeURIComponent(user.airkitUuid)}`);
+        const data = await res.json();
+        if (data.found) {
+          syncBundlesFromServer(data.bundles);
+          renderBundleCTAs();
+          renderTests();
+        }
+      }
+    } catch {}
+  }
+})();
 </script>
 </body>
 </html>

@@ -9,7 +9,7 @@ module.exports = async (req, res) => {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
 
   const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-  const { bundleId, level, pack, promo } = req.body;
+  const { bundleId, level, pack, promo, userId, userEmail } = req.body;
 
   if (!bundleId || !level || !pack) {
     return res.status(400).json({ error: 'Missing bundleId, level, or pack' });
@@ -17,9 +17,9 @@ module.exports = async (req, res) => {
 
   // Pricing: L1 = $5, L2/L3 = $10 (promo: $5)
   const pricing = {
-    l1: { regular: 500, promo: 500 },    // $5 always (no promo discount for L1)
-    l2: { regular: 1000, promo: 500 },   // $10 regular, $5 promo
-    l3: { regular: 1000, promo: 500 },   // $10 regular, $5 promo
+    l1: { regular: 500, promo: 500 },
+    l2: { regular: 1000, promo: 500 },
+    l3: { regular: 1000, promo: 500 },
   };
 
   const levelPricing = pricing[level];
@@ -34,7 +34,7 @@ module.exports = async (req, res) => {
   const siteUrl = process.env.SITE_URL || 'https://wineexamprep.com';
 
   try {
-    const session = await stripe.checkout.sessions.create({
+    const sessionConfig = {
       payment_method_types: ['card'],
       line_items: [{
         price_data: {
@@ -50,8 +50,22 @@ module.exports = async (req, res) => {
       mode: 'payment',
       success_url: `${siteUrl}/?bundle=${bundleId}&session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${siteUrl}/#bundles`,
-      metadata: { bundleId, level, pack: String(pack), promo: String(!!promo) },
-    });
+      metadata: {
+        bundleId,
+        level,
+        pack: String(pack),
+        promo: String(!!promo),
+        userId: userId || '',
+        userEmail: userEmail || '',
+      },
+    };
+
+    // Pre-fill email on Stripe checkout if we have it
+    if (userEmail) {
+      sessionConfig.customer_email = userEmail;
+    }
+
+    const session = await stripe.checkout.sessions.create(sessionConfig);
 
     res.status(200).json({ url: session.url, sessionId: session.id });
   } catch (err) {
