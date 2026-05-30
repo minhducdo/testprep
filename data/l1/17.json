@@ -1,0 +1,392 @@
+[
+  {
+    "category": "Types & Styles of Wine",
+    "text": "What does the term 'off-dry' mean on a wine label?",
+    "options": [
+      "The wine is fortified",
+      "The wine is sparkling",
+      "The wine has a slight sweetness",
+      "The wine is bone dry"
+    ],
+    "correct": 2,
+    "explanation": "Off-dry means the wine has a hint of residual sugar \u2014 not fully dry, but not obviously sweet.",
+    "id": 1
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "A full-bodied red wine typically has:",
+    "options": [
+      "Low alcohol and light colour",
+      "No tannin",
+      "High fizz",
+      "High alcohol, rich flavour, and firm structure"
+    ],
+    "correct": 3,
+    "explanation": "Full-bodied reds typically have higher alcohol, concentrated flavour, and notable tannin structure.",
+    "id": 2
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "Madeira is best described as:",
+    "options": [
+      "A dry white from France",
+      "A fortified wine from a Portuguese island",
+      "A sparkling wine from Italy",
+      "A still ros\u00e9 from Spain"
+    ],
+    "correct": 1,
+    "explanation": "Madeira is a fortified wine from the island of Madeira, Portugal, known for its oxidative ageing style.",
+    "id": 3
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "A wine with noticeable bubbles when poured is classified as:",
+    "options": [
+      "Dessert",
+      "Sparkling",
+      "Still",
+      "Fortified"
+    ],
+    "correct": 1,
+    "explanation": "Visible bubbles in a wine indicate dissolved CO2, which is the defining feature of a sparkling wine.",
+    "id": 4
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "Which of the following is an example of a still wine?",
+    "options": [
+      "Prosecco",
+      "Chablis",
+      "Champagne",
+      "Cava"
+    ],
+    "correct": 1,
+    "explanation": "Chablis is a still white wine from Burgundy made from Chardonnay. Champagne, Cava, and Prosecco are all sparkling wines.",
+    "id": 5
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "What type of wine is Port?",
+    "options": [
+      "Still red",
+      "Fortified",
+      "Ros\u00e9",
+      "Sparkling white"
+    ],
+    "correct": 1,
+    "explanation": "Port is a fortified wine from the Douro Valley in Portugal. Grape spirit is added during fermentation.",
+    "id": 6
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Which of these grapes can produce both still and sparkling wines?",
+    "options": [
+      "Malbec",
+      "Sangiovese",
+      "Pinot Noir",
+      "Tempranillo"
+    ],
+    "correct": 2,
+    "explanation": "Pinot Noir is used for still red Burgundy and is one of the three main grapes in Champagne (sparkling).",
+    "id": 7
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Merlot originally comes from which country?",
+    "options": [
+      "France",
+      "Italy",
+      "Australia",
+      "Spain"
+    ],
+    "correct": 0,
+    "explanation": "Merlot originated in the Bordeaux region of France, where it remains one of the most important red varieties.",
+    "id": 8
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "An unoaked Chardonnay will typically show flavours of:",
+    "options": [
+      "Black pepper and smoke",
+      "Vanilla and toast",
+      "Blackcurrant and cedar",
+      "Green apple and citrus"
+    ],
+    "correct": 3,
+    "explanation": "Without oak influence, Chardonnay expresses its fruit character \u2014 green apple, citrus, and sometimes melon.",
+    "id": 9
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Which variety is the most widely planted red grape in the world?",
+    "options": [
+      "Cabernet Sauvignon",
+      "Merlot",
+      "Syrah",
+      "Pinot Noir"
+    ],
+    "correct": 0,
+    "explanation": "Cabernet Sauvignon is the most widely planted red wine grape variety in the world.",
+    "id": 10
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Which of these is a white grape variety?",
+    "options": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Merlot",
+      "Pinot Noir"
+    ],
+    "correct": 1,
+    "explanation": "Chardonnay is one of the world's most widely planted white grape varieties.",
+    "id": 11
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Sauvignon Blanc wines are typically known for:",
+    "options": [
+      "Rich, buttery flavours",
+      "Aromas of passion fruit, citrus, and herbaceous notes",
+      "Low acidity",
+      "Heavy tannins"
+    ],
+    "correct": 1,
+    "explanation": "Sauvignon Blanc is known for its aromatic intensity, with citrus, tropical, and herbaceous character, and crisp acidity.",
+    "id": 12
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Which grape variety produces wines with aromas of blackcurrant?",
+    "options": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Pinot Grigio",
+      "Riesling"
+    ],
+    "correct": 0,
+    "explanation": "Cabernet Sauvignon is strongly associated with blackcurrant (cassis) aromas.",
+    "id": 13
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Pinot Grigio is typically:",
+    "options": [
+      "A full-bodied, tannic red",
+      "A sweet dessert wine",
+      "A light, dry, crisp white",
+      "A sparkling ros\u00e9"
+    ],
+    "correct": 2,
+    "explanation": "Pinot Grigio from northern Italy is typically a light, dry, crisp white wine with subtle fruit flavours.",
+    "id": 14
+  },
+  {
+    "category": "Winemaking Basics",
+    "text": "What does the term 'tannin' refer to in wine?",
+    "options": [
+      "A bitter, drying sensation in the mouth",
+      "Sweetness",
+      "Acidity",
+      "Fizziness"
+    ],
+    "correct": 0,
+    "explanation": "Tannins create a drying, astringent sensation in the mouth. They come from grape skins, seeds, and sometimes oak.",
+    "id": 15
+  },
+  {
+    "category": "Winemaking Basics",
+    "text": "Oak ageing can add which flavour to wine?",
+    "options": [
+      "Vanilla",
+      "Fresh grass",
+      "Mineral",
+      "Lemon"
+    ],
+    "correct": 0,
+    "explanation": "Oak barrels contribute flavours such as vanilla, toast, spice, and sometimes coconut to wine.",
+    "id": 16
+  },
+  {
+    "category": "Winemaking Basics",
+    "text": "What is the main by-product of alcoholic fermentation besides alcohol?",
+    "options": [
+      "Oxygen",
+      "Tannin",
+      "Carbon dioxide",
+      "Nitrogen"
+    ],
+    "correct": 2,
+    "explanation": "During fermentation, yeast produces both alcohol (ethanol) and carbon dioxide gas.",
+    "id": 17
+  },
+  {
+    "category": "Winemaking Basics",
+    "text": "Ros\u00e9 wine is typically made by:",
+    "options": [
+      "Using pink-skinned grapes only",
+      "Allowing brief skin contact with red grapes",
+      "Adding food colouring",
+      "Blending red and white wine"
+    ],
+    "correct": 1,
+    "explanation": "Most ros\u00e9 is made by allowing limited skin contact with red grape skins, then pressing off the juice.",
+    "id": 18
+  },
+  {
+    "category": "Storage & Service",
+    "text": "Sparkling wine should be served in:",
+    "options": [
+      "A large Burgundy glass",
+      "A tumbler",
+      "A wide, open coupe",
+      "A narrow flute or tulip glass"
+    ],
+    "correct": 3,
+    "explanation": "A flute or tulip glass preserves the bubbles and concentrates the aromas of sparkling wine.",
+    "id": 19
+  },
+  {
+    "category": "Storage & Service",
+    "text": "What happens to wine if it is stored in a warm place?",
+    "options": [
+      "It becomes sparkling",
+      "It improves with age",
+      "It can age prematurely and develop off-flavours",
+      "Nothing"
+    ],
+    "correct": 2,
+    "explanation": "Heat accelerates chemical reactions in wine, causing premature ageing, loss of freshness, and potential faults.",
+    "id": 20
+  },
+  {
+    "category": "Storage & Service",
+    "text": "Why should wine bottles be stored on their side?",
+    "options": [
+      "To keep the cork moist and prevent air entering",
+      "To look attractive",
+      "To allow sediment to settle",
+      "To increase the alcohol"
+    ],
+    "correct": 0,
+    "explanation": "Storing bottles on their side keeps the cork in contact with the wine, preventing it from drying out and letting air in.",
+    "id": 21
+  },
+  {
+    "category": "Storage & Service",
+    "text": "A wine that has turned brown and tastes of vinegar is likely:",
+    "options": [
+      "Perfectly fine",
+      "Oxidised and spoiled",
+      "A natural wine",
+      "Simply a very old wine"
+    ],
+    "correct": 1,
+    "explanation": "Excessive browning and vinegar-like aromas indicate the wine has been damaged by oxidation and acetic acid bacteria.",
+    "id": 22
+  },
+  {
+    "category": "Storage & Service",
+    "text": "At what temperature should ros\u00e9 wine be served?",
+    "options": [
+      "15-18\u00b0C",
+      "Room temperature",
+      "4-6\u00b0C",
+      "7-10\u00b0C"
+    ],
+    "correct": 3,
+    "explanation": "Ros\u00e9 wines are best served chilled at around 7-10\u00b0C to highlight their freshness and fruit character.",
+    "id": 23
+  },
+  {
+    "category": "Storage & Service",
+    "text": "What is the purpose of decanting a wine?",
+    "options": [
+      "To cool the wine",
+      "To add bubbles",
+      "To separate the wine from sediment and allow it to breathe",
+      "To add sweetness"
+    ],
+    "correct": 2,
+    "explanation": "Decanting separates wine from any sediment and exposes it to air, which can help open up aromas and flavours.",
+    "id": 24
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "Which type of wine pairs best with grilled steak?",
+    "options": [
+      "Sparkling wine",
+      "Full-bodied red wine",
+      "Light white wine",
+      "Sweet dessert wine"
+    ],
+    "correct": 1,
+    "explanation": "The bold flavours and tannins of a full-bodied red like Cabernet Sauvignon complement the richness of grilled steak.",
+    "id": 25
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "A crisp, dry white wine pairs well with:",
+    "options": [
+      "Fresh seafood and salads",
+      "Rich chocolate cake",
+      "Grilled lamb",
+      "Spicy curry"
+    ],
+    "correct": 0,
+    "explanation": "Crisp, dry whites like Sauvignon Blanc complement the delicate flavours of fresh seafood and salads.",
+    "id": 26
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "What is a general principle of food and wine pairing?",
+    "options": [
+      "Always pair red wine with fish",
+      "White wine should never be served with meat",
+      "Match the weight of the wine to the weight of the food",
+      "Sweet wines only go with savoury food"
+    ],
+    "correct": 2,
+    "explanation": "Matching the body and intensity of the wine with the richness of the food is a fundamental pairing principle.",
+    "id": 27
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "Sweet wines pair well with:",
+    "options": [
+      "Vinaigrette-dressed salads",
+      "Rare steak",
+      "Spicy foods and desserts",
+      "Raw oysters"
+    ],
+    "correct": 2,
+    "explanation": "Sweet wines can complement spicy dishes by cooling the palate, and they pair naturally with desserts.",
+    "id": 28
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "Which wine would pair best with a creamy pasta dish?",
+    "options": [
+      "Dry Fino Sherry",
+      "Oaked Chardonnay",
+      "Tannic Cabernet Sauvignon",
+      "Light Pinot Grigio"
+    ],
+    "correct": 1,
+    "explanation": "An oaked Chardonnay has the body and richness to match creamy pasta sauces.",
+    "id": 29
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "High-acid wines pair well with:",
+    "options": [
+      "Very spicy dishes",
+      "Bitter vegetables",
+      "Rich, fatty foods",
+      "Chocolate desserts"
+    ],
+    "correct": 2,
+    "explanation": "High acidity in wine acts as a palate cleanser, cutting through the richness of fatty and oily foods.",
+    "id": 30
+  }
+]

@@ -1,0 +1,392 @@
+[
+  {
+    "category": "Types & Styles of Wine",
+    "text": "What colour can still wines be?",
+    "options": [
+      "Only red and white",
+      "Only white and ros\u00e9",
+      "Red, white, or ros\u00e9",
+      "Only red"
+    ],
+    "correct": 2,
+    "explanation": "Still wines can be red, white, or ros\u00e9 depending on the grape variety and winemaking process.",
+    "id": 1
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "Which of the following best describes a light-bodied white wine?",
+    "options": [
+      "Rich, oaky, and full on the palate",
+      "High in tannin with dark fruit flavours",
+      "Refreshing with higher acidity and lower alcohol",
+      "Sweet with dried fruit notes"
+    ],
+    "correct": 2,
+    "explanation": "Light-bodied whites tend to be refreshing, with crisp acidity and lower alcohol, like a Pinot Grigio.",
+    "id": 2
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "What does the term 'off-dry' mean on a wine label?",
+    "options": [
+      "The wine is bone dry",
+      "The wine is fortified",
+      "The wine is sparkling",
+      "The wine has a slight sweetness"
+    ],
+    "correct": 3,
+    "explanation": "Off-dry means the wine has a hint of residual sugar \u2014 not fully dry, but not obviously sweet.",
+    "id": 3
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "A full-bodied red wine typically has:",
+    "options": [
+      "High fizz",
+      "High alcohol, rich flavour, and firm structure",
+      "No tannin",
+      "Low alcohol and light colour"
+    ],
+    "correct": 1,
+    "explanation": "Full-bodied reds typically have higher alcohol, concentrated flavour, and notable tannin structure.",
+    "id": 4
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "Madeira is best described as:",
+    "options": [
+      "A dry white from France",
+      "A sparkling wine from Italy",
+      "A still ros\u00e9 from Spain",
+      "A fortified wine from a Portuguese island"
+    ],
+    "correct": 3,
+    "explanation": "Madeira is a fortified wine from the island of Madeira, Portugal, known for its oxidative ageing style.",
+    "id": 5
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "A wine with noticeable bubbles when poured is classified as:",
+    "options": [
+      "Still",
+      "Fortified",
+      "Sparkling",
+      "Dessert"
+    ],
+    "correct": 2,
+    "explanation": "Visible bubbles in a wine indicate dissolved CO2, which is the defining feature of a sparkling wine.",
+    "id": 6
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "An unoaked Chardonnay will typically show flavours of:",
+    "options": [
+      "Blackcurrant and cedar",
+      "Vanilla and toast",
+      "Green apple and citrus",
+      "Black pepper and smoke"
+    ],
+    "correct": 2,
+    "explanation": "Without oak influence, Chardonnay expresses its fruit character \u2014 green apple, citrus, and sometimes melon.",
+    "id": 7
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Which variety is the most widely planted red grape in the world?",
+    "options": [
+      "Pinot Noir",
+      "Merlot",
+      "Cabernet Sauvignon",
+      "Syrah"
+    ],
+    "correct": 2,
+    "explanation": "Cabernet Sauvignon is the most widely planted red wine grape variety in the world.",
+    "id": 8
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Which of these is a white grape variety?",
+    "options": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Pinot Noir",
+      "Merlot"
+    ],
+    "correct": 1,
+    "explanation": "Chardonnay is one of the world's most widely planted white grape varieties.",
+    "id": 9
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Sauvignon Blanc wines are typically known for:",
+    "options": [
+      "Low acidity",
+      "Aromas of passion fruit, citrus, and herbaceous notes",
+      "Heavy tannins",
+      "Rich, buttery flavours"
+    ],
+    "correct": 1,
+    "explanation": "Sauvignon Blanc is known for its aromatic intensity, with citrus, tropical, and herbaceous character, and crisp acidity.",
+    "id": 10
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Which grape variety produces wines with aromas of blackcurrant?",
+    "options": [
+      "Cabernet Sauvignon",
+      "Pinot Grigio",
+      "Riesling",
+      "Chardonnay"
+    ],
+    "correct": 0,
+    "explanation": "Cabernet Sauvignon is strongly associated with blackcurrant (cassis) aromas.",
+    "id": 11
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Pinot Grigio is typically:",
+    "options": [
+      "A sparkling ros\u00e9",
+      "A full-bodied, tannic red",
+      "A light, dry, crisp white",
+      "A sweet dessert wine"
+    ],
+    "correct": 2,
+    "explanation": "Pinot Grigio from northern Italy is typically a light, dry, crisp white wine with subtle fruit flavours.",
+    "id": 12
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Merlot wines are generally described as:",
+    "options": [
+      "Very light-bodied and fizzy",
+      "Highly aromatic with floral notes",
+      "Soft, round, with plum and red fruit",
+      "Very high in tannin with green flavours"
+    ],
+    "correct": 2,
+    "explanation": "Merlot produces soft, approachable wines with plum, red cherry, and smooth tannins.",
+    "id": 13
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Riesling can produce wines that are:",
+    "options": [
+      "Only dry",
+      "Only sparkling",
+      "Only sweet",
+      "Dry, off-dry, or sweet depending on the style"
+    ],
+    "correct": 3,
+    "explanation": "Riesling is a versatile grape that can make wines across the sweetness spectrum, from bone dry to very sweet.",
+    "id": 14
+  },
+  {
+    "category": "Winemaking Basics",
+    "text": "What does the term 'tannin' refer to in wine?",
+    "options": [
+      "Sweetness",
+      "Acidity",
+      "Fizziness",
+      "A bitter, drying sensation in the mouth"
+    ],
+    "correct": 3,
+    "explanation": "Tannins create a drying, astringent sensation in the mouth. They come from grape skins, seeds, and sometimes oak.",
+    "id": 15
+  },
+  {
+    "category": "Winemaking Basics",
+    "text": "Oak ageing can add which flavour to wine?",
+    "options": [
+      "Mineral",
+      "Fresh grass",
+      "Vanilla",
+      "Lemon"
+    ],
+    "correct": 2,
+    "explanation": "Oak barrels contribute flavours such as vanilla, toast, spice, and sometimes coconut to wine.",
+    "id": 16
+  },
+  {
+    "category": "Winemaking Basics",
+    "text": "What is the main by-product of alcoholic fermentation besides alcohol?",
+    "options": [
+      "Oxygen",
+      "Carbon dioxide",
+      "Tannin",
+      "Nitrogen"
+    ],
+    "correct": 1,
+    "explanation": "During fermentation, yeast produces both alcohol (ethanol) and carbon dioxide gas.",
+    "id": 17
+  },
+  {
+    "category": "Winemaking Basics",
+    "text": "Ros\u00e9 wine is typically made by:",
+    "options": [
+      "Allowing brief skin contact with red grapes",
+      "Blending red and white wine",
+      "Adding food colouring",
+      "Using pink-skinned grapes only"
+    ],
+    "correct": 0,
+    "explanation": "Most ros\u00e9 is made by allowing limited skin contact with red grape skins, then pressing off the juice.",
+    "id": 18
+  },
+  {
+    "category": "Storage & Service",
+    "text": "What is the purpose of decanting a wine?",
+    "options": [
+      "To add bubbles",
+      "To separate the wine from sediment and allow it to breathe",
+      "To cool the wine",
+      "To add sweetness"
+    ],
+    "correct": 1,
+    "explanation": "Decanting separates wine from any sediment and exposes it to air, which can help open up aromas and flavours.",
+    "id": 19
+  },
+  {
+    "category": "Storage & Service",
+    "text": "How long can an opened bottle of still wine typically last in the fridge?",
+    "options": [
+      "1-2 weeks",
+      "1-3 days",
+      "Indefinitely",
+      "1 month"
+    ],
+    "correct": 1,
+    "explanation": "Once opened, still wine begins to oxidise. It will typically remain drinkable for 1-3 days if refrigerated.",
+    "id": 20
+  },
+  {
+    "category": "Storage & Service",
+    "text": "Which of the following is a sign that wine may be faulty?",
+    "options": [
+      "A small amount of sediment",
+      "Cloudy appearance with off-putting smell",
+      "Slight fizz in young white wine",
+      "Bright, clear colour"
+    ],
+    "correct": 1,
+    "explanation": "A cloudy appearance combined with an off-putting smell can indicate the wine is faulty or spoiled.",
+    "id": 21
+  },
+  {
+    "category": "Storage & Service",
+    "text": "At what temperature should a full-bodied red wine be served?",
+    "options": [
+      "8-12\u00b0C",
+      "15-18\u00b0C",
+      "22-25\u00b0C",
+      "4-8\u00b0C"
+    ],
+    "correct": 1,
+    "explanation": "Full-bodied red wines are best served at 15-18\u00b0C. Serving too warm emphasises alcohol; too cold mutes flavour.",
+    "id": 22
+  },
+  {
+    "category": "Storage & Service",
+    "text": "How should wine be stored for long periods?",
+    "options": [
+      "Upright in a warm room",
+      "In direct sunlight",
+      "In a refrigerator",
+      "On its side in a cool, dark place"
+    ],
+    "correct": 3,
+    "explanation": "Wine should be stored on its side to keep the cork moist, in a cool (10-15\u00b0C), dark, stable environment.",
+    "id": 23
+  },
+  {
+    "category": "Storage & Service",
+    "text": "What is the correct serving temperature for a light white wine?",
+    "options": [
+      "Room temperature",
+      "4-8\u00b0C",
+      "15-18\u00b0C",
+      "20-22\u00b0C"
+    ],
+    "correct": 1,
+    "explanation": "Light, crisp white wines are best served well chilled at 7-10\u00b0C to preserve their freshness.",
+    "id": 24
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "What does 'AOC' on a French wine label indicate?",
+    "options": [
+      "The grape variety used",
+      "The winemaker's name",
+      "The alcohol content",
+      "A controlled appellation of origin"
+    ],
+    "correct": 3,
+    "explanation": "AOC (Appellation d'Origine Contr\u00f4l\u00e9e) indicates the wine comes from a specific, regulated French wine region.",
+    "id": 25
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "What information must appear on a wine label in most countries?",
+    "options": [
+      "Only the brand name",
+      "The grape harvest date and time",
+      "Country of origin, alcohol content, and volume",
+      "The food pairing suggestions"
+    ],
+    "correct": 2,
+    "explanation": "Most countries require the label to show at least the country of origin, alcohol level (ABV), and bottle volume.",
+    "id": 26
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "If a wine label says 'Reserva' on a Spanish wine, it means:",
+    "options": [
+      "The wine has been aged for a minimum required period",
+      "The wine contains reserve sugar",
+      "The wine is the cheapest in the range",
+      "The wine is organic"
+    ],
+    "correct": 0,
+    "explanation": "In Spain, 'Reserva' indicates the wine has been aged for a specific minimum period in oak and bottle.",
+    "id": 27
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "Tannic red wines do NOT pair well with:",
+    "options": [
+      "Red meat",
+      "Rich stew",
+      "Hard cheese",
+      "Delicate fish"
+    ],
+    "correct": 3,
+    "explanation": "Tannin in red wine can overwhelm the delicate flavours of fish, creating a metallic or bitter taste.",
+    "id": 28
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "What is the purpose of the vintage year on a label?",
+    "options": [
+      "To indicate the year the grapes were harvested",
+      "To indicate when to drink the wine",
+      "To show when the wine was bottled",
+      "To show the winery founding date"
+    ],
+    "correct": 0,
+    "explanation": "The vintage year indicates when the grapes were picked, which reflects the growing conditions of that year.",
+    "id": 29
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "Which term on a label means the wine has some sweetness?",
+    "options": [
+      "Sec",
+      "Extra Brut",
+      "Demi-sec",
+      "Brut"
+    ],
+    "correct": 2,
+    "explanation": "Demi-sec means 'half dry' and indicates the wine has noticeable sweetness. It is commonly used for sparkling wines.",
+    "id": 30
+  }
+]

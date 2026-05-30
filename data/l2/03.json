@@ -1,0 +1,652 @@
+[
+  {
+    "category": "LO1 \u2013 Environmental Influences",
+    "text": "Cool climate wine regions typically produce wines with:",
+    "options": [
+      "Lower acidity",
+      "More tannin",
+      "Higher acidity and lighter body",
+      "Fuller body and riper fruit"
+    ],
+    "correct": 2,
+    "explanation": "Cool climates produce grapes with higher natural acidity and less ripe fruit, resulting in lighter wines.",
+    "id": 1
+  },
+  {
+    "category": "LO1 \u2013 Environmental Influences",
+    "text": "Which factor helps protect vineyards from spring frost?",
+    "options": [
+      "Using no irrigation",
+      "Being at the bottom of a valley",
+      "Being near a large body of water",
+      "Planting on flat open land"
+    ],
+    "correct": 2,
+    "explanation": "Bodies of water store heat and radiate it, helping protect nearby vineyards from frost damage.",
+    "id": 2
+  },
+  {
+    "category": "LO1 \u2013 Environmental Influences",
+    "text": "Which of the following is a direct benefit of a long, cool growing season?",
+    "options": [
+      "Higher sugar and lower acidity",
+      "Increased rot leading to concentration",
+      "Gradual ripening with good sugar-acid balance",
+      "Rapid ripening and thick skins"
+    ],
+    "correct": 2,
+    "explanation": "A long, cool growing season allows grapes to ripen gradually, retaining acidity while developing sugar and flavour.",
+    "id": 3
+  },
+  {
+    "category": "LO1 \u2013 Environmental Influences",
+    "text": "What is the primary risk of high rainfall during the growing season?",
+    "options": [
+      "Low yields",
+      "Sunburn",
+      "Frost damage",
+      "Fungal diseases such as grey rot"
+    ],
+    "correct": 3,
+    "explanation": "High rainfall increases humidity, creating conditions for fungal diseases like grey rot (Botrytis cinerea).",
+    "id": 4
+  },
+  {
+    "category": "LO1 \u2013 Environmental Influences",
+    "text": "How does altitude influence vineyard conditions?",
+    "options": [
+      "Higher altitudes have more humidity",
+      "Higher altitudes are cooler",
+      "Higher altitudes are warmer",
+      "Higher altitudes receive less sun"
+    ],
+    "correct": 1,
+    "explanation": "Temperature drops with altitude. Higher elevation vineyards benefit from cooler temperatures.",
+    "id": 5
+  },
+  {
+    "category": "LO2 \u2013 Winemaking & Ageing",
+    "text": "Why might a winemaker choose old oak barrels over new?",
+    "options": [
+      "Old oak is cheaper and better",
+      "Old oak adds more tannin",
+      "Old oak adds less flavour, allowing fruit to dominate",
+      "Old oak adds more flavour"
+    ],
+    "correct": 2,
+    "explanation": "Old oak barrels have already released most of their flavour compounds, so they add subtlety rather than strong oak character.",
+    "id": 6
+  },
+  {
+    "category": "LO2 \u2013 Winemaking & Ageing",
+    "text": "What is the purpose of fining in winemaking?",
+    "options": [
+      "To add flavour",
+      "To increase alcohol",
+      "To add colour",
+      "To clarify and stabilise the wine by removing particles"
+    ],
+    "correct": 3,
+    "explanation": "Fining agents bind to unwanted particles (proteins, tannins) and settle out, clarifying the wine.",
+    "id": 7
+  },
+  {
+    "category": "LO2 \u2013 Winemaking & Ageing",
+    "text": "What is the primary purpose of malolactic conversion?",
+    "options": [
+      "Convert malic acid to softer lactic acid",
+      "Add residual sugar",
+      "Increase alcohol",
+      "Extract colour"
+    ],
+    "correct": 0,
+    "explanation": "MLF transforms sharp malic acid into softer lactic acid, reducing perceived acidity and adding complexity.",
+    "id": 8
+  },
+  {
+    "category": "LO2 \u2013 Winemaking & Ageing",
+    "text": "New oak barrel ageing typically adds:",
+    "options": [
+      "Prevention of all oxidation",
+      "Vanilla, toast, and clove flavours",
+      "Removal of tannins",
+      "Increased acidity"
+    ],
+    "correct": 1,
+    "explanation": "New oak contributes vanilla, toast, coconut, and spice flavours through compounds in the wood.",
+    "id": 9
+  },
+  {
+    "category": "LO3 \u2013 Chardonnay",
+    "text": "Margaret River Chardonnay from Australia is generally:",
+    "options": [
+      "Sweet and low alcohol",
+      "Medium to full-bodied with stone fruit and balanced oak",
+      "Very tannic",
+      "Very light and acidic"
+    ],
+    "correct": 1,
+    "explanation": "Margaret River's moderate climate produces elegant Chardonnay with stone fruit, citrus, and restrained oak.",
+    "id": 10
+  },
+  {
+    "category": "LO3 \u2013 Chardonnay",
+    "text": "An unoaked Chablis is typically:",
+    "options": [
+      "Off-dry with floral aromas",
+      "Medium with red fruit",
+      "Full-bodied with tropical fruit",
+      "Light-bodied with high acidity, citrus, and mineral"
+    ],
+    "correct": 3,
+    "explanation": "Chablis is cool-climate Chardonnay, unoaked, with high acidity, citrus, and mineral character.",
+    "id": 11
+  },
+  {
+    "category": "LO3 \u2013 Chardonnay",
+    "text": "Napa Valley Chardonnay aged in new oak would be:",
+    "options": [
+      "Off-dry and floral",
+      "Fizzy with red berry",
+      "Full-bodied with tropical fruit, vanilla, and butter",
+      "Light and crisp"
+    ],
+    "correct": 2,
+    "explanation": "Warm Napa climate + new oak = ripe, full-bodied Chardonnay with vanilla and buttery notes.",
+    "id": 12
+  },
+  {
+    "category": "LO3 \u2013 Sauvignon Blanc",
+    "text": "Marlborough, New Zealand Sauvignon Blanc is known for:",
+    "options": [
+      "Rich buttery flavours",
+      "Heavy tannins",
+      "Low acidity",
+      "Intense passion fruit, grapefruit, and cut grass"
+    ],
+    "correct": 3,
+    "explanation": "Marlborough SB is intensely aromatic with passion fruit, grapefruit, and herbaceous notes.",
+    "id": 13
+  },
+  {
+    "category": "LO3 \u2013 Sauvignon Blanc",
+    "text": "Pouilly-Fum\u00e9 is:",
+    "options": [
+      "Oaked Chardonnay",
+      "Dry Sauvignon Blanc from the Loire with mineral and citrus",
+      "Sweet Loire white",
+      "Sparkling Champagne"
+    ],
+    "correct": 1,
+    "explanation": "Pouilly-Fum\u00e9 is dry Sauvignon Blanc from the Loire Valley with citrus and flinty mineral character.",
+    "id": 14
+  },
+  {
+    "category": "LO3 \u2013 Sauvignon Blanc",
+    "text": "Sancerre is made from:",
+    "options": [
+      "Chardonnay",
+      "Sauvignon Blanc",
+      "Chenin Blanc",
+      "Viognier"
+    ],
+    "correct": 1,
+    "explanation": "Sancerre in the Loire Valley produces dry white wines exclusively from Sauvignon Blanc.",
+    "id": 15
+  },
+  {
+    "category": "LO3 \u2013 Pinot Grigio/Gris",
+    "text": "The Pinot Gris grape has:",
+    "options": [
+      "No colour at all",
+      "Green skins",
+      "Very dark skins",
+      "Greyish-pink skins"
+    ],
+    "correct": 3,
+    "explanation": "Pinot Gris/Grigio has greyish-pink coloured skins, hence the name 'gris' (grey).",
+    "id": 16
+  },
+  {
+    "category": "LO3 \u2013 Riesling",
+    "text": "Alsatian Riesling is usually:",
+    "options": [
+      "Sparkling",
+      "Dry, aromatic, with citrus and floral notes",
+      "Oaked and tannic",
+      "Sweet and heavy"
+    ],
+    "correct": 1,
+    "explanation": "Alsace Riesling is typically dry, with pronounced aromatics, citrus, floral, and mineral character.",
+    "id": 17
+  },
+  {
+    "category": "LO3 \u2013 Riesling",
+    "text": "What makes Mosel Riesling distinctive?",
+    "options": [
+      "High acidity, light body, and often residual sugar",
+      "High alcohol and full body",
+      "Oaky flavours",
+      "Heavy tannins"
+    ],
+    "correct": 0,
+    "explanation": "Mosel Riesling: high acidity, light body, lower alcohol, often with balancing residual sugar.",
+    "id": 18
+  },
+  {
+    "category": "LO3 \u2013 Cabernet Sauvignon",
+    "text": "Left Bank Bordeaux Cabernet Sauvignon is typically:",
+    "options": [
+      "Sweet",
+      "Aromatic and low tannin",
+      "Full-bodied with blackcurrant, cedar, and firm tannins",
+      "Light with red cherry"
+    ],
+    "correct": 2,
+    "explanation": "Left Bank Bordeaux: full-bodied Cabernet-dominant blends with cassis, cedar, and firm structure.",
+    "id": 19
+  },
+  {
+    "category": "LO3 \u2013 Cabernet Sauvignon",
+    "text": "Napa Valley Cabernet Sauvignon is characterised by:",
+    "options": [
+      "Light body with green notes",
+      "Full body, ripe dark fruit, and prominent oak",
+      "Fizzy and off-dry",
+      "Low tannin and floral aromas"
+    ],
+    "correct": 1,
+    "explanation": "Napa Cab: powerful, full-bodied with ripe blackcurrant, black cherry, and generous oak influence.",
+    "id": 20
+  },
+  {
+    "category": "LO3 \u2013 Cabernet Sauvignon",
+    "text": "The hallmark fruit descriptor for Cabernet Sauvignon is:",
+    "options": [
+      "Lychee and rose",
+      "Peach and apricot",
+      "Blackcurrant and black cherry",
+      "Strawberry and cranberry"
+    ],
+    "correct": 2,
+    "explanation": "Blackcurrant (cassis) and black cherry are the signature descriptors of Cabernet Sauvignon.",
+    "id": 21
+  },
+  {
+    "category": "LO3 \u2013 Merlot",
+    "text": "Why is Merlot popular as an entry-level red wine?",
+    "options": [
+      "It has no flavour",
+      "It is the cheapest grape",
+      "Its soft tannins and ripe fruit make it approachable",
+      "It is always sweet"
+    ],
+    "correct": 2,
+    "explanation": "Merlot's soft, round tannins and ripe fruit make it accessible and easy to enjoy.",
+    "id": 22
+  },
+  {
+    "category": "LO3 \u2013 Merlot",
+    "text": "Compared to Cabernet Sauvignon, Merlot is:",
+    "options": [
+      "Softer, rounder, with medium tannins",
+      "Higher in tannin",
+      "More acidic and lighter",
+      "Identical"
+    ],
+    "correct": 0,
+    "explanation": "Merlot produces wines with softer tannins and approachable plum/red fruit character.",
+    "id": 23
+  },
+  {
+    "category": "LO3 \u2013 Pinot Noir",
+    "text": "Red Burgundy is typically:",
+    "options": [
+      "Full-bodied with blackcurrant",
+      "Sweet with dried fruit",
+      "Light to medium-bodied with cherry, strawberry, and earth",
+      "Medium with black pepper"
+    ],
+    "correct": 2,
+    "explanation": "Red Burgundy (Pinot Noir): light to medium body, red fruit, floral, and earthy complexity.",
+    "id": 24
+  },
+  {
+    "category": "LO3 \u2013 Pinot Noir",
+    "text": "Which region is known for premium Pinot Noir outside Burgundy?",
+    "options": [
+      "Rioja",
+      "Douro",
+      "Central Otago, New Zealand",
+      "Barossa"
+    ],
+    "correct": 2,
+    "explanation": "Central Otago produces concentrated Pinot Noir with dark cherry and spice.",
+    "id": 25
+  },
+  {
+    "category": "LO3 \u2013 Pinot Noir",
+    "text": "Pinot Noir is difficult to grow because:",
+    "options": [
+      "It needs very poor soil",
+      "It ripens too late for any climate",
+      "It has very thick skins",
+      "It has thin skins susceptible to rot"
+    ],
+    "correct": 3,
+    "explanation": "Pinot Noir's thin skins make it susceptible to rot and disease, requiring careful management.",
+    "id": 26
+  },
+  {
+    "category": "LO3 \u2013 Syrah/Shiraz",
+    "text": "Shiraz from McLaren Vale, Australia tends to be:",
+    "options": [
+      "Sparkling",
+      "Bone dry and austere",
+      "Rich, full-bodied with dark fruit and chocolate",
+      "Light and delicate"
+    ],
+    "correct": 2,
+    "explanation": "McLaren Vale Shiraz is typically rich and full-bodied with generous dark fruit, chocolate, and spice.",
+    "id": 27
+  },
+  {
+    "category": "LO3 \u2013 Syrah/Shiraz",
+    "text": "Northern Rh\u00f4ne Syrah vs Barossa Shiraz:",
+    "options": [
+      "Rh\u00f4ne Syrah is fruitier and more jammy",
+      "Rh\u00f4ne Syrah shows pepper and herbs while Barossa Shiraz is riper with dark fruit and oak",
+      "Both produce identical styles",
+      "Barossa Shiraz is lighter in body"
+    ],
+    "correct": 1,
+    "explanation": "Northern Rh\u00f4ne Syrah: pepper, herbs, floral. Barossa Shiraz: fuller, riper, chocolate, and oak.",
+    "id": 28
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "Tempranillo is the principal red grape of:",
+    "options": [
+      "France",
+      "Portugal",
+      "Italy",
+      "Spain"
+    ],
+    "correct": 3,
+    "explanation": "Tempranillo is Spain's most important red grape, the backbone of Rioja and Ribera del Duero.",
+    "id": 29
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "The dominant red grape in Chianti is:",
+    "options": [
+      "Montepulciano",
+      "Sangiovese",
+      "Nebbiolo",
+      "Barbera"
+    ],
+    "correct": 1,
+    "explanation": "Sangiovese is Chianti's principal grape, producing wines with cherry fruit, high acidity, and firm tannins.",
+    "id": 30
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "Malbec is most associated with:",
+    "options": [
+      "Chile",
+      "Australia",
+      "South Africa",
+      "Argentina"
+    ],
+    "correct": 3,
+    "explanation": "Malbec found its greatest success in Argentina, especially Mendoza's high-altitude vineyards.",
+    "id": 31
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "Barolo and Barbaresco are made from:",
+    "options": [
+      "Sangiovese",
+      "Dolcetto",
+      "Barbera",
+      "Nebbiolo"
+    ],
+    "correct": 3,
+    "explanation": "Nebbiolo: high tannin, high acidity, flavours of tar, roses, and red fruit.",
+    "id": 32
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "Grenache is key in blends from:",
+    "options": [
+      "Marlborough",
+      "Chablis",
+      "Southern Rh\u00f4ne",
+      "Mosel"
+    ],
+    "correct": 2,
+    "explanation": "Grenache dominates Southern Rh\u00f4ne blends, including Ch\u00e2teauneuf-du-Pape.",
+    "id": 33
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "Vinho Verde from Portugal is typically:",
+    "options": [
+      "Sweet dessert",
+      "Rich oaked white",
+      "Full-bodied tannic red",
+      "Light, dry or off-dry, slightly fizzy white"
+    ],
+    "correct": 3,
+    "explanation": "Vinho Verde: light, refreshing, often slightly sparkling white with low alcohol.",
+    "id": 34
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "Chenin Blanc is important in:",
+    "options": [
+      "Burgundy and Napa",
+      "Loire Valley and South Africa",
+      "Rioja and Marlborough",
+      "Mosel and Alsace"
+    ],
+    "correct": 1,
+    "explanation": "Chenin Blanc stars in the Loire (Vouvray) and is South Africa's most planted white grape.",
+    "id": 35
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "Soave is based on which grape?",
+    "options": [
+      "Sangiovese",
+      "Nebbiolo",
+      "Cortese",
+      "Garganega"
+    ],
+    "correct": 3,
+    "explanation": "Soave from Veneto uses Garganega primarily, producing dry whites with almond and citrus character.",
+    "id": 36
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "Carmen\u00e8re is a signature grape of:",
+    "options": [
+      "Uruguay",
+      "Argentina",
+      "Brazil",
+      "Chile"
+    ],
+    "correct": 3,
+    "explanation": "Carmen\u00e8re, originally from Bordeaux, was rediscovered in Chile and is now its signature red.",
+    "id": 37
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "Albari\u00f1o is associated with:",
+    "options": [
+      "Jerez",
+      "Rioja",
+      "R\u00edas Baixas",
+      "Douro"
+    ],
+    "correct": 2,
+    "explanation": "Albari\u00f1o is the key white grape of R\u00edas Baixas, Spain, producing aromatic, crisp whites.",
+    "id": 38
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "C\u00f4tes du Rh\u00f4ne rouge is dominated by:",
+    "options": [
+      "Cabernet Sauvignon",
+      "Grenache",
+      "Merlot",
+      "Pinot Noir"
+    ],
+    "correct": 1,
+    "explanation": "Grenache dominates C\u00f4tes du Rh\u00f4ne red blends, often with Syrah and Mourv\u00e8dre.",
+    "id": 39
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "Pinotage is unique to:",
+    "options": [
+      "South Africa",
+      "New Zealand",
+      "Chile",
+      "Australia"
+    ],
+    "correct": 0,
+    "explanation": "Pinotage (Pinot Noir \u00d7 Cinsaut) was created in South Africa in 1925.",
+    "id": 40
+  },
+  {
+    "category": "LO5 \u2013 Sparkling Wines",
+    "text": "Cr\u00e9mant d'Alsace is:",
+    "options": [
+      "A ros\u00e9",
+      "A still wine",
+      "A fortified wine",
+      "A sparkling wine made by the traditional method in Alsace"
+    ],
+    "correct": 3,
+    "explanation": "Cr\u00e9mant d'Alsace is a French sparkling wine made using the traditional method in the Alsace region.",
+    "id": 41
+  },
+  {
+    "category": "LO5 \u2013 Sparkling Wines",
+    "text": "The traditional method involves:",
+    "options": [
+      "Fermenting in open barrels",
+      "Injecting CO2",
+      "Second fermentation in a tank",
+      "Second fermentation in the bottle"
+    ],
+    "correct": 3,
+    "explanation": "Traditional method: second fermentation in the individual bottle, producing fine persistent bubbles.",
+    "id": 42
+  },
+  {
+    "category": "LO5 \u2013 Sparkling Wines",
+    "text": "Champagne's three main grapes are:",
+    "options": [
+      "Chardonnay, Sauvignon Blanc, Riesling",
+      "Grenache, Syrah, Mourv\u00e8dre",
+      "Pinot Noir, Chardonnay, Pinot Meunier",
+      "Chenin Blanc, Pinot Gris, Muscat"
+    ],
+    "correct": 2,
+    "explanation": "Champagne: Pinot Noir, Chardonnay, and Pinot Meunier (Meunier).",
+    "id": 43
+  },
+  {
+    "category": "LO5 \u2013 Fortified Wines",
+    "text": "Amontillado Sherry starts as:",
+    "options": [
+      "Fino that loses its flor and undergoes oxidative ageing",
+      "A sparkling wine",
+      "A sweet wine",
+      "Oloroso"
+    ],
+    "correct": 0,
+    "explanation": "Amontillado begins as Fino under flor, then the flor dies and oxidative ageing follows.",
+    "id": 44
+  },
+  {
+    "category": "LO5 \u2013 Fortified Wines",
+    "text": "Grape spirit is added to Port:",
+    "options": [
+      "During fermentation to stop it",
+      "Before fermentation",
+      "After fermentation is complete",
+      "After bottling"
+    ],
+    "correct": 0,
+    "explanation": "Port: spirit added during fermentation, killing yeast and retaining residual sugar.",
+    "id": 45
+  },
+  {
+    "category": "LO5 \u2013 Fortified Wines",
+    "text": "Fino Sherry's distinctive character comes from:",
+    "options": [
+      "Late harvest",
+      "Brandy blending",
+      "Ageing under flor yeast",
+      "New oak barrels"
+    ],
+    "correct": 2,
+    "explanation": "Fino develops under flor yeast (biological ageing), giving almond, bread dough, and saline notes.",
+    "id": 46
+  },
+  {
+    "category": "LO6 \u2013 Service & Pairing",
+    "text": "Light white wines should be served at:",
+    "options": [
+      "Room temperature",
+      "3-5\u00b0C",
+      "15-18\u00b0C",
+      "7-10\u00b0C"
+    ],
+    "correct": 3,
+    "explanation": "Light white wines like Pinot Grigio are best at 7-10\u00b0C to highlight freshness.",
+    "id": 47
+  },
+  {
+    "category": "LO6 \u2013 Service & Pairing",
+    "text": "What is the German quality term for wines made from individually selected botrytised berries?",
+    "options": [
+      "Kabinett",
+      "Beerenauslese",
+      "Sp\u00e4tlese",
+      "Auslese"
+    ],
+    "correct": 1,
+    "explanation": "Beerenauslese ('selected berries harvest') uses individually selected botrytis-affected grapes for rich sweet wine.",
+    "id": 48
+  },
+  {
+    "category": "LO6 \u2013 Service & Pairing",
+    "text": "Full-bodied red wines should be served at:",
+    "options": [
+      "15-18\u00b0C",
+      "6-10\u00b0C",
+      "20-25\u00b0C",
+      "10-13\u00b0C"
+    ],
+    "correct": 0,
+    "explanation": "Full-bodied reds: 15-18\u00b0C. Too warm emphasises alcohol; too cold makes tannins harsh.",
+    "id": 49
+  },
+  {
+    "category": "LO6 \u2013 Service & Pairing",
+    "text": "High-acid wines pair well with:",
+    "options": [
+      "Bitter vegetables only",
+      "Very sweet foods",
+      "Rich, fatty dishes",
+      "Chocolate desserts"
+    ],
+    "correct": 2,
+    "explanation": "Acidity cuts through richness of fatty foods, refreshing the palate \u2014 a key pairing principle.",
+    "id": 50
+  }
+]

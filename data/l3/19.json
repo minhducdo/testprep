@@ -1,0 +1,652 @@
+[
+  {
+    "category": "Factors \u2013 Climate & Site",
+    "text": "The Winkler Index measures:",
+    "options": [
+      "Rainfall",
+      "Altitude",
+      "Soil depth",
+      "Growing degree days (heat accumulation)"
+    ],
+    "correct": 3,
+    "explanation": "The Winkler Index sums heat units above 10\u00b0C during the growing season to classify climate regions.",
+    "id": 1
+  },
+  {
+    "category": "Factors \u2013 Climate & Site",
+    "text": "In K\u00f6ppen classification, what type of climate does Bordeaux have?",
+    "options": [
+      "Mediterranean",
+      "Tropical",
+      "Warm oceanic (Cfb)",
+      "Hot continental"
+    ],
+    "correct": 2,
+    "explanation": "Bordeaux has a warm oceanic (Cfb) climate with moderate temperatures and rainfall, influenced by the Atlantic.",
+    "id": 2
+  },
+  {
+    "category": "Factors \u2013 Climate & Site",
+    "text": "What is the primary viticultural advantage of a diurnal temperature range?",
+    "options": [
+      "Sugar accumulation by day, acid preservation at night",
+      "More disease",
+      "Higher yields",
+      "Faster ripening overall"
+    ],
+    "correct": 0,
+    "explanation": "Warm days promote sugar accumulation through photosynthesis while cool nights slow acid respiration, preserving freshness.",
+    "id": 3
+  },
+  {
+    "category": "Factors \u2013 Viticulture",
+    "text": "Gobelet (bush vine) training is suited to:",
+    "options": [
+      "Hot, dry climates with low rainfall",
+      "Irrigated vineyards",
+      "Maritime climates",
+      "Cool, humid climates"
+    ],
+    "correct": 0,
+    "explanation": "Gobelet training is used in hot, dry regions \u2014 the vine shades its own grapes without trellis support.",
+    "id": 4
+  },
+  {
+    "category": "Factors \u2013 Viticulture",
+    "text": "Green harvesting (vendange verte) involves:",
+    "options": [
+      "Removing unripe grape bunches to reduce yield and concentrate flavour",
+      "Harvesting during a green moon phase",
+      "Harvesting only green-skinned grapes",
+      "Harvesting unripe grapes for sparkling wine"
+    ],
+    "correct": 0,
+    "explanation": "Green harvest removes excess bunches, directing the vine's energy into fewer, more concentrated clusters.",
+    "id": 5
+  },
+  {
+    "category": "Factors \u2013 Winemaking",
+    "text": "How does extended maceration affect red wine?",
+    "options": [
+      "Adds sweetness",
+      "Makes wine lighter",
+      "Reduces tannin",
+      "Increases tannin, colour, and structural complexity"
+    ],
+    "correct": 3,
+    "explanation": "Extended maceration after fermentation extracts additional tannins and phenolic compounds, adding structure.",
+    "id": 6
+  },
+  {
+    "category": "Factors \u2013 Winemaking",
+    "text": "What is the effect of whole-bunch fermentation?",
+    "options": [
+      "It always produces inferior wine",
+      "It increases alcohol",
+      "It can add structure, spice, and a different textural complexity",
+      "It reduces all tannin"
+    ],
+    "correct": 2,
+    "explanation": "Whole-bunch (stems included) fermentation adds tannin structure, spice, and savoury complexity, used notably for Pinot Noir.",
+    "id": 7
+  },
+  {
+    "category": "France \u2013 Bordeaux",
+    "text": "Sauternes is known for:",
+    "options": [
+      "Botrytised sweet white wines from S\u00e9millon, Sauvignon Blanc, and Muscadelle",
+      "Sparkling ros\u00e9",
+      "Light Pinot Noir",
+      "Dry red wines"
+    ],
+    "correct": 0,
+    "explanation": "Sauternes produces luscious sweet wines from grapes affected by noble rot (Botrytis cinerea).",
+    "id": 8
+  },
+  {
+    "category": "France \u2013 Bordeaux",
+    "text": "Pomerol differs from other Bordeaux appellations because:",
+    "options": [
+      "It has no official classification system",
+      "It produces only white wines",
+      "It is the largest appellation",
+      "It uses only Syrah"
+    ],
+    "correct": 0,
+    "explanation": "Pomerol has never been officially classified, unlike the M\u00e9doc (1855) and Saint-\u00c9milion.",
+    "id": 9
+  },
+  {
+    "category": "France \u2013 Bordeaux",
+    "text": "Pessac-L\u00e9ognan is notable for:",
+    "options": [
+      "Only sparkling wines",
+      "Both premium red and dry white Bordeaux",
+      "Only ros\u00e9 wines",
+      "Only sweet wines"
+    ],
+    "correct": 1,
+    "explanation": "Pessac-L\u00e9ognan (northern Graves) produces both high-quality reds (Cab Sauv-dominant) and dry whites (S\u00e9millon/Sauvignon Blanc).",
+    "id": 10
+  },
+  {
+    "category": "France \u2013 Bordeaux",
+    "text": "What distinguishes Left Bank from Right Bank Bordeaux?",
+    "options": [
+      "Left Bank is Cab Sauv on gravel while Right Bank is Merlot on clay",
+      "They are identical",
+      "Left Bank uses only white grapes",
+      "Right Bank is always sparkling"
+    ],
+    "correct": 0,
+    "explanation": "The Left Bank (M\u00e9doc, Graves) favours Cabernet Sauvignon on gravelly soils; the Right Bank (Saint-\u00c9milion, Pomerol) favours Merlot on clay and limestone.",
+    "id": 11
+  },
+  {
+    "category": "France \u2013 Burgundy",
+    "text": "Beaujolais Cru wines differ from basic Beaujolais by:",
+    "options": [
+      "Being fortified",
+      "Coming from specific named communes with distinct terroir",
+      "Using different grapes",
+      "Being sparkling"
+    ],
+    "correct": 1,
+    "explanation": "Beaujolais Crus (e.g., Morgon, Fleurie, Moulin-\u00e0-Vent) come from 10 named villages producing more complex wines.",
+    "id": 12
+  },
+  {
+    "category": "France \u2013 Burgundy",
+    "text": "What winemaking technique is associated with Beaujolais Nouveau?",
+    "options": [
+      "Ice wine production",
+      "Extended oak ageing",
+      "Botrytis infection",
+      "Carbonic maceration for fresh, fruity character"
+    ],
+    "correct": 3,
+    "explanation": "Carbonic maceration (whole-berry fermentation in a CO2 atmosphere) produces Beaujolais Nouveau's fresh, fruity, low-tannin style.",
+    "id": 13
+  },
+  {
+    "category": "France \u2013 Burgundy",
+    "text": "In Burgundy's hierarchy, which is the highest vineyard classification?",
+    "options": [
+      "Grand Cru",
+      "Village",
+      "Premier Cru",
+      "Bourgogne"
+    ],
+    "correct": 0,
+    "explanation": "Grand Cru is the top tier in Burgundy, representing the finest individual vineyards.",
+    "id": 14
+  },
+  {
+    "category": "France \u2013 Rh\u00f4ne",
+    "text": "How does the Northern Rh\u00f4ne differ from the Southern Rh\u00f4ne?",
+    "options": [
+      "Northern: single-variety Syrah on steep slopes. Southern: Grenache blends on flatter land",
+      "They are identical",
+      "North uses only white grapes",
+      "South is the cooler region"
+    ],
+    "correct": 0,
+    "explanation": "The Northern Rh\u00f4ne features Syrah on steep, terraced slopes. The Southern Rh\u00f4ne is warmer and flatter, led by Grenache blends.",
+    "id": 15
+  },
+  {
+    "category": "France \u2013 Rh\u00f4ne",
+    "text": "Ch\u00e2teauneuf-du-Pape can use up to how many permitted grape varieties?",
+    "options": [
+      "5",
+      "13",
+      "23",
+      "3"
+    ],
+    "correct": 1,
+    "explanation": "Ch\u00e2teauneuf-du-Pape permits up to 13 grape varieties, though Grenache dominates most blends.",
+    "id": 16
+  },
+  {
+    "category": "France \u2013 Rh\u00f4ne",
+    "text": "Condrieu is made exclusively from:",
+    "options": [
+      "Marsanne",
+      "Grenache Blanc",
+      "Viognier",
+      "Roussanne"
+    ],
+    "correct": 2,
+    "explanation": "Condrieu produces rich, aromatic white wines exclusively from Viognier grapes.",
+    "id": 17
+  },
+  {
+    "category": "France \u2013 Loire & Alsace",
+    "text": "Muscadet is made from which grape?",
+    "options": [
+      "Chenin Blanc",
+      "Melon de Bourgogne",
+      "Sauvignon Blanc",
+      "Chardonnay"
+    ],
+    "correct": 1,
+    "explanation": "Muscadet is made from Melon de Bourgogne, producing light, dry whites often aged sur lie.",
+    "id": 18
+  },
+  {
+    "category": "France \u2013 Loire & Alsace",
+    "text": "Vouvray can produce wines in which styles?",
+    "options": [
+      "Only dry",
+      "Only sparkling",
+      "Dry, off-dry, sweet, and sparkling",
+      "Only sweet"
+    ],
+    "correct": 2,
+    "explanation": "Vouvray (Chenin Blanc) is remarkably versatile, ranging from bone dry to lusciously sweet, still to sparkling.",
+    "id": 19
+  },
+  {
+    "category": "Italy \u2013 Piedmont",
+    "text": "How do Barolo and Barbaresco compare?",
+    "options": [
+      "They use different grapes",
+      "Both use Nebbiolo but Barolo is generally more tannic and age-worthy",
+      "Barbaresco is always sweet",
+      "They are from different countries"
+    ],
+    "correct": 1,
+    "explanation": "Both use Nebbiolo. Barolo requires longer ageing and tends to be more powerful, while Barbaresco is slightly earlier-drinking.",
+    "id": 20
+  },
+  {
+    "category": "Italy \u2013 Piedmont",
+    "text": "What does 'Riserva' mean for Barolo?",
+    "options": [
+      "Extended minimum ageing (5 years total)",
+      "A different grape variety",
+      "Organic production",
+      "Cheaper wine"
+    ],
+    "correct": 0,
+    "explanation": "Barolo Riserva requires minimum 5 years total ageing (vs. 3 years for standard), with at least 18 months in oak.",
+    "id": 21
+  },
+  {
+    "category": "Italy \u2013 Tuscany & Veneto",
+    "text": "Super Tuscans are notable because:",
+    "options": [
+      "They are always cheap",
+      "They often use non-traditional grapes like Cabernet Sauvignon, initially outside the classification system",
+      "They use only Nebbiolo",
+      "They follow all DOC rules"
+    ],
+    "correct": 1,
+    "explanation": "Super Tuscans pioneered the use of international varieties in Tuscany, originally sold as Vino da Tavola before IGT was created.",
+    "id": 22
+  },
+  {
+    "category": "Italy \u2013 Tuscany & Veneto",
+    "text": "Bolgheri is known for:",
+    "options": [
+      "Only white wines",
+      "Sparkling wines",
+      "Traditional Sangiovese",
+      "Bordeaux-style blends using Cabernet Sauvignon and Merlot on the Tuscan coast"
+    ],
+    "correct": 3,
+    "explanation": "Bolgheri on Tuscany's coast produces premium Bordeaux-style reds, including Sassicaia and Ornellaia.",
+    "id": 23
+  },
+  {
+    "category": "Italy \u2013 Tuscany & Veneto",
+    "text": "What distinguishes Brunello di Montalcino from Chianti Classico?",
+    "options": [
+      "Different grape variety",
+      "Brunello uses 100% Sangiovese while Chianti Classico allows blending",
+      "Brunello is white",
+      "They are from different countries"
+    ],
+    "correct": 1,
+    "explanation": "Brunello di Montalcino must be 100% Sangiovese Grosso. Chianti Classico allows up to 20% other varieties.",
+    "id": 24
+  },
+  {
+    "category": "Spain & Portugal",
+    "text": "Priorat in Catalonia is distinguished by:",
+    "options": [
+      "Old-vine Garnacha and Cari\u00f1ena on llicorella (slate) soils producing concentrated wines",
+      "Only white wines",
+      "Bulk production",
+      "Low quality wines"
+    ],
+    "correct": 0,
+    "explanation": "Priorat's old vines on steep llicorella soils produce intensely concentrated, mineral wines from Garnacha and Cari\u00f1ena.",
+    "id": 25
+  },
+  {
+    "category": "Spain & Portugal",
+    "text": "What is the solera system in Sherry production?",
+    "options": [
+      "A fermentation technique",
+      "A type of grape",
+      "Single vintage ageing",
+      "A fractional blending system where younger wine refreshes older"
+    ],
+    "correct": 3,
+    "explanation": "The solera system layers barrels by age. Wine is drawn from the oldest, which is refreshed by the next oldest, ensuring consistency.",
+    "id": 26
+  },
+  {
+    "category": "Spain & Portugal",
+    "text": "Portuguese D\u00e3o is known for:",
+    "options": [
+      "Only Port",
+      "Only white wines",
+      "Sparkling wines",
+      "Elegant reds from Touriga Nacional and other indigenous varieties"
+    ],
+    "correct": 3,
+    "explanation": "D\u00e3o produces elegant, medium-bodied reds from indigenous grapes including Touriga Nacional.",
+    "id": 27
+  },
+  {
+    "category": "Spain & Portugal",
+    "text": "How do Rioja Crianza, Reserva, and Gran Reserva differ?",
+    "options": [
+      "By region",
+      "By sweetness level",
+      "By minimum ageing requirements in oak and bottle",
+      "By grape variety"
+    ],
+    "correct": 2,
+    "explanation": "They are defined by minimum ageing periods: Crianza (1yr oak + 1yr bottle), Reserva (1yr oak + 2yr), Gran Reserva (2yr oak + 3yr).",
+    "id": 28
+  },
+  {
+    "category": "Germany & Austria",
+    "text": "Austrian Wachau's classification includes:",
+    "options": [
+      "Crianza, Reserva, Gran Reserva",
+      "Kabinett, Sp\u00e4tlese, Auslese",
+      "Premier Cru, Grand Cru",
+      "Steinfeder, Federspiel, Smaragd"
+    ],
+    "correct": 3,
+    "explanation": "The Wachau uses Steinfeder (lightest), Federspiel (medium), and Smaragd (richest) for its quality tiers.",
+    "id": 29
+  },
+  {
+    "category": "Germany & Austria",
+    "text": "Blaufr\u00e4nkisch is:",
+    "options": [
+      "A Swiss cheese",
+      "An Austrian white grape",
+      "An Austrian red grape producing structured, peppery wines",
+      "A German Riesling style"
+    ],
+    "correct": 2,
+    "explanation": "Blaufr\u00e4nkisch is Austria's most important red grape, producing structured wines with dark fruit and pepper.",
+    "id": 30
+  },
+  {
+    "category": "Germany & Austria",
+    "text": "In Germany's Pr\u00e4dikat system, which level indicates the ripest grapes?",
+    "options": [
+      "Trockenbeerenauslese",
+      "Auslese",
+      "Kabinett",
+      "Sp\u00e4tlese"
+    ],
+    "correct": 0,
+    "explanation": "Trockenbeerenauslese (TBA) uses individually selected dried, botrytised berries \u2014 the highest ripeness level.",
+    "id": 31
+  },
+  {
+    "category": "USA",
+    "text": "Oregon's Willamette Valley is primarily planted to:",
+    "options": [
+      "Zinfandel",
+      "Pinot Noir",
+      "Syrah",
+      "Cabernet Sauvignon"
+    ],
+    "correct": 1,
+    "explanation": "Willamette Valley's cool, maritime climate is ideal for Pinot Noir, Oregon's flagship grape.",
+    "id": 32
+  },
+  {
+    "category": "USA",
+    "text": "Washington State's Columbia Valley is characterised by:",
+    "options": [
+      "Maritime climate",
+      "Volcanic soil only",
+      "Tropical climate",
+      "Continental climate with warm days, cold nights, and irrigated desert conditions"
+    ],
+    "correct": 3,
+    "explanation": "Columbia Valley has a continental climate: warm days for ripening, cold nights for acidity, requiring irrigation.",
+    "id": 33
+  },
+  {
+    "category": "USA",
+    "text": "What makes Napa Valley distinctive for Cabernet Sauvignon?",
+    "options": [
+      "Warm climate with diverse soils and mountain benchland sites",
+      "Volcanic island",
+      "Cool climate",
+      "Only flat valley floor"
+    ],
+    "correct": 0,
+    "explanation": "Napa's warm climate, diverse soils (volcanic, alluvial, mountain), and benchmark sites produce world-class Cabernet.",
+    "id": 34
+  },
+  {
+    "category": "Australia & New Zealand",
+    "text": "What makes Central Otago unique in New Zealand?",
+    "options": [
+      "It is the warmest region",
+      "It is at sea level",
+      "It grows only white grapes",
+      "It is the only wine region with a continental climate"
+    ],
+    "correct": 3,
+    "explanation": "Central Otago is New Zealand's most southerly region with a continental (not maritime) climate, ideal for Pinot Noir.",
+    "id": 35
+  },
+  {
+    "category": "Australia & New Zealand",
+    "text": "Marlborough's success with Sauvignon Blanc is due to:",
+    "options": [
+      "Heavy rainfall",
+      "Warm, dry conditions",
+      "Long, sunny days with cool nights preserving intense aromatics",
+      "Volcanic soils"
+    ],
+    "correct": 2,
+    "explanation": "Marlborough's long sunshine hours and cool nights preserve the intense aromatic compounds in Sauvignon Blanc.",
+    "id": 36
+  },
+  {
+    "category": "Australia & New Zealand",
+    "text": "How does Hunter Valley Semillon differ from most white wines?",
+    "options": [
+      "It uses Sauvignon Blanc",
+      "It is typically unoaked, low alcohol, and develops complex toast and honey with age",
+      "It is always oaked",
+      "It is always sweet"
+    ],
+    "correct": 1,
+    "explanation": "Hunter Valley Semillon is uniquely picked early (low alcohol), unoaked, and develops extraordinary complexity with bottle age.",
+    "id": 37
+  },
+  {
+    "category": "South Africa, Chile & Argentina",
+    "text": "Stellenbosch in South Africa is known for:",
+    "options": [
+      "Only sparkling",
+      "Only Pinotage",
+      "Only white wines",
+      "Premium Bordeaux-style red blends and Chenin Blanc"
+    ],
+    "correct": 3,
+    "explanation": "Stellenbosch produces South Africa's finest red wines, particularly Cabernet-based Bordeaux-style blends.",
+    "id": 38
+  },
+  {
+    "category": "South Africa, Chile & Argentina",
+    "text": "The Swartland in South Africa has gained reputation for:",
+    "options": [
+      "Only Pinotage",
+      "Only bulk wine",
+      "Only sparkling wines",
+      "Old-vine Chenin Blanc, Syrah, and Rh\u00f4ne-style blends"
+    ],
+    "correct": 3,
+    "explanation": "Swartland's dry-farmed old vines (especially Chenin Blanc and Syrah) produce concentrated, characterful wines.",
+    "id": 39
+  },
+  {
+    "category": "South Africa, Chile & Argentina",
+    "text": "How does altitude affect Argentine viticulture?",
+    "options": [
+      "It prevents frost",
+      "No effect",
+      "It increases rainfall",
+      "High altitude compensates for warm latitude by providing cooler temperatures and UV intensity"
+    ],
+    "correct": 3,
+    "explanation": "Argentine vineyards at 800-1500m elevation use altitude to moderate warm-latitude temperatures, preserving acidity.",
+    "id": 40
+  },
+  {
+    "category": "Sparkling Wines",
+    "text": "What is autolysis in Champagne production?",
+    "options": [
+      "The breakdown of dead yeast cells during lees ageing, adding biscuity, toasty complexity",
+      "A type of grape",
+      "A fining process",
+      "Adding sugar"
+    ],
+    "correct": 0,
+    "explanation": "Autolysis occurs during extended lees contact in bottle, releasing compounds that create biscuit, brioche, and toasty flavours.",
+    "id": 41
+  },
+  {
+    "category": "Sparkling Wines",
+    "text": "What is the dosage in Champagne?",
+    "options": [
+      "The grape harvest",
+      "A type of yeast",
+      "A mixture of wine and sugar added after disgorgement to set the sweetness level",
+      "The bottle pressure"
+    ],
+    "correct": 2,
+    "explanation": "Dosage (liqueur d'exp\u00e9dition) is added after disgorgement, determining the final sweetness from Brut Nature to Doux.",
+    "id": 42
+  },
+  {
+    "category": "Sparkling Wines",
+    "text": "English sparkling wine has gained recognition because:",
+    "options": [
+      "It uses Champagne grapes on chalk soils in a cool climate similar to Champagne",
+      "It uses only Chardonnay",
+      "It is always cheaper",
+      "It uses the tank method"
+    ],
+    "correct": 0,
+    "explanation": "English sparkling wine uses Champagne grape varieties on chalk soils in a cool climate, producing wines that rival Champagne.",
+    "id": 43
+  },
+  {
+    "category": "Fortified Wines",
+    "text": "How does Manzanilla differ from Fino Sherry?",
+    "options": [
+      "Different grape",
+      "It is sweeter",
+      "Manzanilla is Fino-style Sherry aged specifically in Sanl\u00facar de Barrameda, developing a salty character",
+      "It uses red grapes"
+    ],
+    "correct": 2,
+    "explanation": "Manzanilla is biologically aged under flor in Sanl\u00facar de Barrameda's coastal climate, giving it a distinctive salty tang.",
+    "id": 44
+  },
+  {
+    "category": "Fortified Wines",
+    "text": "What is estufagem in Madeira production?",
+    "options": [
+      "Cold stabilisation",
+      "Controlled heating that gives Madeira its distinctive caramelised, oxidised character",
+      "A grape variety",
+      "Oak ageing"
+    ],
+    "correct": 1,
+    "explanation": "Estufagem heats the wine, accelerating the Maillard reaction and creating Madeira's unique caramel, nutty, oxidised character.",
+    "id": 45
+  },
+  {
+    "category": "Fortified Wines",
+    "text": "LBV Port stands for:",
+    "options": [
+      "Long Bottle Varietal",
+      "Late Bottled Vintage \u2014 aged 4-6 years in cask",
+      "Late Barrel Vintage",
+      "Light Bodied Vintage"
+    ],
+    "correct": 1,
+    "explanation": "Late Bottled Vintage Port is aged 4-6 years in cask before bottling, producing a ready-to-drink style.",
+    "id": 46
+  },
+  {
+    "category": "Business & Labelling",
+    "text": "What is the difference between PDO and PGI in EU wine law?",
+    "options": [
+      "They are identical",
+      "PDO has stricter rules tied to a specific place while PGI allows more flexibility",
+      "PGI is higher quality",
+      "PDO means organic"
+    ],
+    "correct": 1,
+    "explanation": "PDO (Protected Designation of Origin) has stricter rules than PGI (Protected Geographical Indication), which allows more winemaking freedom.",
+    "id": 47
+  },
+  {
+    "category": "Business & Labelling",
+    "text": "What does 'biodynamic' viticulture involve?",
+    "options": [
+      "Machine harvesting only",
+      "Only organic sprays",
+      "No farming at all",
+      "A holistic farming approach following lunar cycles with specific preparations, plus organic standards"
+    ],
+    "correct": 3,
+    "explanation": "Biodynamic farming follows Rudolf Steiner's principles: organic practices plus specific preparations and planting by lunar/astronomical calendar.",
+    "id": 48
+  },
+  {
+    "category": "France \u2013 Bordeaux",
+    "text": "Pomerol differs from other Bordeaux appellations because:",
+    "options": [
+      "It produces only white wines",
+      "It has no official classification system",
+      "It uses only Syrah",
+      "It is the largest appellation"
+    ],
+    "correct": 1,
+    "explanation": "Pomerol has never been officially classified, unlike the M\u00e9doc (1855) and Saint-\u00c9milion.",
+    "id": 49
+  },
+  {
+    "category": "Italy \u2013 Tuscany & Veneto",
+    "text": "Super Tuscans are notable because:",
+    "options": [
+      "They use only Nebbiolo",
+      "They often use non-traditional grapes like Cabernet Sauvignon, initially outside the classification system",
+      "They are always cheap",
+      "They follow all DOC rules"
+    ],
+    "correct": 1,
+    "explanation": "Super Tuscans pioneered the use of international varieties in Tuscany, originally sold as Vino da Tavola before IGT was created.",
+    "id": 50
+  }
+]

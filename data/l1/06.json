@@ -1,0 +1,392 @@
+[
+  {
+    "category": "Types & Styles of Wine",
+    "text": "What is the main difference between a still wine and a sparkling wine?",
+    "options": [
+      "Grape variety used",
+      "Alcohol content",
+      "Country of origin",
+      "Presence of carbon dioxide bubbles"
+    ],
+    "correct": 3,
+    "explanation": "Sparkling wines contain dissolved carbon dioxide, which creates bubbles. Still wines do not.",
+    "id": 1
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "Medium-sweet wines contain:",
+    "options": [
+      "No sugar",
+      "More sugar than sweet wines",
+      "Only sugar from added syrup",
+      "A moderate amount of residual sugar"
+    ],
+    "correct": 3,
+    "explanation": "Medium-sweet wines have a moderate amount of residual sugar, between dry and sweet.",
+    "id": 2
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "A fortified wine typically has an alcohol level of:",
+    "options": [
+      "8-12% ABV",
+      "5-8% ABV",
+      "15-22% ABV",
+      "30-40% ABV"
+    ],
+    "correct": 2,
+    "explanation": "Fortified wines typically range from 15-22% ABV due to the addition of grape spirit during or after fermentation.",
+    "id": 3
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "Which of these is a still red wine?",
+    "options": [
+      "Chianti",
+      "Asti",
+      "Champagne",
+      "Port"
+    ],
+    "correct": 0,
+    "explanation": "Chianti is a still red wine from Tuscany, Italy, made primarily from the Sangiovese grape.",
+    "id": 4
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "What colour can still wines be?",
+    "options": [
+      "Only red",
+      "Red, white, or ros\u00e9",
+      "Only red and white",
+      "Only white and ros\u00e9"
+    ],
+    "correct": 1,
+    "explanation": "Still wines can be red, white, or ros\u00e9 depending on the grape variety and winemaking process.",
+    "id": 5
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "Which of the following best describes a light-bodied white wine?",
+    "options": [
+      "Rich, oaky, and full on the palate",
+      "Sweet with dried fruit notes",
+      "High in tannin with dark fruit flavours",
+      "Refreshing with higher acidity and lower alcohol"
+    ],
+    "correct": 3,
+    "explanation": "Light-bodied whites tend to be refreshing, with crisp acidity and lower alcohol, like a Pinot Grigio.",
+    "id": 6
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Which of these grapes can produce both still and sparkling wines?",
+    "options": [
+      "Malbec",
+      "Pinot Noir",
+      "Tempranillo",
+      "Sangiovese"
+    ],
+    "correct": 1,
+    "explanation": "Pinot Noir is used for still red Burgundy and is one of the three main grapes in Champagne (sparkling).",
+    "id": 7
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Merlot originally comes from which country?",
+    "options": [
+      "Australia",
+      "France",
+      "Italy",
+      "Spain"
+    ],
+    "correct": 1,
+    "explanation": "Merlot originated in the Bordeaux region of France, where it remains one of the most important red varieties.",
+    "id": 8
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "An unoaked Chardonnay will typically show flavours of:",
+    "options": [
+      "Vanilla and toast",
+      "Blackcurrant and cedar",
+      "Green apple and citrus",
+      "Black pepper and smoke"
+    ],
+    "correct": 2,
+    "explanation": "Without oak influence, Chardonnay expresses its fruit character \u2014 green apple, citrus, and sometimes melon.",
+    "id": 9
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Which variety is the most widely planted red grape in the world?",
+    "options": [
+      "Syrah",
+      "Cabernet Sauvignon",
+      "Merlot",
+      "Pinot Noir"
+    ],
+    "correct": 1,
+    "explanation": "Cabernet Sauvignon is the most widely planted red wine grape variety in the world.",
+    "id": 10
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Which of these is a white grape variety?",
+    "options": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Merlot",
+      "Pinot Noir"
+    ],
+    "correct": 1,
+    "explanation": "Chardonnay is one of the world's most widely planted white grape varieties.",
+    "id": 11
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Sauvignon Blanc wines are typically known for:",
+    "options": [
+      "Heavy tannins",
+      "Aromas of passion fruit, citrus, and herbaceous notes",
+      "Low acidity",
+      "Rich, buttery flavours"
+    ],
+    "correct": 1,
+    "explanation": "Sauvignon Blanc is known for its aromatic intensity, with citrus, tropical, and herbaceous character, and crisp acidity.",
+    "id": 12
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Which grape variety produces wines with aromas of blackcurrant?",
+    "options": [
+      "Chardonnay",
+      "Pinot Grigio",
+      "Cabernet Sauvignon",
+      "Riesling"
+    ],
+    "correct": 2,
+    "explanation": "Cabernet Sauvignon is strongly associated with blackcurrant (cassis) aromas.",
+    "id": 13
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Pinot Grigio is typically:",
+    "options": [
+      "A sweet dessert wine",
+      "A light, dry, crisp white",
+      "A sparkling ros\u00e9",
+      "A full-bodied, tannic red"
+    ],
+    "correct": 1,
+    "explanation": "Pinot Grigio from northern Italy is typically a light, dry, crisp white wine with subtle fruit flavours.",
+    "id": 14
+  },
+  {
+    "category": "Winemaking Basics",
+    "text": "What does 'vintage' mean on a wine label?",
+    "options": [
+      "The winery name",
+      "The year the grapes were harvested",
+      "The grape variety",
+      "The region of production"
+    ],
+    "correct": 1,
+    "explanation": "The vintage on a wine label indicates the year in which the grapes used to make the wine were harvested.",
+    "id": 15
+  },
+  {
+    "category": "Winemaking Basics",
+    "text": "If a wine has high acidity, it will taste:",
+    "options": [
+      "Fresh and crisp",
+      "Sweet and soft",
+      "Bitter and dry",
+      "Flat and dull"
+    ],
+    "correct": 0,
+    "explanation": "High acidity gives wine a fresh, crisp, mouth-watering quality.",
+    "id": 16
+  },
+  {
+    "category": "Winemaking Basics",
+    "text": "What happens if grapes are harvested very late?",
+    "options": [
+      "They accumulate more sugar, producing sweeter or higher alcohol wines",
+      "They produce drier wines",
+      "They lose all flavour",
+      "They become sparkling"
+    ],
+    "correct": 0,
+    "explanation": "Late-harvested grapes have higher sugar levels, which can result in sweeter wines or wines with higher alcohol.",
+    "id": 17
+  },
+  {
+    "category": "Winemaking Basics",
+    "text": "The alcohol content of most table wines is typically:",
+    "options": [
+      "35-40% ABV",
+      "8-15% ABV",
+      "1-5% ABV",
+      "20-30% ABV"
+    ],
+    "correct": 1,
+    "explanation": "Most still table wines fall in the 8-15% ABV range, depending on grape ripeness and winemaking style.",
+    "id": 18
+  },
+  {
+    "category": "Storage & Service",
+    "text": "Which type of glass is best for red wine?",
+    "options": [
+      "A large, wide-bowled glass",
+      "A tumbler",
+      "A flute",
+      "A small narrow glass"
+    ],
+    "correct": 0,
+    "explanation": "Red wines benefit from a large, wide-bowled glass that allows the wine to breathe and the aromas to develop.",
+    "id": 19
+  },
+  {
+    "category": "Storage & Service",
+    "text": "Sparkling wine should be served in:",
+    "options": [
+      "A tumbler",
+      "A wide, open coupe",
+      "A large Burgundy glass",
+      "A narrow flute or tulip glass"
+    ],
+    "correct": 3,
+    "explanation": "A flute or tulip glass preserves the bubbles and concentrates the aromas of sparkling wine.",
+    "id": 20
+  },
+  {
+    "category": "Storage & Service",
+    "text": "What happens to wine if it is stored in a warm place?",
+    "options": [
+      "It improves with age",
+      "It can age prematurely and develop off-flavours",
+      "Nothing",
+      "It becomes sparkling"
+    ],
+    "correct": 1,
+    "explanation": "Heat accelerates chemical reactions in wine, causing premature ageing, loss of freshness, and potential faults.",
+    "id": 21
+  },
+  {
+    "category": "Storage & Service",
+    "text": "Why should wine bottles be stored on their side?",
+    "options": [
+      "To increase the alcohol",
+      "To keep the cork moist and prevent air entering",
+      "To allow sediment to settle",
+      "To look attractive"
+    ],
+    "correct": 1,
+    "explanation": "Storing bottles on their side keeps the cork in contact with the wine, preventing it from drying out and letting air in.",
+    "id": 22
+  },
+  {
+    "category": "Storage & Service",
+    "text": "A wine that has turned brown and tastes of vinegar is likely:",
+    "options": [
+      "Perfectly fine",
+      "Oxidised and spoiled",
+      "A natural wine",
+      "Simply a very old wine"
+    ],
+    "correct": 1,
+    "explanation": "Excessive browning and vinegar-like aromas indicate the wine has been damaged by oxidation and acetic acid bacteria.",
+    "id": 23
+  },
+  {
+    "category": "Storage & Service",
+    "text": "At what temperature should ros\u00e9 wine be served?",
+    "options": [
+      "4-6\u00b0C",
+      "Room temperature",
+      "7-10\u00b0C",
+      "15-18\u00b0C"
+    ],
+    "correct": 2,
+    "explanation": "Ros\u00e9 wines are best served chilled at around 7-10\u00b0C to highlight their freshness and fruit character.",
+    "id": 24
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "What does 'AOC' on a French wine label indicate?",
+    "options": [
+      "The alcohol content",
+      "The winemaker's name",
+      "The grape variety used",
+      "A controlled appellation of origin"
+    ],
+    "correct": 3,
+    "explanation": "AOC (Appellation d'Origine Contr\u00f4l\u00e9e) indicates the wine comes from a specific, regulated French wine region.",
+    "id": 25
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "What information must appear on a wine label in most countries?",
+    "options": [
+      "Country of origin, alcohol content, and volume",
+      "Only the brand name",
+      "The food pairing suggestions",
+      "The grape harvest date and time"
+    ],
+    "correct": 0,
+    "explanation": "Most countries require the label to show at least the country of origin, alcohol level (ABV), and bottle volume.",
+    "id": 26
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "If a wine label says 'Reserva' on a Spanish wine, it means:",
+    "options": [
+      "The wine contains reserve sugar",
+      "The wine is organic",
+      "The wine has been aged for a minimum required period",
+      "The wine is the cheapest in the range"
+    ],
+    "correct": 2,
+    "explanation": "In Spain, 'Reserva' indicates the wine has been aged for a specific minimum period in oak and bottle.",
+    "id": 27
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "Tannic red wines do NOT pair well with:",
+    "options": [
+      "Rich stew",
+      "Red meat",
+      "Hard cheese",
+      "Delicate fish"
+    ],
+    "correct": 3,
+    "explanation": "Tannin in red wine can overwhelm the delicate flavours of fish, creating a metallic or bitter taste.",
+    "id": 28
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "What is the purpose of the vintage year on a label?",
+    "options": [
+      "To show when the wine was bottled",
+      "To indicate the year the grapes were harvested",
+      "To show the winery founding date",
+      "To indicate when to drink the wine"
+    ],
+    "correct": 1,
+    "explanation": "The vintage year indicates when the grapes were picked, which reflects the growing conditions of that year.",
+    "id": 29
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "Which term on a label means the wine has some sweetness?",
+    "options": [
+      "Brut",
+      "Demi-sec",
+      "Sec",
+      "Extra Brut"
+    ],
+    "correct": 1,
+    "explanation": "Demi-sec means 'half dry' and indicates the wine has noticeable sweetness. It is commonly used for sparkling wines.",
+    "id": 30
+  }
+]

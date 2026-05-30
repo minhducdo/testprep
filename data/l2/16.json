@@ -1,0 +1,652 @@
+[
+  {
+    "category": "LO1 \u2013 Environmental Influences",
+    "text": "Why do coastal vineyards often have moderate temperatures?",
+    "options": [
+      "Salt insulates vines",
+      "Increased rainfall cools the air",
+      "The ocean moderates temperature extremes",
+      "Coastal soils are warmer"
+    ],
+    "correct": 2,
+    "explanation": "Large bodies of water absorb and release heat slowly, moderating nearby vineyard temperatures.",
+    "id": 1
+  },
+  {
+    "category": "LO1 \u2013 Environmental Influences",
+    "text": "What characterises a continental climate?",
+    "options": [
+      "Cool foggy mornings",
+      "Large temperature variation between seasons",
+      "Consistently mild winters",
+      "Small temperature variation"
+    ],
+    "correct": 1,
+    "explanation": "Continental climates have large temperature differences between hot summers and cold winters.",
+    "id": 2
+  },
+  {
+    "category": "LO1 \u2013 Environmental Influences",
+    "text": "Warm climate vineyards tend to produce grapes with:",
+    "options": [
+      "Lower acidity and higher sugar",
+      "Higher acidity and lower sugar",
+      "More disease pressure",
+      "Thinner skins"
+    ],
+    "correct": 0,
+    "explanation": "Warmth accelerates ripening, leading to higher sugar (and potential alcohol) with lower natural acidity.",
+    "id": 3
+  },
+  {
+    "category": "LO1 \u2013 Environmental Influences",
+    "text": "In which direction do vineyards in the Northern Hemisphere ideally face?",
+    "options": [
+      "East",
+      "North",
+      "West",
+      "South"
+    ],
+    "correct": 3,
+    "explanation": "South-facing slopes in the Northern Hemisphere receive the most sunlight, aiding grape ripening.",
+    "id": 4
+  },
+  {
+    "category": "LO1 \u2013 Environmental Influences",
+    "text": "What role does wind play in viticulture?",
+    "options": [
+      "It has no effect",
+      "It always damages vines",
+      "It increases sugar levels",
+      "It can reduce humidity and fungal disease risk"
+    ],
+    "correct": 3,
+    "explanation": "Wind circulation reduces humidity around the vine canopy, lowering the risk of fungal diseases.",
+    "id": 5
+  },
+  {
+    "category": "LO2 \u2013 Winemaking & Ageing",
+    "text": "What is the primary purpose of malolactic conversion?",
+    "options": [
+      "Convert malic acid to softer lactic acid",
+      "Extract colour",
+      "Add residual sugar",
+      "Increase alcohol"
+    ],
+    "correct": 0,
+    "explanation": "MLF transforms sharp malic acid into softer lactic acid, reducing perceived acidity and adding complexity.",
+    "id": 6
+  },
+  {
+    "category": "LO2 \u2013 Winemaking & Ageing",
+    "text": "New oak barrel ageing typically adds:",
+    "options": [
+      "Removal of tannins",
+      "Prevention of all oxidation",
+      "Vanilla, toast, and clove flavours",
+      "Increased acidity"
+    ],
+    "correct": 2,
+    "explanation": "New oak contributes vanilla, toast, coconut, and spice flavours through compounds in the wood.",
+    "id": 7
+  },
+  {
+    "category": "LO2 \u2013 Winemaking & Ageing",
+    "text": "During red winemaking, fermentation occurs:",
+    "options": [
+      "After bottling",
+      "After pressing, away from skins",
+      "While juice is in contact with skins",
+      "Before crushing"
+    ],
+    "correct": 2,
+    "explanation": "Red wine fermentation happens with the juice in contact with skins to extract colour, tannin, and flavour.",
+    "id": 8
+  },
+  {
+    "category": "LO2 \u2013 Winemaking & Ageing",
+    "text": "Lees ageing can add:",
+    "options": [
+      "Faster fermentation",
+      "Clarification",
+      "Texture, body, and biscuity complexity",
+      "Fresh fruit flavours"
+    ],
+    "correct": 2,
+    "explanation": "Lees (dead yeast) add body, creaminess, and complex biscuity/bready flavours to wine.",
+    "id": 9
+  },
+  {
+    "category": "LO3 \u2013 Chardonnay",
+    "text": "Chardonnay grown in a cool climate typically shows:",
+    "options": [
+      "Low acidity and high alcohol",
+      "Green apple, citrus, and high acidity",
+      "Tropical fruit and butter",
+      "Black pepper and smoke"
+    ],
+    "correct": 1,
+    "explanation": "Cool-climate Chardonnay expresses green apple, citrus, and crisp acidity.",
+    "id": 10
+  },
+  {
+    "category": "LO3 \u2013 Chardonnay",
+    "text": "Which region produces both oaked and unoaked styles of Chardonnay?",
+    "options": [
+      "Bordeaux",
+      "Burgundy",
+      "Champagne only",
+      "Chablis only"
+    ],
+    "correct": 1,
+    "explanation": "Burgundy produces a range of Chardonnay styles, from unoaked Chablis to richly oaked Meursault.",
+    "id": 11
+  },
+  {
+    "category": "LO3 \u2013 Chardonnay",
+    "text": "Pouilly-Fuiss\u00e9 is a Chardonnay from which region?",
+    "options": [
+      "Rh\u00f4ne Valley",
+      "Burgundy (M\u00e2connais)",
+      "Loire Valley",
+      "Alsace"
+    ],
+    "correct": 1,
+    "explanation": "Pouilly-Fuiss\u00e9 is in the M\u00e2connais sub-region of southern Burgundy, producing Chardonnay.",
+    "id": 12
+  },
+  {
+    "category": "LO3 \u2013 Sauvignon Blanc",
+    "text": "How does Bordeaux Blanc differ from Loire Sauvignon Blanc?",
+    "options": [
+      "Bordeaux versions are often blended with S\u00e9millon and may see oak",
+      "They are identical",
+      "Loire versions are oaked and Bordeaux are not",
+      "Bordeaux uses only Chenin Blanc"
+    ],
+    "correct": 0,
+    "explanation": "White Bordeaux often blends Sauvignon Blanc with S\u00e9millon and may use oak ageing, unlike the Loire.",
+    "id": 13
+  },
+  {
+    "category": "LO3 \u2013 Sauvignon Blanc",
+    "text": "A typical aroma of cool-climate Sauvignon Blanc is:",
+    "options": [
+      "Dried fruit and nuts",
+      "Vanilla and toast",
+      "Green pepper and gooseberry",
+      "Chocolate and coffee"
+    ],
+    "correct": 2,
+    "explanation": "Cool-climate Sauvignon Blanc often shows green pepper, gooseberry, and herbaceous character.",
+    "id": 14
+  },
+  {
+    "category": "LO3 \u2013 Sauvignon Blanc",
+    "text": "Which region's Sauvignon Blanc is sometimes labelled as Fum\u00e9 Blanc?",
+    "options": [
+      "California (USA)",
+      "New Zealand",
+      "France",
+      "Germany"
+    ],
+    "correct": 0,
+    "explanation": "Robert Mondavi coined 'Fum\u00e9 Blanc' in California for oak-aged Sauvignon Blanc.",
+    "id": 15
+  },
+  {
+    "category": "LO3 \u2013 Pinot Grigio/Gris",
+    "text": "How do Italian Pinot Grigio and Alsace Pinot Gris differ?",
+    "options": [
+      "Italian PG is fuller-bodied and richer",
+      "Alsace Pinot Gris is lighter and more neutral",
+      "Italian PG is light, dry, and crisp while Alsace Pinot Gris is richer and more aromatic",
+      "Both produce identical styles"
+    ],
+    "correct": 2,
+    "explanation": "Italian PG is light, dry, and neutral. Alsace Pinot Gris is richer, fuller, sometimes off-dry.",
+    "id": 16
+  },
+  {
+    "category": "LO3 \u2013 Riesling",
+    "text": "What makes Mosel Riesling distinctive?",
+    "options": [
+      "Oaky flavours",
+      "Heavy tannins",
+      "High acidity, light body, and often residual sugar",
+      "High alcohol and full body"
+    ],
+    "correct": 2,
+    "explanation": "Mosel Riesling: high acidity, light body, lower alcohol, often with balancing residual sugar.",
+    "id": 17
+  },
+  {
+    "category": "LO3 \u2013 Riesling",
+    "text": "'Sp\u00e4tlese' on a German Riesling label means:",
+    "options": [
+      "Late harvest with riper grapes",
+      "Blended with Pinot",
+      "Early harvest",
+      "Dried grapes"
+    ],
+    "correct": 0,
+    "explanation": "Sp\u00e4tlese = 'late harvest'. Grapes picked later for higher ripeness. Can be dry or sweet.",
+    "id": 18
+  },
+  {
+    "category": "LO3 \u2013 Cabernet Sauvignon",
+    "text": "Cabernet Sauvignon has:",
+    "options": [
+      "Thin skins and low tannin",
+      "Pink skins",
+      "No skins",
+      "Thick skins and high tannin"
+    ],
+    "correct": 3,
+    "explanation": "Cabernet Sauvignon has thick skins, producing deeply coloured wines with firm tannin structure.",
+    "id": 19
+  },
+  {
+    "category": "LO3 \u2013 Cabernet Sauvignon",
+    "text": "In Bordeaux, Cabernet Sauvignon is typically blended with:",
+    "options": [
+      "Riesling",
+      "Syrah",
+      "Merlot and Cabernet Franc",
+      "Chardonnay"
+    ],
+    "correct": 2,
+    "explanation": "Bordeaux blends pair Cabernet Sauvignon with Merlot (for softness) and Cabernet Franc (for aromatics).",
+    "id": 20
+  },
+  {
+    "category": "LO3 \u2013 Cabernet Sauvignon",
+    "text": "Coonawarra in Australia is known for Cabernet Sauvignon grown on:",
+    "options": [
+      "Volcanic soil",
+      "Granite",
+      "Sandy alluvial soil",
+      "Terra rossa (red clay over limestone)"
+    ],
+    "correct": 3,
+    "explanation": "Coonawarra's famous terra rossa soil produces elegant, structured Cabernet Sauvignon.",
+    "id": 21
+  },
+  {
+    "category": "LO3 \u2013 Merlot",
+    "text": "Compared to Cabernet Sauvignon, Merlot is:",
+    "options": [
+      "Softer, rounder, with medium tannins",
+      "Higher in tannin",
+      "Identical",
+      "More acidic and lighter"
+    ],
+    "correct": 0,
+    "explanation": "Merlot produces wines with softer tannins and approachable plum/red fruit character.",
+    "id": 22
+  },
+  {
+    "category": "LO3 \u2013 Merlot",
+    "text": "Saint-\u00c9milion is associated with:",
+    "options": [
+      "Pinot Noir",
+      "Cabernet Sauvignon",
+      "Syrah",
+      "Merlot-dominant blends"
+    ],
+    "correct": 3,
+    "explanation": "Saint-\u00c9milion (Right Bank Bordeaux) is renowned for Merlot-dominant blends.",
+    "id": 23
+  },
+  {
+    "category": "LO3 \u2013 Pinot Noir",
+    "text": "Oregon Pinot Noir is often compared to:",
+    "options": [
+      "Champagne",
+      "Burgundy",
+      "Australian Shiraz",
+      "Bordeaux"
+    ],
+    "correct": 1,
+    "explanation": "Oregon's Willamette Valley has a cool climate similar to Burgundy, producing elegant Pinot Noir.",
+    "id": 24
+  },
+  {
+    "category": "LO3 \u2013 Pinot Noir",
+    "text": "Pinot Noir is used to make:",
+    "options": [
+      "Only sparkling wines",
+      "Only red still wines",
+      "Both still red wines and sparkling wines",
+      "Only ros\u00e9 wines"
+    ],
+    "correct": 2,
+    "explanation": "Pinot Noir is used for still red wines (Burgundy) and is a key grape in Champagne.",
+    "id": 25
+  },
+  {
+    "category": "LO3 \u2013 Pinot Noir",
+    "text": "In Burgundy, which c\u00f4te is more associated with red wines?",
+    "options": [
+      "C\u00f4te de Nuits",
+      "C\u00f4te de Beaune",
+      "C\u00f4te Chalonnaise",
+      "M\u00e2connais"
+    ],
+    "correct": 0,
+    "explanation": "The C\u00f4te de Nuits is primarily known for its Grand Cru red Burgundy from Pinot Noir.",
+    "id": 26
+  },
+  {
+    "category": "LO3 \u2013 Syrah/Shiraz",
+    "text": "Northern Rh\u00f4ne Syrah vs Barossa Shiraz:",
+    "options": [
+      "Rh\u00f4ne Syrah is fruitier and more jammy",
+      "Rh\u00f4ne Syrah shows pepper and herbs while Barossa Shiraz is riper with dark fruit and oak",
+      "Both produce identical styles",
+      "Barossa Shiraz is lighter in body"
+    ],
+    "correct": 1,
+    "explanation": "Northern Rh\u00f4ne Syrah: pepper, herbs, floral. Barossa Shiraz: fuller, riper, chocolate, and oak.",
+    "id": 27
+  },
+  {
+    "category": "LO3 \u2013 Syrah/Shiraz",
+    "text": "C\u00f4te-R\u00f4tie is made from:",
+    "options": [
+      "Cabernet Sauvignon",
+      "Mourv\u00e8dre",
+      "Syrah",
+      "Grenache"
+    ],
+    "correct": 2,
+    "explanation": "C\u00f4te-R\u00f4tie is primarily Syrah, sometimes with a small addition of Viognier.",
+    "id": 28
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "Gamay is the grape of:",
+    "options": [
+      "Beaujolais",
+      "Bordeaux",
+      "Champagne",
+      "Burgundy whites"
+    ],
+    "correct": 0,
+    "explanation": "Gamay is the red grape of Beaujolais, producing light, fruity, low-tannin reds.",
+    "id": 29
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "Viognier is known for:",
+    "options": [
+      "Aromatic whites with peach and apricot",
+      "Light reds",
+      "Sparkling wines",
+      "High tannin"
+    ],
+    "correct": 0,
+    "explanation": "Viognier produces full-bodied, aromatic whites with peach, apricot, and floral notes.",
+    "id": 30
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "Gew\u00fcrztraminer is associated with:",
+    "options": [
+      "Bordeaux",
+      "Douro",
+      "Rioja",
+      "Alsace"
+    ],
+    "correct": 3,
+    "explanation": "Gew\u00fcrztraminer is a signature grape of Alsace, producing aromatic wines with lychee and spice.",
+    "id": 31
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "Torront\u00e9s is a distinctive white grape from:",
+    "options": [
+      "Chile",
+      "Uruguay",
+      "Brazil",
+      "Argentina"
+    ],
+    "correct": 3,
+    "explanation": "Torront\u00e9s is Argentina's signature white grape, producing highly aromatic, floral wines.",
+    "id": 32
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "Gr\u00fcner Veltliner is the most planted grape in:",
+    "options": [
+      "Germany",
+      "Hungary",
+      "Switzerland",
+      "Austria"
+    ],
+    "correct": 3,
+    "explanation": "Gr\u00fcner Veltliner is Austria's most widely planted grape, producing dry whites with pepper and citrus.",
+    "id": 33
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "Touriga Nacional is the most important grape for:",
+    "options": [
+      "Chianti",
+      "Champagne",
+      "Port",
+      "Rioja"
+    ],
+    "correct": 2,
+    "explanation": "Touriga Nacional is considered the finest red grape for Port and increasingly for Douro table wines.",
+    "id": 34
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "Nero d'Avola is associated with:",
+    "options": [
+      "Tuscany",
+      "Sicily",
+      "Veneto",
+      "Piedmont"
+    ],
+    "correct": 1,
+    "explanation": "Nero d'Avola is Sicily's most important red grape, producing rich, full-bodied wines.",
+    "id": 35
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "Assyrtiko is a key grape of:",
+    "options": [
+      "Turkey",
+      "Santorini, Greece",
+      "Crete",
+      "Cyprus"
+    ],
+    "correct": 1,
+    "explanation": "Assyrtiko from Santorini produces crisp, mineral whites with high acidity despite the warm climate.",
+    "id": 36
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "Furmint is the principal grape of:",
+    "options": [
+      "German Sekt",
+      "Austrian Riesling",
+      "Italian Prosecco",
+      "Tokaji wines from Hungary"
+    ],
+    "correct": 3,
+    "explanation": "Furmint is the key grape of Hungary's Tokaji, used for both dry and sweet botrytised wines.",
+    "id": 37
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "Primitivo from southern Italy is genetically identical to:",
+    "options": [
+      "Cabernet Franc",
+      "Syrah",
+      "Zinfandel",
+      "Merlot"
+    ],
+    "correct": 2,
+    "explanation": "DNA analysis confirmed Primitivo and Zinfandel are the same grape variety.",
+    "id": 38
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "Corvina is the main grape in:",
+    "options": [
+      "Soave",
+      "Chianti",
+      "Valpolicella and Amarone",
+      "Barolo"
+    ],
+    "correct": 2,
+    "explanation": "Corvina is the principal grape of Valpolicella and Amarone della Valpolicella in the Veneto.",
+    "id": 39
+  },
+  {
+    "category": "LO4 \u2013 Key Regions & Grapes",
+    "text": "Cinsaut is traditionally blended in:",
+    "options": [
+      "Bordeaux",
+      "Champagne",
+      "Burgundy",
+      "Southern Rh\u00f4ne and Languedoc"
+    ],
+    "correct": 3,
+    "explanation": "Cinsaut is used in Southern Rh\u00f4ne and Languedoc blends, contributing fruit and softness.",
+    "id": 40
+  },
+  {
+    "category": "LO5 \u2013 Sparkling Wines",
+    "text": "'Brut' on a sparkling wine label means:",
+    "options": [
+      "Off-dry",
+      "Very dry",
+      "Medium sweet",
+      "Sweet"
+    ],
+    "correct": 1,
+    "explanation": "Brut indicates a dry sparkling wine with low residual sugar (less than 12 g/L).",
+    "id": 41
+  },
+  {
+    "category": "LO5 \u2013 Sparkling Wines",
+    "text": "Cava is a traditional method sparkling wine from:",
+    "options": [
+      "Spain",
+      "Portugal",
+      "Italy",
+      "France"
+    ],
+    "correct": 0,
+    "explanation": "Cava is produced primarily in Pened\u00e8s, Spain, using the traditional method.",
+    "id": 42
+  },
+  {
+    "category": "LO5 \u2013 Sparkling Wines",
+    "text": "A Blanc de Blancs Champagne is made from:",
+    "options": [
+      "Only Chardonnay",
+      "A blend of all three grapes",
+      "Only red grapes",
+      "Only Pinot Noir"
+    ],
+    "correct": 0,
+    "explanation": "Blanc de Blancs ('white from whites') is made exclusively from white Chardonnay grapes.",
+    "id": 43
+  },
+  {
+    "category": "LO5 \u2013 Fortified Wines",
+    "text": "Oloroso Sherry is aged:",
+    "options": [
+      "Oxidatively without flor",
+      "Under flor",
+      "With residual sugar",
+      "In new oak only"
+    ],
+    "correct": 0,
+    "explanation": "Oloroso Sherry is aged oxidatively (without flor protection), developing rich, nutty, complex character.",
+    "id": 44
+  },
+  {
+    "category": "LO5 \u2013 Fortified Wines",
+    "text": "Pedro Xim\u00e9nez (PX) Sherry is:",
+    "options": [
+      "A ros\u00e9",
+      "Sparkling",
+      "Very sweet, made from sun-dried grapes",
+      "Bone dry"
+    ],
+    "correct": 2,
+    "explanation": "PX Sherry: intensely sweet, made from sun-dried Pedro Xim\u00e9nez grapes, with raisin and fig flavours.",
+    "id": 45
+  },
+  {
+    "category": "LO5 \u2013 Fortified Wines",
+    "text": "Ruby Port compared to Tawny Port is:",
+    "options": [
+      "Always older",
+      "Darker, fruitier, with less cask ageing",
+      "Lighter and nuttier",
+      "Identical"
+    ],
+    "correct": 1,
+    "explanation": "Ruby Port retains its dark colour and fresh fruit character through shorter ageing in large vessels.",
+    "id": 46
+  },
+  {
+    "category": "LO6 \u2013 Service & Pairing",
+    "text": "Full-bodied red wines should be served at:",
+    "options": [
+      "6-10\u00b0C",
+      "10-13\u00b0C",
+      "20-25\u00b0C",
+      "15-18\u00b0C"
+    ],
+    "correct": 3,
+    "explanation": "Full-bodied reds: 15-18\u00b0C. Too warm emphasises alcohol; too cold makes tannins harsh.",
+    "id": 47
+  },
+  {
+    "category": "LO6 \u2013 Service & Pairing",
+    "text": "High-acid wines pair well with:",
+    "options": [
+      "Chocolate desserts",
+      "Bitter vegetables only",
+      "Very sweet foods",
+      "Rich, fatty dishes"
+    ],
+    "correct": 3,
+    "explanation": "Acidity cuts through richness of fatty foods, refreshing the palate \u2014 a key pairing principle.",
+    "id": 48
+  },
+  {
+    "category": "LO6 \u2013 Service & Pairing",
+    "text": "DOCG on an Italian label indicates:",
+    "options": [
+      "Organic grapes",
+      "Five years ageing",
+      "Basic table wine",
+      "Highest quality classification"
+    ],
+    "correct": 3,
+    "explanation": "DOCG is Italy's highest quality tier, requiring strict production rules and tasting approval.",
+    "id": 49
+  },
+  {
+    "category": "LO6 \u2013 Service & Pairing",
+    "text": "Ideal long-term wine storage conditions are:",
+    "options": [
+      "On its side in a cool, dark, consistent temperature place",
+      "In sunlight with good ventilation",
+      "In a fridge at 2-4\u00b0C",
+      "Upright in a warm room"
+    ],
+    "correct": 0,
+    "explanation": "Store wine on its side, cool (10-15\u00b0C), dark, vibration-free, consistent temperature.",
+    "id": 50
+  }
+]

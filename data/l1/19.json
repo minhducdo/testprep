@@ -1,0 +1,392 @@
+[
+  {
+    "category": "Types & Styles of Wine",
+    "text": "What gives red wine its colour?",
+    "options": [
+      "The grape juice",
+      "Contact with grape skins during fermentation",
+      "The addition of colouring",
+      "The type of yeast used"
+    ],
+    "correct": 1,
+    "explanation": "Red wine gets its colour from the anthocyanin pigments in the skins of red grape varieties during maceration.",
+    "id": 1
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "Which is NOT a type of wine?",
+    "options": [
+      "Fortified",
+      "Still",
+      "Distilled",
+      "Sparkling"
+    ],
+    "correct": 2,
+    "explanation": "Distilled products are spirits, not wine. Wine can be still, sparkling, or fortified.",
+    "id": 2
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "What is the main difference between a still wine and a sparkling wine?",
+    "options": [
+      "Presence of carbon dioxide bubbles",
+      "Country of origin",
+      "Alcohol content",
+      "Grape variety used"
+    ],
+    "correct": 0,
+    "explanation": "Sparkling wines contain dissolved carbon dioxide, which creates bubbles. Still wines do not.",
+    "id": 3
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "Medium-sweet wines contain:",
+    "options": [
+      "More sugar than sweet wines",
+      "A moderate amount of residual sugar",
+      "No sugar",
+      "Only sugar from added syrup"
+    ],
+    "correct": 1,
+    "explanation": "Medium-sweet wines have a moderate amount of residual sugar, between dry and sweet.",
+    "id": 4
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "A fortified wine typically has an alcohol level of:",
+    "options": [
+      "30-40% ABV",
+      "15-22% ABV",
+      "5-8% ABV",
+      "8-12% ABV"
+    ],
+    "correct": 1,
+    "explanation": "Fortified wines typically range from 15-22% ABV due to the addition of grape spirit during or after fermentation.",
+    "id": 5
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "Which of these is a still red wine?",
+    "options": [
+      "Asti",
+      "Champagne",
+      "Chianti",
+      "Port"
+    ],
+    "correct": 2,
+    "explanation": "Chianti is a still red wine from Tuscany, Italy, made primarily from the Sangiovese grape.",
+    "id": 6
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "A typical characteristic of Riesling is:",
+    "options": [
+      "Heavy tannins",
+      "Low acidity",
+      "High acidity",
+      "Dark colour"
+    ],
+    "correct": 2,
+    "explanation": "Riesling is known for its naturally high acidity, which gives the wines their freshness and ageing potential.",
+    "id": 7
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Which grape variety is associated with rich, oaky white wines from California?",
+    "options": [
+      "Chardonnay",
+      "Sauvignon Blanc",
+      "Pinot Grigio",
+      "Riesling"
+    ],
+    "correct": 0,
+    "explanation": "California Chardonnay is often fermented and aged in oak barrels, producing rich, buttery, vanilla-scented wines.",
+    "id": 8
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Pinot Noir grapes have:",
+    "options": [
+      "No colour in the skins",
+      "Very high tannin levels",
+      "Thick, dark skins",
+      "Thin skins that are prone to disease"
+    ],
+    "correct": 3,
+    "explanation": "Pinot Noir has thin skins, making it susceptible to fungal diseases but producing lighter-coloured wines.",
+    "id": 9
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "What colour wine does Syrah/Shiraz produce?",
+    "options": [
+      "Red",
+      "Orange",
+      "Ros\u00e9",
+      "White"
+    ],
+    "correct": 0,
+    "explanation": "Syrah (also known as Shiraz) is a red grape variety that produces deeply coloured red wines.",
+    "id": 10
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Which white grape is known for aromas of lychee, rose, and spice?",
+    "options": [
+      "Gew\u00fcrztraminer",
+      "Pinot Grigio",
+      "Chardonnay",
+      "Sauvignon Blanc"
+    ],
+    "correct": 0,
+    "explanation": "Gew\u00fcrztraminer is a highly aromatic white grape known for lychee, rose petal, and exotic spice aromas.",
+    "id": 11
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Cabernet Sauvignon wines typically have:",
+    "options": [
+      "Low tannin and light body",
+      "No fruit flavour",
+      "Natural sparkle",
+      "High tannin and full body"
+    ],
+    "correct": 3,
+    "explanation": "Cabernet Sauvignon produces full-bodied wines with firm tannins, making them suitable for ageing.",
+    "id": 12
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Which of these grapes can produce both still and sparkling wines?",
+    "options": [
+      "Sangiovese",
+      "Tempranillo",
+      "Malbec",
+      "Pinot Noir"
+    ],
+    "correct": 3,
+    "explanation": "Pinot Noir is used for still red Burgundy and is one of the three main grapes in Champagne (sparkling).",
+    "id": 13
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Merlot originally comes from which country?",
+    "options": [
+      "Spain",
+      "Australia",
+      "France",
+      "Italy"
+    ],
+    "correct": 2,
+    "explanation": "Merlot originated in the Bordeaux region of France, where it remains one of the most important red varieties.",
+    "id": 14
+  },
+  {
+    "category": "Winemaking Basics",
+    "text": "What is the process of converting grape sugar into alcohol called?",
+    "options": [
+      "Maceration",
+      "Distillation",
+      "Pasteurisation",
+      "Fermentation"
+    ],
+    "correct": 3,
+    "explanation": "Alcoholic fermentation is the process where yeast converts the sugar in grape juice into alcohol and carbon dioxide.",
+    "id": 15
+  },
+  {
+    "category": "Winemaking Basics",
+    "text": "How does red wine get its colour?",
+    "options": [
+      "From the type of barrel used",
+      "From contact between juice and grape skins",
+      "From added colouring",
+      "From the grape juice"
+    ],
+    "correct": 1,
+    "explanation": "Red wine colour comes from anthocyanin pigments in the grape skins, extracted during fermentation.",
+    "id": 16
+  },
+  {
+    "category": "Winemaking Basics",
+    "text": "Which organism is essential for alcoholic fermentation?",
+    "options": [
+      "Bacteria",
+      "Virus",
+      "Mould",
+      "Yeast"
+    ],
+    "correct": 3,
+    "explanation": "Yeast (Saccharomyces cerevisiae) is the microorganism that converts sugar into alcohol during fermentation.",
+    "id": 17
+  },
+  {
+    "category": "Winemaking Basics",
+    "text": "What is the main difference between red and white winemaking?",
+    "options": [
+      "There is no difference",
+      "Red wine uses only red grapes",
+      "White wine uses only green grapes",
+      "Red wine is fermented with the skins, white wine is not"
+    ],
+    "correct": 3,
+    "explanation": "The key difference is that red wine is fermented in contact with grape skins to extract colour and tannin.",
+    "id": 18
+  },
+  {
+    "category": "Storage & Service",
+    "text": "Which type of glass is best for red wine?",
+    "options": [
+      "A large, wide-bowled glass",
+      "A tumbler",
+      "A small narrow glass",
+      "A flute"
+    ],
+    "correct": 0,
+    "explanation": "Red wines benefit from a large, wide-bowled glass that allows the wine to breathe and the aromas to develop.",
+    "id": 19
+  },
+  {
+    "category": "Storage & Service",
+    "text": "Sparkling wine should be served in:",
+    "options": [
+      "A narrow flute or tulip glass",
+      "A wide, open coupe",
+      "A large Burgundy glass",
+      "A tumbler"
+    ],
+    "correct": 0,
+    "explanation": "A flute or tulip glass preserves the bubbles and concentrates the aromas of sparkling wine.",
+    "id": 20
+  },
+  {
+    "category": "Storage & Service",
+    "text": "What happens to wine if it is stored in a warm place?",
+    "options": [
+      "It improves with age",
+      "It becomes sparkling",
+      "It can age prematurely and develop off-flavours",
+      "Nothing"
+    ],
+    "correct": 2,
+    "explanation": "Heat accelerates chemical reactions in wine, causing premature ageing, loss of freshness, and potential faults.",
+    "id": 21
+  },
+  {
+    "category": "Storage & Service",
+    "text": "Why should wine bottles be stored on their side?",
+    "options": [
+      "To allow sediment to settle",
+      "To increase the alcohol",
+      "To keep the cork moist and prevent air entering",
+      "To look attractive"
+    ],
+    "correct": 2,
+    "explanation": "Storing bottles on their side keeps the cork in contact with the wine, preventing it from drying out and letting air in.",
+    "id": 22
+  },
+  {
+    "category": "Storage & Service",
+    "text": "A wine that has turned brown and tastes of vinegar is likely:",
+    "options": [
+      "Oxidised and spoiled",
+      "A natural wine",
+      "Perfectly fine",
+      "Simply a very old wine"
+    ],
+    "correct": 0,
+    "explanation": "Excessive browning and vinegar-like aromas indicate the wine has been damaged by oxidation and acetic acid bacteria.",
+    "id": 23
+  },
+  {
+    "category": "Storage & Service",
+    "text": "At what temperature should ros\u00e9 wine be served?",
+    "options": [
+      "7-10\u00b0C",
+      "Room temperature",
+      "4-6\u00b0C",
+      "15-18\u00b0C"
+    ],
+    "correct": 0,
+    "explanation": "Ros\u00e9 wines are best served chilled at around 7-10\u00b0C to highlight their freshness and fruit character.",
+    "id": 24
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "Which type of wine pairs best with grilled steak?",
+    "options": [
+      "Light white wine",
+      "Sweet dessert wine",
+      "Sparkling wine",
+      "Full-bodied red wine"
+    ],
+    "correct": 3,
+    "explanation": "The bold flavours and tannins of a full-bodied red like Cabernet Sauvignon complement the richness of grilled steak.",
+    "id": 25
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "A crisp, dry white wine pairs well with:",
+    "options": [
+      "Rich chocolate cake",
+      "Spicy curry",
+      "Fresh seafood and salads",
+      "Grilled lamb"
+    ],
+    "correct": 2,
+    "explanation": "Crisp, dry whites like Sauvignon Blanc complement the delicate flavours of fresh seafood and salads.",
+    "id": 26
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "What is a general principle of food and wine pairing?",
+    "options": [
+      "Match the weight of the wine to the weight of the food",
+      "Always pair red wine with fish",
+      "Sweet wines only go with savoury food",
+      "White wine should never be served with meat"
+    ],
+    "correct": 0,
+    "explanation": "Matching the body and intensity of the wine with the richness of the food is a fundamental pairing principle.",
+    "id": 27
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "Sweet wines pair well with:",
+    "options": [
+      "Rare steak",
+      "Raw oysters",
+      "Vinaigrette-dressed salads",
+      "Spicy foods and desserts"
+    ],
+    "correct": 3,
+    "explanation": "Sweet wines can complement spicy dishes by cooling the palate, and they pair naturally with desserts.",
+    "id": 28
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "Which wine would pair best with a creamy pasta dish?",
+    "options": [
+      "Tannic Cabernet Sauvignon",
+      "Dry Fino Sherry",
+      "Oaked Chardonnay",
+      "Light Pinot Grigio"
+    ],
+    "correct": 2,
+    "explanation": "An oaked Chardonnay has the body and richness to match creamy pasta sauces.",
+    "id": 29
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "High-acid wines pair well with:",
+    "options": [
+      "Rich, fatty foods",
+      "Very spicy dishes",
+      "Bitter vegetables",
+      "Chocolate desserts"
+    ],
+    "correct": 0,
+    "explanation": "High acidity in wine acts as a palate cleanser, cutting through the richness of fatty and oily foods.",
+    "id": 30
+  }
+]

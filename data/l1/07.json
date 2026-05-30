@@ -1,0 +1,392 @@
+[
+  {
+    "category": "Types & Styles of Wine",
+    "text": "What does the term 'off-dry' mean on a wine label?",
+    "options": [
+      "The wine is bone dry",
+      "The wine is sparkling",
+      "The wine is fortified",
+      "The wine has a slight sweetness"
+    ],
+    "correct": 3,
+    "explanation": "Off-dry means the wine has a hint of residual sugar \u2014 not fully dry, but not obviously sweet.",
+    "id": 1
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "A full-bodied red wine typically has:",
+    "options": [
+      "High fizz",
+      "Low alcohol and light colour",
+      "No tannin",
+      "High alcohol, rich flavour, and firm structure"
+    ],
+    "correct": 3,
+    "explanation": "Full-bodied reds typically have higher alcohol, concentrated flavour, and notable tannin structure.",
+    "id": 2
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "Madeira is best described as:",
+    "options": [
+      "A still ros\u00e9 from Spain",
+      "A sparkling wine from Italy",
+      "A dry white from France",
+      "A fortified wine from a Portuguese island"
+    ],
+    "correct": 3,
+    "explanation": "Madeira is a fortified wine from the island of Madeira, Portugal, known for its oxidative ageing style.",
+    "id": 3
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "A wine with noticeable bubbles when poured is classified as:",
+    "options": [
+      "Fortified",
+      "Sparkling",
+      "Dessert",
+      "Still"
+    ],
+    "correct": 1,
+    "explanation": "Visible bubbles in a wine indicate dissolved CO2, which is the defining feature of a sparkling wine.",
+    "id": 4
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "Which of the following is an example of a still wine?",
+    "options": [
+      "Prosecco",
+      "Chablis",
+      "Champagne",
+      "Cava"
+    ],
+    "correct": 1,
+    "explanation": "Chablis is a still white wine from Burgundy made from Chardonnay. Champagne, Cava, and Prosecco are all sparkling wines.",
+    "id": 5
+  },
+  {
+    "category": "Types & Styles of Wine",
+    "text": "What type of wine is Port?",
+    "options": [
+      "Sparkling white",
+      "Fortified",
+      "Ros\u00e9",
+      "Still red"
+    ],
+    "correct": 1,
+    "explanation": "Port is a fortified wine from the Douro Valley in Portugal. Grape spirit is added during fermentation.",
+    "id": 6
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Merlot wines are generally described as:",
+    "options": [
+      "Soft, round, with plum and red fruit",
+      "Very high in tannin with green flavours",
+      "Highly aromatic with floral notes",
+      "Very light-bodied and fizzy"
+    ],
+    "correct": 0,
+    "explanation": "Merlot produces soft, approachable wines with plum, red cherry, and smooth tannins.",
+    "id": 7
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Riesling can produce wines that are:",
+    "options": [
+      "Dry, off-dry, or sweet depending on the style",
+      "Only dry",
+      "Only sweet",
+      "Only sparkling"
+    ],
+    "correct": 0,
+    "explanation": "Riesling is a versatile grape that can make wines across the sweetness spectrum, from bone dry to very sweet.",
+    "id": 8
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Which grape variety is associated with light-bodied red wines with cherry and strawberry flavours?",
+    "options": [
+      "Cabernet Sauvignon",
+      "Pinot Noir",
+      "Syrah",
+      "Merlot"
+    ],
+    "correct": 1,
+    "explanation": "Pinot Noir typically produces light to medium-bodied reds with red fruit flavours like cherry and strawberry.",
+    "id": 9
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Syrah/Shiraz is known for producing wines with:",
+    "options": [
+      "Residual sugar",
+      "Citrus and green apple",
+      "Light floral character",
+      "Dark fruit, pepper, and spice"
+    ],
+    "correct": 3,
+    "explanation": "Syrah/Shiraz produces medium to full-bodied reds with dark fruit, black pepper, and spice.",
+    "id": 10
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Chardonnay can produce wines that range from:",
+    "options": [
+      "Light and crisp to full-bodied and oaky, depending on winemaking",
+      "Only sweet",
+      "Only light and citrusy",
+      "Only oaky and buttery"
+    ],
+    "correct": 0,
+    "explanation": "Chardonnay is highly versatile. Unoaked versions are crisp and citrusy; oaked versions are rich and buttery.",
+    "id": 11
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Which grape variety is most commonly associated with Bordeaux red blends?",
+    "options": [
+      "Riesling",
+      "Sauvignon Blanc",
+      "Cabernet Sauvignon",
+      "Pinot Grigio"
+    ],
+    "correct": 2,
+    "explanation": "Cabernet Sauvignon is the dominant red grape of the Bordeaux Left Bank, used in the region's famous blends.",
+    "id": 12
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "What flavours are typical of a Sauvignon Blanc from a warm climate?",
+    "options": [
+      "Tropical fruits like mango and guava",
+      "Heavy oak and vanilla",
+      "Smoky and earthy",
+      "Green pepper and cat pee"
+    ],
+    "correct": 0,
+    "explanation": "Warm-climate Sauvignon Blanc develops riper tropical fruit flavours like mango, guava, and melon.",
+    "id": 13
+  },
+  {
+    "category": "Grape Varieties",
+    "text": "Which grape makes light, refreshing Italian white wines?",
+    "options": [
+      "Pinot Grigio",
+      "Cabernet Sauvignon",
+      "Merlot",
+      "Syrah"
+    ],
+    "correct": 0,
+    "explanation": "Pinot Grigio from regions like the Veneto in Italy produces light, refreshing white wines.",
+    "id": 14
+  },
+  {
+    "category": "Winemaking Basics",
+    "text": "What is the process of converting grape sugar into alcohol called?",
+    "options": [
+      "Maceration",
+      "Fermentation",
+      "Distillation",
+      "Pasteurisation"
+    ],
+    "correct": 1,
+    "explanation": "Alcoholic fermentation is the process where yeast converts the sugar in grape juice into alcohol and carbon dioxide.",
+    "id": 15
+  },
+  {
+    "category": "Winemaking Basics",
+    "text": "How does red wine get its colour?",
+    "options": [
+      "From the grape juice",
+      "From contact between juice and grape skins",
+      "From added colouring",
+      "From the type of barrel used"
+    ],
+    "correct": 1,
+    "explanation": "Red wine colour comes from anthocyanin pigments in the grape skins, extracted during fermentation.",
+    "id": 16
+  },
+  {
+    "category": "Winemaking Basics",
+    "text": "Which organism is essential for alcoholic fermentation?",
+    "options": [
+      "Mould",
+      "Yeast",
+      "Bacteria",
+      "Virus"
+    ],
+    "correct": 1,
+    "explanation": "Yeast (Saccharomyces cerevisiae) is the microorganism that converts sugar into alcohol during fermentation.",
+    "id": 17
+  },
+  {
+    "category": "Winemaking Basics",
+    "text": "What is the main difference between red and white winemaking?",
+    "options": [
+      "White wine uses only green grapes",
+      "Red wine uses only red grapes",
+      "Red wine is fermented with the skins, white wine is not",
+      "There is no difference"
+    ],
+    "correct": 2,
+    "explanation": "The key difference is that red wine is fermented in contact with grape skins to extract colour and tannin.",
+    "id": 18
+  },
+  {
+    "category": "Storage & Service",
+    "text": "What is the purpose of decanting a wine?",
+    "options": [
+      "To add sweetness",
+      "To separate the wine from sediment and allow it to breathe",
+      "To add bubbles",
+      "To cool the wine"
+    ],
+    "correct": 1,
+    "explanation": "Decanting separates wine from any sediment and exposes it to air, which can help open up aromas and flavours.",
+    "id": 19
+  },
+  {
+    "category": "Storage & Service",
+    "text": "How long can an opened bottle of still wine typically last in the fridge?",
+    "options": [
+      "1-3 days",
+      "1 month",
+      "Indefinitely",
+      "1-2 weeks"
+    ],
+    "correct": 0,
+    "explanation": "Once opened, still wine begins to oxidise. It will typically remain drinkable for 1-3 days if refrigerated.",
+    "id": 20
+  },
+  {
+    "category": "Storage & Service",
+    "text": "Which of the following is a sign that wine may be faulty?",
+    "options": [
+      "Slight fizz in young white wine",
+      "Cloudy appearance with off-putting smell",
+      "A small amount of sediment",
+      "Bright, clear colour"
+    ],
+    "correct": 1,
+    "explanation": "A cloudy appearance combined with an off-putting smell can indicate the wine is faulty or spoiled.",
+    "id": 21
+  },
+  {
+    "category": "Storage & Service",
+    "text": "At what temperature should a full-bodied red wine be served?",
+    "options": [
+      "4-8\u00b0C",
+      "15-18\u00b0C",
+      "22-25\u00b0C",
+      "8-12\u00b0C"
+    ],
+    "correct": 1,
+    "explanation": "Full-bodied red wines are best served at 15-18\u00b0C. Serving too warm emphasises alcohol; too cold mutes flavour.",
+    "id": 22
+  },
+  {
+    "category": "Storage & Service",
+    "text": "How should wine be stored for long periods?",
+    "options": [
+      "On its side in a cool, dark place",
+      "Upright in a warm room",
+      "In direct sunlight",
+      "In a refrigerator"
+    ],
+    "correct": 0,
+    "explanation": "Wine should be stored on its side to keep the cork moist, in a cool (10-15\u00b0C), dark, stable environment.",
+    "id": 23
+  },
+  {
+    "category": "Storage & Service",
+    "text": "What is the correct serving temperature for a light white wine?",
+    "options": [
+      "Room temperature",
+      "20-22\u00b0C",
+      "4-8\u00b0C",
+      "15-18\u00b0C"
+    ],
+    "correct": 2,
+    "explanation": "Light, crisp white wines are best served well chilled at 7-10\u00b0C to preserve their freshness.",
+    "id": 24
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "Which type of wine pairs best with grilled steak?",
+    "options": [
+      "Sweet dessert wine",
+      "Light white wine",
+      "Full-bodied red wine",
+      "Sparkling wine"
+    ],
+    "correct": 2,
+    "explanation": "The bold flavours and tannins of a full-bodied red like Cabernet Sauvignon complement the richness of grilled steak.",
+    "id": 25
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "A crisp, dry white wine pairs well with:",
+    "options": [
+      "Fresh seafood and salads",
+      "Spicy curry",
+      "Rich chocolate cake",
+      "Grilled lamb"
+    ],
+    "correct": 0,
+    "explanation": "Crisp, dry whites like Sauvignon Blanc complement the delicate flavours of fresh seafood and salads.",
+    "id": 26
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "What is a general principle of food and wine pairing?",
+    "options": [
+      "Always pair red wine with fish",
+      "Sweet wines only go with savoury food",
+      "Match the weight of the wine to the weight of the food",
+      "White wine should never be served with meat"
+    ],
+    "correct": 2,
+    "explanation": "Matching the body and intensity of the wine with the richness of the food is a fundamental pairing principle.",
+    "id": 27
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "Sweet wines pair well with:",
+    "options": [
+      "Spicy foods and desserts",
+      "Rare steak",
+      "Vinaigrette-dressed salads",
+      "Raw oysters"
+    ],
+    "correct": 0,
+    "explanation": "Sweet wines can complement spicy dishes by cooling the palate, and they pair naturally with desserts.",
+    "id": 28
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "Which wine would pair best with a creamy pasta dish?",
+    "options": [
+      "Tannic Cabernet Sauvignon",
+      "Light Pinot Grigio",
+      "Oaked Chardonnay",
+      "Dry Fino Sherry"
+    ],
+    "correct": 2,
+    "explanation": "An oaked Chardonnay has the body and richness to match creamy pasta sauces.",
+    "id": 29
+  },
+  {
+    "category": "Food Pairing & Labels",
+    "text": "High-acid wines pair well with:",
+    "options": [
+      "Very spicy dishes",
+      "Chocolate desserts",
+      "Rich, fatty foods",
+      "Bitter vegetables"
+    ],
+    "correct": 2,
+    "explanation": "High acidity in wine acts as a palate cleanser, cutting through the richness of fatty and oily foods.",
+    "id": 30
+  }
+]
