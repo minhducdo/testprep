@@ -29,8 +29,8 @@ module.exports = async (req, res) => {
 
   const unitAmount = promo ? levelPricing.promo : levelPricing.regular;
   const levelNames = { l1: 'Level 1', l2: 'Level 2', l3: 'Level 3' };
-  const startTest = pack === 1 ? 1 : 11;
-  const endTest = pack === 1 ? 10 : 20;
+  const startTest = pack === 'pack1' ? 1 : 11;
+  const endTest = pack === 'pack1' ? 10 : 20;
   const siteUrl = process.env.SITE_URL || 'https://wineexamprep.com';
 
   try {

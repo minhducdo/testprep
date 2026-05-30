@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Practice Exam – WineExamPrep</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M20 8h24v4c0 11-5 18-10 22v10h8v4H22v-4h8V34C25 30 20 23 20 12V8z' fill='%23722f37'/%3E%3Cpath d='M24 12c0 8 4 14 8 17 4-3 8-9 8-17H24z' fill='%23c5a46e'/%3E%3C/svg%3E">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{wine:{50:'#faf5f0',100:'#f0e6da',200:'#e8d5c4',300:'#c5a46e',400:'#b08a4a',500:'#8b6f6a',600:'#722f37',700:'#5a2530',800:'#2c2528',900:'#1f1a1d',950:'#181315'}}}}}
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+body{font-family:'Inter',sans-serif}
+h1,h2,h3,.brand{font-family:'Playfair Display',serif}
+.glass{background:rgba(44,37,40,0.6);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.06)}
+.option-btn{transition:all .2s ease}
+.option-btn:hover{transform:translateX(4px)}
+.option-btn.selected{background:rgba(114,47,55,0.3);border-color:#722f37 !important}
+.option-btn.correct{background:rgba(34,197,94,0.2);border-color:#22c55e !important}
+.option-btn.incorrect{background:rgba(239,68,68,0.2);border-color:#ef4444 !important}
+.progress-fill{transition:width .4s ease}
+.fade-in{animation:fadeIn .3s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.nav-dot{transition:all .15s ease}
+.nav-dot.answered{background:#722f37;color:#fff}
+.nav-dot.current{box-shadow:0 0 0 2px #722f37}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:rgba(0,0,0,0.2)}
+::-webkit-scrollbar-thumb{background:#722f37;border-radius:3px}
+.timer-warning{animation:pulse 1s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+</style>
+</head>
+<body class="bg-[#181315] text-[#e8d5c4] min-h-screen">
+
+<div class="fixed inset-0 -z-10 bg-[#181315]"></div>
+
+<!-- Header -->
+<header class="border-b border-white/[0.06] bg-[#181315]/90 backdrop-blur-md sticky top-0 z-50">
+  <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <a href="/" class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-full bg-[#722f37] flex items-center justify-center text-sm">&#127863;</div>
+        <div>
+          <h1 class="brand text-lg font-semibold text-[#c5a46e] leading-tight" id="examTitle">Loading...</h1>
+          <p class="text-xs text-[#665a55]">wineexamprep.com</p>
+        </div>
+      </a>
+    </div>
+    <div id="headerTimer" class="hidden text-right">
+      <div id="timerDisplay" class="font-mono text-xl font-semibold text-[#c5a46e]">60:00</div>
+      <div class="text-xs text-[#665a55]">remaining</div>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-4xl mx-auto px-4 py-8">
+
+  <!-- LOADING -->
+  <section id="loadingScreen" class="text-center py-20">
+    <div class="w-12 h-12 border-2 border-[#722f37] border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+    <p class="text-[#8b6f6a]">Loading exam...</p>
+  </section>
+
+  <!-- ACCESS DENIED -->
+  <section id="accessDenied" class="hidden text-center py-20 fade-in">
+    <div class="text-5xl mb-4">&#128274;</div>
+    <h2 class="text-2xl font-bold text-[#c5a46e] brand mb-3">Bundle Required</h2>
+    <p class="text-[#8b6f6a] mb-6">You need to purchase the exam bundle to access this test.</p>
+    <a href="/#bundles" class="px-6 py-3 bg-[#722f37] hover:bg-[#8a3a44] rounded-xl font-semibold transition-colors inline-block">View Bundles & Pricing</a>
+  </section>
+
+  <!-- WELCOME SCREEN -->
+  <section id="welcomeScreen" class="hidden fade-in">
+    <div class="text-center mb-10">
+      <h2 class="text-4xl font-bold text-[#c5a46e] mb-3 brand" id="welcomeTitle">Practice Exam</h2>
+      <p class="text-[#8b6f6a] max-w-xl mx-auto" id="welcomeDesc"></p>
+    </div>
+    <div class="glass rounded-2xl p-8 max-w-2xl mx-auto mb-8">
+      <h3 class="text-xl font-semibold mb-4 text-[#e8d5c4] brand">Exam Format</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-6 text-center">
+        <div class="bg-white/[0.03] rounded-xl p-4"><div class="text-2xl font-bold text-[#c5a46e]" id="statQs">50</div><div class="text-xs text-[#8b6f6a] mt-1">Questions</div></div>
+        <div class="bg-white/[0.03] rounded-xl p-4"><div class="text-2xl font-bold text-[#c5a46e]" id="statTime">60</div><div class="text-xs text-[#8b6f6a] mt-1">Minutes</div></div>
+        <div class="bg-white/[0.03] rounded-xl p-4"><div class="text-2xl font-bold text-[#c5a46e]" id="statPass">55%</div><div class="text-xs text-[#8b6f6a] mt-1">Pass Mark</div></div>
+      </div>
+      <div id="gradingInfo" class="space-y-2 text-sm mb-6"></div>
+      <p class="text-xs text-[#665a55] mb-6">This is a closed-book practice exam. No notes or references should be used. Your progress is saved automatically.</p>
+      <button onclick="startExam()" class="w-full py-4 bg-[#722f37] hover:bg-[#8a3a44] rounded-xl font-semibold text-lg transition-colors focus:outline-none focus:ring-2 focus:ring-wine-500 focus:ring-offset-2 focus:ring-offset-[#181315]">Begin Exam</button>
+      <button onclick="resumeExam()" id="resumeBtn" class="hidden w-full mt-3 py-3 border border-[#722f37] hover:bg-[#1f1a1d]/50 rounded-xl font-medium transition-colors">Resume Previous Attempt</button>
+    </div>
+  </section>
+
+  <!-- EXAM SCREEN -->
+  <section id="examScreen" class="hidden fade-in">
+    <div class="mb-6">
+      <div class="flex justify-between text-sm text-[#8b6f6a] mb-2">
+        <span>Question <span id="currentQ">1</span> of <span id="totalQs">50</span></span>
+        <span><span id="answeredCount">0</span>/<span id="totalQs2">50</span> answered</span>
+      </div>
+      <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
+        <div id="progressBar" class="h-full bg-[#722f37] rounded-full progress-fill" style="width:2%"></div>
+      </div>
+    </div>
+    <div id="navDots" class="flex flex-wrap gap-1.5 mb-6 justify-center" role="navigation"></div>
+    <div class="glass rounded-2xl p-6 sm:p-8 mb-6">
+      <div class="flex items-start gap-3 mb-2">
+        <span id="qCategory" class="text-xs px-2 py-1 rounded-full bg-[#1f1a1d]/60 text-[#c5a46e] whitespace-nowrap"></span>
+      </div>
+      <h3 id="qText" class="text-lg sm:text-xl font-medium mb-6 leading-relaxed"></h3>
+      <div id="optionsContainer" class="space-y-3" role="radiogroup"></div>
+    </div>
+    <div class="flex justify-between items-center">
+      <button onclick="prevQuestion()" id="prevBtn" class="px-5 py-2.5 rounded-xl border border-white/[0.06] hover:bg-white/[0.03] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-wine-500">&larr; Previous</button>
+      <button onclick="submitExam()" id="submitBtn" class="hidden px-6 py-2.5 rounded-xl bg-[#722f37] hover:bg-[#8a3a44] transition-colors text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-wine-500">Submit Exam</button>
+      <button onclick="nextQuestion()" id="nextBtn" class="px-5 py-2.5 rounded-xl border border-white/[0.06] hover:bg-white/[0.03] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-wine-500">Next &rarr;</button>
+    </div>
+  </section>
+
+  <!-- RESULTS SCREEN -->
+  <section id="resultsScreen" class="hidden fade-in">
+    <div class="text-center mb-8">
+      <h2 class="text-3xl font-bold text-[#c5a46e] brand mb-2">Exam Results</h2>
+      <div id="scoreCircle" class="w-36 h-36 mx-auto rounded-full border-4 border-[#722f37] flex flex-col items-center justify-center my-6">
+        <span id="scorePercent" class="text-4xl font-bold text-[#c5a46e]"></span>
+        <span class="text-xs text-[#8b6f6a]">score</span>
+      </div>
+      <div id="gradeLabel" class="text-2xl font-semibold mb-2"></div>
+      <p id="scoreDetail" class="text-[#8b6f6a]"></p>
+    </div>
+    <div class="flex gap-3 justify-center mb-8 flex-wrap">
+      <button onclick="showReview()" class="px-6 py-2.5 rounded-xl bg-[#722f37] hover:bg-[#8a3a44] transition-colors text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-wine-500">Review All Questions</button>
+      <button onclick="restartExam()" class="px-6 py-2.5 rounded-xl border border-[#722f37] hover:bg-[#1f1a1d]/50 transition-colors text-sm font-medium focus:outline-none focus:ring-2 focus:ring-wine-500">Retake Exam</button>
+      <a href="/#tests" class="px-6 py-2.5 rounded-xl border border-white/[0.06] hover:bg-white/[0.03] transition-colors text-sm font-medium">Back to Tests</a>
+    </div>
+    <div id="reviewContainer" class="hidden space-y-4"></div>
+  </section>
+</main>
+
+<footer class="border-t border-white/[0.06] mt-16 py-6 text-center text-xs text-[#665a55]">
+  <p class="mb-1">wineexamprep.com</p>
+  <p>Practice exam only. Questions based on publicly available WSET materials. Not affiliated with WSET.</p>
+</footer>
+
+<!-- Timer Warning Modal -->
+<div id="timerWarning" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-[#181315]/90 backdrop-blur-sm">
+  <div class="glass rounded-2xl p-8 max-w-sm text-center">
+    <div class="text-4xl mb-3">&#9200;</div>
+    <h3 class="text-xl font-semibold text-[#c5a46e] mb-2 brand">5 Minutes Remaining</h3>
+    <p class="text-[#8b6f6a] text-sm mb-4">Unanswered questions will be marked incorrect.</p>
+    <button onclick="dismissWarning()" class="px-6 py-2 bg-[#722f37] hover:bg-[#8a3a44] rounded-xl text-sm font-medium transition-colors">Continue</button>
+  </div>
+</div>
+
+<!-- Confirm Submit Modal -->
+<div id="confirmModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-[#181315]/90 backdrop-blur-sm">
+  <div class="glass rounded-2xl p-8 max-w-sm text-center">
+    <h3 class="text-xl font-semibold text-[#c5a46e] mb-2 brand">Submit Exam?</h3>
+    <p id="confirmMsg" class="text-[#8b6f6a] text-sm mb-4"></p>
+    <div class="flex gap-3 justify-center">
+      <button onclick="closeConfirm()" class="px-5 py-2 border border-white/[0.06] hover:bg-white/[0.03] rounded-xl text-sm transition-colors">Cancel</button>
+      <button onclick="confirmSubmit()" class="px-5 py-2 bg-[#722f37] hover:bg-[#8a3a44] rounded-xl text-sm font-semibold transition-colors">Submit</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ============================================================
+// CONFIG PER LEVEL
+// ============================================================
+const levelConfig = {
+  l1: { name:'Level 1', questions:30, time:2700, pass:70, merit:null, distinction:null, grading:[
+    {label:'Pass',pct:70},{label:'Below Pass',pct:0}
+  ]},
+  l2: { name:'Level 2', questions:50, time:3600, pass:55, merit:70, distinction:85, grading:[
+    {label:'Distinction',pct:85},{label:'Merit',pct:70},{label:'Pass',pct:55},{label:'Below Pass',pct:0}
+  ]},
+  l3: { name:'Level 3', questions:50, time:4200, pass:55, merit:65, distinction:80, grading:[
+    {label:'Distinction',pct:80},{label:'Merit',pct:65},{label:'Pass',pct:55},{label:'Below Pass',pct:0}
+  ]}
+};
+
+// ============================================================
+// STATE
+// ============================================================
+let testId = null;
+let level = null;
+let config = null;
+let questions = [];
+let state = {};
+let timerInterval = null;
+
+// ============================================================
+// BUNDLE ACCESS CHECK
+// ============================================================
+function getPurchasedBundles() {
+  try { return JSON.parse(localStorage.getItem('wep_bundles') || '[]'); }
+  catch { return []; }
+}
+function markBundlePurchased(bId) {
+  const b = getPurchasedBundles();
+  if (!b.includes(bId)) { b.push(bId); localStorage.setItem('wep_bundles', JSON.stringify(b)); }
+}
+function isTestUnlocked(tId) {
+  const [lv, numStr] = tId.split('-');
+  const num = parseInt(numStr);
+  const pack = num <= 10 ? 1 : 2;
+  return getPurchasedBundles().includes(`${lv}-pack${pack}`);
+}
+
+// Backward compat: check old per-test purchases too
+function isTestAccessible(tId) {
+  if (isTestUnlocked(tId)) return true;
+  // Also check legacy per-test purchases
+  try {
+    const legacy = JSON.parse(localStorage.getItem('wep_purchased') || '[]');
+    return legacy.includes(tId);
+  } catch { return false; }
+}
+
+// ============================================================
+// INIT
+// ============================================================
+window.addEventListener('DOMContentLoaded', async () => {
+  const params = new URLSearchParams(window.location.search);
+  testId = params.get('test');
+  const sessionId = params.get('session_id');
+
+  if (!testId) {
+    document.getElementById('loadingScreen').classList.add('hidden');
+    document.getElementById('accessDenied').classList.remove('hidden');
+    return;
+  }
+
+  // Parse level from testId (e.g., "l2-05")
+  level = testId.split('-')[0];
+  config = levelConfig[level];
+  if (!config) {
+    document.getElementById('loadingScreen').classList.add('hidden');
+    document.getElementById('accessDenied').classList.remove('hidden');
+    return;
+  }
+
+  // If returning from Stripe, verify payment
+  if (sessionId) {
+    try {
+      const res = await fetch(`/api/verify-payment?session_id=${sessionId}`);
+      const data = await res.json();
+      if (data.verified && data.bundleId) {
+        markBundlePurchased(data.bundleId);
+        window.history.replaceState({}, '', `/exam?test=${testId}`);
+      }
+    } catch {}
+  }
+
+  // Check access
+  if (!isTestAccessible(testId)) {
+    document.getElementById('loadingScreen').classList.add('hidden');
+    document.getElementById('accessDenied').classList.remove('hidden');
+    return;
+  }
+
+  // Load test data
+  try {
+    const testNum = testId.split('-')[1];
+    const res = await fetch(`/data/${level}/${testNum}.json`);
+    if (!res.ok) throw new Error('Not found');
+    questions = await res.json();
+  } catch {
+    document.getElementById('loadingScreen').innerHTML = '<p class="text-red-400">Failed to load exam data. Please try again.</p>';
+    return;
+  }
+
+  // Set up UI
+  const testNumber = parseInt(testId.split('-')[1]);
+  document.title = `WSET ${config.name} Exam #${testNumber} – WineExamPrep`;
+  document.getElementById('examTitle').textContent = `WSET ${config.name} – Exam #${testNumber}`;
+  document.getElementById('welcomeTitle').textContent = `${config.name} Practice Exam #${testNumber}`;
+  document.getElementById('welcomeDesc').textContent = `${config.questions} multiple-choice questions in ${config.time/60} minutes.`;
+  document.getElementById('statQs').textContent = config.questions;
+  document.getElementById('statTime').textContent = config.time / 60;
+  document.getElementById('statPass').textContent = config.pass + '%';
+  document.getElementById('totalQs').textContent = config.questions;
+  document.getElementById('totalQs2').textContent = config.questions;
+
+  // Grading info
+  const gradingHtml = config.grading.filter(g => g.pct > 0).map(g =>
+    `<div class="flex justify-between bg-white/5 rounded-lg px-4 py-2"><span>${g.label}</span><span class="text-wine-300">${g.pct}%+</span></div>`
+  ).join('');
+  document.getElementById('gradingInfo').innerHTML = gradingHtml;
+
+  // Check for saved state
+  const saved = localStorage.getItem(`wep_exam_${testId}`);
+  if (saved) {
+    try {
+      const parsed = JSON.parse(saved);
+      if (parsed && !parsed.examFinished && parsed.examStarted) {
+        document.getElementById('resumeBtn').classList.remove('hidden');
+      }
+    } catch {}
+  }
+
+  document.getElementById('loadingScreen').classList.add('hidden');
+  document.getElementById('welcomeScreen').classList.remove('hidden');
+  buildNavDots();
+});
+
+// ============================================================
+// SCREENS
+// ============================================================
+function showScreen(id) {
+  ['loadingScreen','accessDenied','welcomeScreen','examScreen','resultsScreen'].forEach(s => {
+    document.getElementById(s).classList.add('hidden');
+  });
+  document.getElementById(id).classList.remove('hidden');
+}
+
+function startExam() {
+  state = {
+    currentQuestion: 0,
+    answers: new Array(questions.length).fill(null),
+    timeRemaining: config.time,
+    examStarted: true, examFinished: false, warningShown: false
+  };
+  saveState();
+  beginExam();
+}
+
+function resumeExam() {
+  const saved = localStorage.getItem(`wep_exam_${testId}`);
+  if (saved) { state = JSON.parse(saved); beginExam(); }
+}
+
+function beginExam() {
+  showScreen('examScreen');
+  document.getElementById('headerTimer').classList.remove('hidden');
+  buildNavDots();
+  renderQuestion();
+  startTimer();
+}
+
+function saveState() {
+  localStorage.setItem(`wep_exam_${testId}`, JSON.stringify(state));
+}
+
+// ============================================================
+// TIMER
+// ============================================================
+function startTimer() {
+  if (timerInterval) clearInterval(timerInterval);
+  updateTimerDisplay();
+  timerInterval = setInterval(() => {
+    state.timeRemaining--;
+    if (state.timeRemaining <= 0) { state.timeRemaining = 0; clearInterval(timerInterval); finishExam(); return; }
+    if (state.timeRemaining === 300 && !state.warningShown) {
+      state.warningShown = true;
+      document.getElementById('timerWarning').classList.remove('hidden');
+      document.getElementById('timerDisplay').classList.add('timer-warning','text-red-400');
+    }
+    updateTimerDisplay();
+    if (state.timeRemaining % 30 === 0) saveState();
+  }, 1000);
+}
+
+function updateTimerDisplay() {
+  const m = Math.floor(state.timeRemaining / 60);
+  const s = state.timeRemaining % 60;
+  document.getElementById('timerDisplay').textContent = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+}
+
+function dismissWarning() { document.getElementById('timerWarning').classList.add('hidden'); }
+
+// ============================================================
+// QUESTIONS
+// ============================================================
+function renderQuestion() {
+  const q = questions[state.currentQuestion];
+  const total = questions.length;
+  document.getElementById('currentQ').textContent = state.currentQuestion + 1;
+  document.getElementById('qCategory').textContent = q.category;
+  document.getElementById('qText').textContent = q.text;
+
+  const answered = state.answers.filter(a => a !== null).length;
+  document.getElementById('answeredCount').textContent = answered;
+  document.getElementById('progressBar').style.width = ((state.currentQuestion + 1) / total * 100) + '%';
+
+  const container = document.getElementById('optionsContainer');
+  container.innerHTML = '';
+  const labels = ['A','B','C','D'];
+  q.options.forEach((opt, i) => {
+    const btn = document.createElement('button');
+    btn.className = `option-btn w-full text-left p-4 rounded-xl border border-white/10 hover:border-wine-600/50 flex items-start gap-3 focus:outline-none focus:ring-2 focus:ring-wine-500 ${state.answers[state.currentQuestion] === i ? 'selected' : ''}`;
+    btn.setAttribute('role','radio');
+    btn.setAttribute('aria-checked', state.answers[state.currentQuestion] === i ? 'true' : 'false');
+    btn.innerHTML = `<span class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-sm font-semibold shrink-0 mt-0.5">${labels[i]}</span><span class="text-sm sm:text-base">${opt}</span>`;
+    btn.onclick = () => selectAnswer(i);
+    container.appendChild(btn);
+  });
+
+  document.getElementById('prevBtn').disabled = state.currentQuestion === 0;
+  document.getElementById('prevBtn').classList.toggle('opacity-30', state.currentQuestion === 0);
+
+  if (state.currentQuestion === total - 1) {
+    document.getElementById('nextBtn').classList.add('hidden');
+    document.getElementById('submitBtn').classList.remove('hidden');
+  } else {
+    document.getElementById('nextBtn').classList.remove('hidden');
+    document.getElementById('submitBtn').classList.add('hidden');
+  }
+  updateNavDots();
+}
+
+function selectAnswer(idx) { state.answers[state.currentQuestion] = idx; saveState(); renderQuestion(); }
+function nextQuestion() { if (state.currentQuestion < questions.length - 1) { state.currentQuestion++; renderQuestion(); } }
+function prevQuestion() { if (state.currentQuestion > 0) { state.currentQuestion--; renderQuestion(); } }
+function goToQuestion(idx) { state.currentQuestion = idx; renderQuestion(); }
+
+// ============================================================
+// NAV DOTS
+// ============================================================
+function buildNavDots() {
+  const container = document.getElementById('navDots');
+  container.innerHTML = '';
+  for (let i = 0; i < questions.length; i++) {
+    const dot = document.createElement('button');
+    dot.className = 'nav-dot w-7 h-7 rounded-full text-xs font-medium bg-white/5 border border-white/10 hover:border-wine-600 flex items-center justify-center focus:outline-none focus:ring-1 focus:ring-wine-500';
+    dot.textContent = i + 1;
+    dot.setAttribute('aria-label', `Go to question ${i + 1}`);
+    dot.onclick = () => goToQuestion(i);
+    container.appendChild(dot);
+  }
+}
+
+function updateNavDots() {
+  const dots = document.getElementById('navDots').children;
+  for (let i = 0; i < questions.length; i++) {
+    dots[i].classList.toggle('answered', state.answers[i] !== null);
+    dots[i].classList.toggle('current', i === state.currentQuestion);
+  }
+}
+
+// ============================================================
+// SUBMIT & SCORING
+// ============================================================
+function submitExam() {
+  const unanswered = state.answers.filter(a => a === null).length;
+  const msg = unanswered > 0
+    ? `You have ${unanswered} unanswered question${unanswered > 1 ? 's' : ''}. Unanswered questions will be marked incorrect. Submit anyway?`
+    : `You have answered all ${questions.length} questions. Submit your exam?`;
+  document.getElementById('confirmMsg').textContent = msg;
+  document.getElementById('confirmModal').classList.remove('hidden');
+}
+function closeConfirm() { document.getElementById('confirmModal').classList.add('hidden'); }
+function confirmSubmit() { closeConfirm(); finishExam(); }
+
+function finishExam() {
+  if (timerInterval) clearInterval(timerInterval);
+  state.examFinished = true;
+  saveState();
+  document.getElementById('headerTimer').classList.add('hidden');
+  showResults();
+}
+
+function showResults() {
+  showScreen('resultsScreen');
+  let correct = 0;
+  questions.forEach((q, i) => { if (state.answers[i] === q.correct) correct++; });
+  const pct = Math.round((correct / questions.length) * 100);
+
+  let grade = 'Below Pass', gradeColor = 'text-red-400', borderColor = 'border-red-500';
+  for (const g of config.grading) {
+    if (pct >= g.pct) {
+      grade = g.label;
+      if (grade === 'Distinction') { gradeColor = 'text-yellow-400'; borderColor = 'border-yellow-500'; }
+      else if (grade === 'Merit') { gradeColor = 'text-emerald-400'; borderColor = 'border-emerald-500'; }
+      else if (grade === 'Pass') { gradeColor = 'text-wine-300'; borderColor = 'border-wine-500'; }
+      break;
+    }
+  }
+
+  document.getElementById('scorePercent').textContent = pct + '%';
+  document.getElementById('gradeLabel').className = `text-2xl font-semibold mb-2 ${gradeColor}`;
+  document.getElementById('gradeLabel').textContent = grade;
+  document.getElementById('scoreDetail').textContent = `${correct} out of ${questions.length} correct`;
+  document.getElementById('scoreCircle').className = `w-36 h-36 mx-auto rounded-full border-4 ${borderColor} flex flex-col items-center justify-center my-6`;
+}
+
+function showReview() {
+  const container = document.getElementById('reviewContainer');
+  container.classList.remove('hidden');
+  container.innerHTML = '';
+  const labels = ['A','B','C','D'];
+  questions.forEach((q, i) => {
+    const userAns = state.answers[i];
+    const isCorrect = userAns === q.correct;
+    const card = document.createElement('div');
+    card.className = `glass rounded-xl p-5 ${isCorrect ? 'border-l-4 border-l-emerald-500' : 'border-l-4 border-l-red-500'}`;
+    let optionsHtml = q.options.map((opt, oi) => {
+      let cls = 'p-3 rounded-lg text-sm flex items-start gap-2 ';
+      if (oi === q.correct) cls += 'correct ';
+      if (oi === userAns && oi !== q.correct) cls += 'incorrect ';
+      if (oi !== q.correct && oi !== userAns) cls += 'bg-white/5 ';
+      const icon = oi === q.correct ? '&#10003;' : (oi === userAns ? '&#10007;' : '');
+      return `<div class="option-btn ${cls}"><span class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center text-xs font-semibold shrink-0">${labels[oi]}</span><span>${opt}</span>${icon ? `<span class="ml-auto text-sm">${icon}</span>` : ''}</div>`;
+    }).join('');
+    card.innerHTML = `<div class="flex items-start gap-2 mb-3"><span class="text-xs px-2 py-0.5 rounded-full ${isCorrect ? 'bg-emerald-900/40 text-emerald-300' : 'bg-red-900/40 text-red-300'}">${isCorrect ? 'Correct' : 'Incorrect'}</span><span class="text-xs text-gray-500">${q.category}</span></div><p class="font-medium mb-3 text-sm sm:text-base">${i + 1}. ${q.text}</p><div class="space-y-2 mb-3">${optionsHtml}</div><div class="text-sm text-gray-400 bg-white/5 rounded-lg p-3"><strong class="text-wine-300">Explanation:</strong> ${q.explanation}</div>`;
+    container.appendChild(card);
+  });
+  container.scrollIntoView({ behavior: 'smooth' });
+}
+
+function restartExam() {
+  localStorage.removeItem(`wep_exam_${testId}`);
+  document.getElementById('reviewContainer').classList.add('hidden');
+  document.getElementById('timerDisplay').classList.remove('timer-warning','text-red-400');
+  showScreen('welcomeScreen');
+  document.getElementById('resumeBtn').classList.add('hidden');
+}
+
+// Keyboard nav
+document.addEventListener('keydown', (e) => {
+  if (!state.examStarted || state.examFinished) return;
+  if (e.key === 'ArrowRight' || e.key === 'n') nextQuestion();
+  if (e.key === 'ArrowLeft' || e.key === 'p') prevQuestion();
+  const keyMap = { '1':0,'2':1,'3':2,'4':3,'a':0,'A':0,'b':1,'B':1,'c':2,'C':2,'d':3,'D':3 };
+  if (e.key in keyMap) selectAnswer(keyMap[e.key]);
+});
+</script>
+</body>
+</html>
