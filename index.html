@@ -590,10 +590,24 @@ function showLevel(level) {
 // ============================================================
 // BUY BUNDLE
 // ============================================================
+// Holds the bundle a signed-out user tried to buy, so we can resume the
+// purchase automatically right after they finish signing up.
+let pendingPurchase = null;
+
+function resumePendingPurchase() {
+  if (pendingPurchase && currentUser && currentUser.supabaseId) {
+    const p = pendingPurchase;
+    pendingPurchase = null;
+    buyBundle(p.bId, p.level, p.pack, p.promoActive);
+  }
+}
+
 async function buyBundle(bId, level, pack, promoActive) {
-  // Require login before purchase
+  // If not signed in, don't dead-end with an alert. Remember what they wanted,
+  // launch the sign-up flow, and resume this purchase once they're signed in
+  // (see resumePendingPurchase, called after login/registration succeeds).
   if (!currentUser || !currentUser.supabaseId) {
-    alert('Please sign in before purchasing.');
+    pendingPurchase = { bId, level, pack, promoActive };
     handleLogin();
     return;
   }
@@ -709,6 +723,7 @@ async function handleLogin() {
       updateLoginUI();
       renderBundleCTAs();
       renderTests();
+      resumePendingPurchase();
     } else {
       // New user — show registration modal
       currentUser = { airkitUuid, email, displayName, pendingRegistration: true };
@@ -774,6 +789,7 @@ async function submitRegistration(event) {
     updateLoginUI();
     renderBundleCTAs();
     renderTests();
+    resumePendingPurchase();
   } catch (err) {
     errEl.textContent = err.message;
     errEl.classList.remove('hidden');
