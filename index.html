@@ -666,9 +666,20 @@ async function handleLogin() {
     console.log('AIRkit login result:', result);
     if (!result) return;
 
-    const airkitUuid = result.uuid || result.userId || null;
-    const email = result.email || result.userMetadata?.email || null;
-    const displayName = result.displayName || result.userMetadata?.displayName || null;
+    // AIRkit (1.7.0) does NOT return the email/uuid in the login() result.
+    // Identity details live under getUserInfo().user — { id, email, abstractAccountAddress, ... }.
+    let userInfo = null;
+    try {
+      userInfo = await airService.getUserInfo();
+    } catch (e) {
+      console.warn('AIRkit getUserInfo failed:', e);
+    }
+    console.log('AIRkit user info:', userInfo);
+    const airUser = (userInfo && userInfo.user) || {};
+
+    const airkitUuid = airUser.id || (userInfo && userInfo.airId) || result.uuid || result.userId || null;
+    const email = airUser.email || result.email || result.userMetadata?.email || null;
+    const displayName = (email ? email.split('@')[0] : null) || result.displayName || null;
 
     if (!email) {
       alert('Could not retrieve your email from the login provider.');
