@@ -54,6 +54,8 @@ module.exports = async (req, res) => {
         bundleId,
         level: session.metadata.level,
         pack: session.metadata.pack,
+        amount: (session.amount_total != null) ? session.amount_total / 100 : null,
+        currency: (session.currency || 'usd').toUpperCase(),
         customerEmail: session.customer_details?.email || userEmail || null,
       });
     } else {
