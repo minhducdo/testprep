@@ -623,6 +623,12 @@ async function buyBundle(bId, level, pack, promoActive) {
 // AIRKIT LOGIN + SUPABASE PROFILE
 // ============================================================
 const AIRKIT_PARTNER_ID = '8ec22b8f-c2f2-4678-aa80-4c22a3b4b250';
+// Pin the AIRkit SDK to a specific STABLE version. The bare specifier
+// (https://esm.sh/@mocanetwork/airkit) resolves to the npm "latest" dist-tag,
+// which is currently a pre-release (1.9.0-beta.x) whose API differs and throws
+// "Cannot read properties of undefined (reading 'length')" during login().
+// 1.7.0 is the highest stable release and matches the official docs.
+const AIRKIT_SDK_URL = 'https://esm.sh/@mocanetwork/airkit@1.7.0';
 let currentUser = null;
 let airService = null;
 let airBuildEnv = null;
@@ -630,12 +636,14 @@ let airBuildEnv = null;
 // Load AIRkit SDK dynamically from CDN
 (async function loadAirKit() {
   try {
-    const mod = await import('https://esm.sh/@mocanetwork/airkit');
+    const mod = await import(AIRKIT_SDK_URL);
     airService = new mod.AirService({ partnerId: AIRKIT_PARTNER_ID });
     airBuildEnv = mod.BUILD_ENV;
-    console.log('AIRkit SDK loaded successfully');
+    console.log('AIRkit SDK loaded successfully', {
+      buildEnvKeys: airBuildEnv ? Object.keys(airBuildEnv) : null
+    });
   } catch (err) {
-    console.warn('AIRkit SDK not available:', err.message);
+    console.error('AIRkit SDK not available:', err);
   }
 })();
 
@@ -645,9 +653,17 @@ async function handleLogin() {
     return;
   }
 
+  // Guard against a missing/changed SANDBOX build env (the original failure mode).
+  if (!airBuildEnv || !airBuildEnv.SANDBOX) {
+    console.error('AIRkit build environment is unavailable:', airBuildEnv);
+    alert('Login is temporarily unavailable due to a configuration issue. Please try again later.');
+    return;
+  }
+
   try {
     await airService.init({ buildEnv: airBuildEnv.SANDBOX });
     const result = await airService.login();
+    console.log('AIRkit login result:', result);
     if (!result) return;
 
     const airkitUuid = result.uuid || result.userId || null;
@@ -689,7 +705,7 @@ async function handleLogin() {
       showRegistrationModal(email);
     }
   } catch (err) {
-    console.warn('Login error:', err.message);
+    console.error('Login error:', err);
     alert('Login failed. Please try again.');
   }
 }
