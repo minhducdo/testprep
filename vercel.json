@@ -11,10 +11,5 @@
     { "src": "/exam", "dest": "/public/exam.html" },
     { "src": "/exam.html", "dest": "/public/exam.html" },
     { "src": "/(.*)", "dest": "/public/$1" }
-  ],
-  "env": {
-    "STRIPE_SECRET_KEY": "@stripe_secret_key",
-    "STRIPE_PUBLISHABLE_KEY": "@stripe_publishable_key",
-    "SITE_URL": "@site_url"
-  }
+  ]
 }
