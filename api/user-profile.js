@@ -13,22 +13,21 @@ module.exports = async (req, res) => {
 
   const db = supabase();
 
-  // ── GET: Lookup user by airkit_uuid or email, return profile + purchases ──
+  // ── GET: Lookup user by airkit_uuid, return profile + purchases ──
+  // Email-based lookup is intentionally not supported — it would allow
+  // unauthenticated callers to enumerate whether any email is registered.
   if (req.method === 'GET') {
-    const { airkit_uuid, email } = req.query;
-    if (!airkit_uuid && !email) {
-      return res.status(400).json({ error: 'Provide airkit_uuid or email' });
+    const { airkit_uuid } = req.query;
+    if (!airkit_uuid) {
+      return res.status(400).json({ error: 'Provide airkit_uuid' });
     }
 
     try {
-      // Find user
-      let query = db.from('users').select('*');
-      if (airkit_uuid) {
-        query = query.eq('airkit_uuid', airkit_uuid);
-      } else {
-        query = query.eq('email', email);
-      }
-      const { data: user, error: userErr } = await query.single();
+      const { data: user, error: userErr } = await db
+        .from('users')
+        .select('*')
+        .eq('airkit_uuid', airkit_uuid)
+        .single();
 
       if (userErr || !user) {
         return res.status(404).json({ found: false });
