@@ -1,4 +1,5 @@
 {
+  "outputDirectory": ".",
   "routes": [
     { "src": "/data/(.*)", "status": 403 },
     {
