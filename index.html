@@ -305,7 +305,8 @@ Full-length practice exams for WSET Levels 1, 2 & 3. Realistic questions, timed 
 
 <!-- Registration Modal -->
 <div id="regModal" class="hidden fixed inset-0 z-[70] flex items-center justify-center bg-[#181315]/90 backdrop-blur-sm">
-<div class="glass rounded-2xl p-8 max-w-md w-full mx-4">
+<div class="glass rounded-2xl p-8 max-w-md w-full mx-4 relative">
+<button onclick="dismissRegistrationModal()" aria-label="Close" class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-lg text-[#665a55] hover:text-[#e8d5c4] hover:bg-white/[0.05] transition-colors text-lg leading-none">&times;</button>
 <h3 class="text-xl font-semibold text-[#c5a46e] mb-2 brand">Complete Your Registration</h3>
 <p class="text-sm text-[#8b6f6a] mb-6">Tell us a bit about yourself to get started.</p>
 <form id="regForm" class="space-y-4" onsubmit="submitRegistration(event)">
@@ -676,9 +677,6 @@ try {
 const mod = await import(AIRKIT_SDK_URL);
 airService = new mod.AirService({ partnerId: AIRKIT_PARTNER_ID });
 airBuildEnv = mod.BUILD_ENV;
-console.log('AIRkit SDK loaded successfully', {
-buildEnvKeys: airBuildEnv ? Object.keys(airBuildEnv) : null
-});
 } catch (err) {
 console.error('AIRkit SDK not available:', err);
 }
@@ -700,7 +698,6 @@ return;
 try {
 await airService.init({ buildEnv: airBuildEnv.SANDBOX });
 const result = await airService.login();
-console.log('AIRkit login result:', result);
 if (!result) return;
 
 // AIRkit (1.7.0) does NOT return the email/uuid in the login() result.
@@ -709,9 +706,8 @@ let userInfo = null;
 try {
 userInfo = await airService.getUserInfo();
 } catch (e) {
-console.warn('AIRkit getUserInfo failed:', e);
+console.error('AIRkit getUserInfo failed:', e.message);
 }
-console.log('AIRkit user info:', userInfo);
 const airUser = (userInfo && userInfo.user) || {};
 
 const airkitUuid = airUser.id || (userInfo && userInfo.airId) || result.uuid || result.userId || null;
@@ -766,6 +762,16 @@ alert('Login failed. Please try again.');
 function showRegistrationModal(email) {
 document.getElementById('regModal').classList.remove('hidden');
 populateCountryDropdown();
+}
+
+function dismissRegistrationModal() {
+document.getElementById('regModal').classList.add('hidden');
+document.getElementById('regForm').reset();
+document.getElementById('regError').classList.add('hidden');
+// Abandon the pending registration — user is back to signed-out state
+localStorage.removeItem('wep_user');
+currentUser = null;
+updateLoginUI();
 }
 
 async function submitRegistration(event) {
@@ -905,6 +911,11 @@ const menu = document.getElementById('userMenu');
 const btn = document.getElementById('loginBtn');
 if (menu && !menu.contains(e.target) && !btn.contains(e.target)) {
 menu.classList.add('hidden');
+}
+});
+document.addEventListener('keydown', (e) => {
+if (e.key === 'Escape' && !document.getElementById('regModal').classList.contains('hidden')) {
+dismissRegistrationModal();
 }
 });
 function showDashboard() {
