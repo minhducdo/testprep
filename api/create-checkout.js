@@ -1,8 +1,11 @@
 const Stripe = require('stripe');
 
+const VALID_LEVELS = new Set(['l1', 'l2', 'l3']);
+const VALID_PACKS = new Set(['pack1', 'pack2']);
+
 module.exports = async (req, res) => {
-  // CORS
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  const origin = process.env.SITE_URL || 'https://wineexamprep.com';
+  res.setHeader('Access-Control-Allow-Origin', origin);
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   if (req.method === 'OPTIONS') return res.status(200).end();
@@ -14,8 +17,11 @@ module.exports = async (req, res) => {
   if (!bundleId || !level || !pack) {
     return res.status(400).json({ error: 'Missing bundleId, level, or pack' });
   }
+  if (!VALID_LEVELS.has(level) || !VALID_PACKS.has(pack)) {
+    return res.status(400).json({ error: 'Invalid level or pack' });
+  }
 
-  // Pricing: L1 = $5, L2/L3 = $10 (promo: $5)
+  // Pricing: L1 = $5, L2/L3 = $10 (promo: $5 per-session timer on client)
   const pricing = {
     l1: { regular: 500, promo: 500 },
     l2: { regular: 1000, promo: 500 },
@@ -23,11 +29,8 @@ module.exports = async (req, res) => {
   };
 
   const levelPricing = pricing[level];
-  if (!levelPricing) {
-    return res.status(400).json({ error: 'Invalid level' });
-  }
-
   const unitAmount = promo ? levelPricing.promo : levelPricing.regular;
+
   const levelNames = { l1: 'Level 1', l2: 'Level 2', l3: 'Level 3' };
   const startTest = pack === 'pack1' ? 1 : 11;
   const endTest = pack === 'pack1' ? 10 : 20;
@@ -60,13 +63,11 @@ module.exports = async (req, res) => {
       },
     };
 
-    // Pre-fill email on Stripe checkout if we have it
     if (userEmail) {
       sessionConfig.customer_email = userEmail;
     }
 
     const session = await stripe.checkout.sessions.create(sessionConfig);
-
     res.status(200).json({ url: session.url, sessionId: session.id });
   } catch (err) {
     console.error('Stripe error:', err);

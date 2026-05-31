@@ -294,13 +294,25 @@ window.addEventListener('DOMContentLoaded', async () => {
     return;
   }
 
-  // Load test data
+  // Load test data via server-side authenticated endpoint
+  const user = JSON.parse(localStorage.getItem('wep_user') || '{}');
+  const userId = user.supabaseId || '';
+  if (!userId) {
+    document.getElementById('loadingScreen').classList.add('hidden');
+    document.getElementById('accessDenied').classList.remove('hidden');
+    return;
+  }
   try {
-    const testNum = testId.split('-')[1];
-    const res = await fetch(`/data/${level}/${testNum}.json`);
-    if (!res.ok) throw new Error('Not found');
+    const res = await fetch(`/api/exam-data?test=${testId}&userId=${encodeURIComponent(userId)}`);
+    if (res.status === 403 || res.status === 401) {
+      document.getElementById('loadingScreen').classList.add('hidden');
+      document.getElementById('accessDenied').classList.remove('hidden');
+      return;
+    }
+    if (!res.ok) throw new Error(`Server error: ${res.status}`);
     questions = await res.json();
-  } catch {
+  } catch (err) {
+    console.error('Exam load error:', err);
     document.getElementById('loadingScreen').innerHTML = '<p class="text-red-400">Failed to load exam data. Please try again.</p>';
     return;
   }

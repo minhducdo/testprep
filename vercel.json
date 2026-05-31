@@ -1,5 +1,7 @@
 {
-  "rewrites": [
-    { "source": "/exam", "destination": "/exam.html" }
+  "routes": [
+    { "src": "/data/(.*)", "status": 403 },
+    { "handle": "filesystem" },
+    { "src": "/exam", "dest": "/exam.html" }
   ]
 }
