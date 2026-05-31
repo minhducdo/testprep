@@ -1,7 +1,6 @@
 const Stripe = require('stripe');
 
 const VALID_LEVELS = new Set(['l1', 'l2', 'l3']);
-const VALID_PACKS = new Set(['pack1', 'pack2']);
 
 module.exports = async (req, res) => {
   const origin = process.env.SITE_URL || 'https://wineexamprep.com';
@@ -17,7 +16,10 @@ module.exports = async (req, res) => {
   if (!bundleId || !level || !pack) {
     return res.status(400).json({ error: 'Missing bundleId, level, or pack' });
   }
-  if (!VALID_LEVELS.has(level) || !VALID_PACKS.has(pack)) {
+
+  // pack is sent as a number (1 or 2) from the client
+  const packNum = parseInt(pack, 10);
+  if (!VALID_LEVELS.has(level) || (packNum !== 1 && packNum !== 2)) {
     return res.status(400).json({ error: 'Invalid level or pack' });
   }
 
@@ -32,8 +34,8 @@ module.exports = async (req, res) => {
   const unitAmount = promo ? levelPricing.promo : levelPricing.regular;
 
   const levelNames = { l1: 'Level 1', l2: 'Level 2', l3: 'Level 3' };
-  const startTest = pack === 'pack1' ? 1 : 11;
-  const endTest = pack === 'pack1' ? 10 : 20;
+  const startTest = packNum === 1 ? 1 : 11;
+  const endTest = packNum === 1 ? 10 : 20;
   const siteUrl = process.env.SITE_URL || 'https://wineexamprep.com';
 
   try {
