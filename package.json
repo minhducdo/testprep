@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "stripe": "^17.0.0",
-    "@supabase/supabase-js": "^2.45.0"
+    "@supabase/supabase-js": "^2.45.0",
+    "stripe": "^17.0.0"
   },
   "scripts": {
-    "dev": "vercel dev"
+    "dev": "vercel dev",
+    "build:css": "tailwindcss -i styles/input.css -o styles.css --minify",
+    "build": "npm run build:css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
   }
 }

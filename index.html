@@ -16,26 +16,10 @@
 <meta name="description" content="Prepare for your WSET wine certification with 60 full-length practice exams. Level 1, 2 & 3 mock tests with instant scoring and detailed explanations.">
 <link rel="canonical" href="https://wineexamprep.com">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M20 8h24v4c0 11-5 18-10 22v10h8v4H22v-4h8V34C25 30 20 23 20 12V8z' fill='%23722f37'/%3E%3Cpath d='M24 12c0 8 4 14 8 17 4-3 8-9 8-17H24z' fill='%23c5a46e'/%3E%3C/svg%3E">
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-tailwind.config={theme:{extend:{colors:{wine:{50:'#faf5f0',100:'#f0e6da',200:'#e8d5c4',300:'#c5a46e',400:'#b08a4a',500:'#8b6f6a',600:'#722f37',700:'#5a2530',800:'#2c2528',900:'#1f1a1d',950:'#181315'}}}}}
-</script>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
-body{font-family:'Inter',sans-serif}
-h1,h2,h3,h4,.brand{font-family:'Playfair Display',serif}
-.glass{background:rgba(44,37,40,0.6);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.06)}
-.card-hover{transition:all .25s ease}
-.card-hover:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(114,47,55,0.15)}
-.fade-up{opacity:0;transform:translateY(20px);transition:all .6s ease}
-.fade-up.visible{opacity:1;transform:translateY(0)}
-.promo-pulse{animation:promoPulse 2s infinite}
-@keyframes promoPulse{0%,100%{opacity:1}50%{opacity:.7}}
-.strike{text-decoration:line-through;opacity:.5}
-::-webkit-scrollbar{width:6px}
-::-webkit-scrollbar-track{background:rgba(0,0,0,0.2)}
-::-webkit-scrollbar-thumb{background:#722f37;border-radius:3px}
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="/styles.css">
 </head>
 <body class="bg-[#181315] text-[#e8d5c4]">
 
@@ -342,6 +326,7 @@ Full-length practice exams for WSET Levels 1, 2 & 3. Realistic questions, timed 
 </div>
 </div>
 
+<script src="/js/wep-shared.js"></script>
 <script>
 // ============================================================
 // BUNDLE CONFIGURATION
@@ -451,32 +436,7 @@ document.getElementById('l3-price-sub').textContent = 'per 10 exams · $1.00/tes
 }
 }
 
-// ============================================================
-// PURCHASED BUNDLES (localStorage + Supabase sync)
-// ============================================================
-function getPurchasedBundles() {
-try { return JSON.parse(localStorage.getItem('wep_bundles') || '[]'); }
-catch { return []; }
-}
-function markBundlePurchased(bId) {
-const b = getPurchasedBundles();
-if (!b.includes(bId)) { b.push(bId); localStorage.setItem('wep_bundles', JSON.stringify(b)); }
-}
-function syncBundlesFromServer(bundleIds) {
-// Merge server bundles into localStorage
-const local = getPurchasedBundles();
-let changed = false;
-bundleIds.forEach(bId => {
-if (!local.includes(bId)) { local.push(bId); changed = true; }
-});
-if (changed) localStorage.setItem('wep_bundles', JSON.stringify(local));
-}
-function isTestUnlocked(testId) {
-const [level, numStr] = testId.split('-');
-const num = parseInt(numStr);
-const pack = num <= 10 ? 1 : 2;
-return getPurchasedBundles().includes(bundleId(level, pack));
-}
+// Purchase state helpers loaded from /js/wep-shared.js
 
 // ============================================================
 // PAYMENT RETURN HANDLER
