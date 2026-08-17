@@ -13,31 +13,31 @@
   window.track = function(name, params){ try { gtag('event', name, params || {}); } catch(e){} };
 </script>
 <title>Practice Exam – WineExamPrep</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M20 8h24v4c0 11-5 18-10 22v10h8v4H22v-4h8V34C25 30 20 23 20 12V8z' fill='%23722f37'/%3E%3Cpath d='M24 12c0 8 4 14 8 17 4-3 8-9 8-17H24z' fill='%23c5a46e'/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M20 8h24v4c0 11-5 18-10 22v10h8v4H22v-4h8V34C25 30 20 23 20 12V8z' fill='%234A1F26'/%3E%3Cpath d='M24 12c0 8 4 14 8 17 4-3 8-9 8-17H24z' fill='%23B08D57'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap">
 <link rel="stylesheet" href="/styles.css">
 </head>
-<body class="bg-[#181315] text-[#e8d5c4] min-h-screen">
+<body class="bg-[#F5F1EA] text-[#2A2320] min-h-screen grain">
 
-<div class="fixed inset-0 -z-10 bg-[#181315]"></div>
+<div class="fixed inset-0 -z-10 bg-[#F5F1EA]"></div>
 
 <!-- Header -->
-<header class="border-b border-white/[0.06] bg-[#181315]/90 backdrop-blur-md sticky top-0 z-50">
+<header class="border-b border-[#4A1F26]/10 bg-[#F5F1EA]/90 backdrop-blur-md sticky top-0 z-50">
   <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
     <div class="flex items-center gap-3">
       <a href="/" class="flex items-center gap-2">
-        <div class="w-8 h-8 rounded-full bg-[#722f37] flex items-center justify-center text-sm">&#127863;</div>
+        <div class="w-8 h-8 rounded-full bg-[#4A1F26] flex items-center justify-center text-sm">&#127863;</div>
         <div>
-          <h1 class="brand text-lg font-semibold text-[#c5a46e] leading-tight" id="examTitle">Loading...</h1>
-          <p class="text-xs text-[#665a55]">wineexamprep.com</p>
+          <h1 class="brand text-lg font-semibold text-[#B08D57] leading-tight" id="examTitle">Loading...</h1>
+          <p class="text-xs text-[#8A7A6B]">wineexamprep.com</p>
         </div>
       </a>
     </div>
     <div id="headerTimer" class="hidden text-right">
-      <div id="timerDisplay" class="font-mono text-xl font-semibold text-[#c5a46e]">60:00</div>
-      <div class="text-xs text-[#665a55]">remaining</div>
+      <div id="timerDisplay" class="font-mono text-xl font-semibold text-[#B08D57]">60:00</div>
+      <div class="text-xs text-[#8A7A6B]">remaining</div>
     </div>
   </div>
 </header>
@@ -46,107 +46,108 @@
 
   <!-- LOADING -->
   <section id="loadingScreen" class="text-center py-20">
-    <div class="w-12 h-12 border-2 border-[#722f37] border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-    <p class="text-[#8b6f6a]">Loading exam...</p>
+    <div class="w-12 h-12 border-2 border-[#4A1F26] border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+    <p class="text-[#7A6A5D]">Loading exam...</p>
   </section>
 
   <!-- ACCESS DENIED -->
   <section id="accessDenied" class="hidden text-center py-20 fade-in">
     <div class="text-5xl mb-4">&#128274;</div>
-    <h2 class="text-2xl font-bold text-[#c5a46e] brand mb-3">Bundle Required</h2>
-    <p class="text-[#8b6f6a] mb-6">You need to purchase the exam bundle to access this test.</p>
-    <a href="/#bundles" class="px-6 py-3 bg-[#722f37] hover:bg-[#8a3a44] rounded-xl font-semibold transition-colors inline-block">View Bundles & Pricing</a>
+    <h2 class="text-2xl font-bold text-[#B08D57] brand mb-3">Bundle Required</h2>
+    <p class="text-[#7A6A5D] mb-6">You need to purchase the exam bundle to access this test.</p>
+    <a href="/#bundles" class="px-6 py-3 bg-[#4A1F26] hover:bg-[#5E2A31] text-[#F5F1EA] rounded-xl font-semibold transition-colors inline-block">View Bundles & Pricing</a>
   </section>
 
   <!-- WELCOME SCREEN -->
   <section id="welcomeScreen" class="hidden fade-in">
     <div class="text-center mb-10">
-      <h2 class="text-4xl font-bold text-[#c5a46e] mb-3 brand" id="welcomeTitle">Practice Exam</h2>
-      <p class="text-[#8b6f6a] max-w-xl mx-auto" id="welcomeDesc"></p>
+      <h2 class="text-4xl font-bold text-[#B08D57] mb-3 brand" id="welcomeTitle">Practice Exam</h2>
+      <p class="text-[#7A6A5D] max-w-xl mx-auto" id="welcomeDesc"></p>
     </div>
     <div class="glass rounded-2xl p-8 max-w-2xl mx-auto mb-8">
-      <h3 class="text-xl font-semibold mb-4 text-[#e8d5c4] brand">Exam Format</h3>
+      <h3 class="text-xl font-semibold mb-4 text-[#2A2320] brand">Exam Format</h3>
       <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-6 text-center">
-        <div class="bg-white/[0.03] rounded-xl p-4"><div class="text-2xl font-bold text-[#c5a46e]" id="statQs">50</div><div class="text-xs text-[#8b6f6a] mt-1">Questions</div></div>
-        <div class="bg-white/[0.03] rounded-xl p-4"><div class="text-2xl font-bold text-[#c5a46e]" id="statTime">60</div><div class="text-xs text-[#8b6f6a] mt-1">Minutes</div></div>
-        <div class="bg-white/[0.03] rounded-xl p-4"><div class="text-2xl font-bold text-[#c5a46e]" id="statPass">55%</div><div class="text-xs text-[#8b6f6a] mt-1">Pass Mark</div></div>
+        <div class="bg-[#4A1F26]/[0.04] rounded-xl p-4"><div class="text-2xl font-bold text-[#B08D57]" id="statQs">50</div><div class="text-xs text-[#7A6A5D] mt-1">Questions</div></div>
+        <div class="bg-[#4A1F26]/[0.04] rounded-xl p-4"><div class="text-2xl font-bold text-[#B08D57]" id="statTime">60</div><div class="text-xs text-[#7A6A5D] mt-1">Minutes</div></div>
+        <div class="bg-[#4A1F26]/[0.04] rounded-xl p-4"><div class="text-2xl font-bold text-[#B08D57]" id="statPass">55%</div><div class="text-xs text-[#7A6A5D] mt-1">Pass Mark</div></div>
       </div>
       <div id="gradingInfo" class="space-y-2 text-sm mb-6"></div>
-      <p class="text-xs text-[#665a55] mb-6">This is a closed-book practice exam. No notes or references should be used. Your progress is saved automatically.</p>
-      <button onclick="startExam()" class="w-full py-4 bg-[#722f37] hover:bg-[#8a3a44] rounded-xl font-semibold text-lg transition-colors focus:outline-none focus:ring-2 focus:ring-wine-500 focus:ring-offset-2 focus:ring-offset-[#181315]">Begin Exam</button>
-      <button onclick="resumeExam()" id="resumeBtn" class="hidden w-full mt-3 py-3 border border-[#722f37] hover:bg-[#1f1a1d]/50 rounded-xl font-medium transition-colors">Resume Previous Attempt</button>
+      <p class="text-xs text-[#8A7A6B] mb-6">This is a closed-book practice exam. No notes or references should be used. Your progress is saved automatically.</p>
+      <button onclick="startExam()" class="w-full py-4 bg-[#4A1F26] hover:bg-[#5E2A31] text-[#F5F1EA] rounded-xl font-semibold text-lg transition-colors focus:outline-none focus:ring-2 focus:ring-wine-500 focus:ring-offset-2 focus:ring-offset-[#F5F1EA]">Begin Exam</button>
+      <button onclick="resumeExam()" id="resumeBtn" class="hidden w-full mt-3 py-3 border border-[#4A1F26] hover:bg-[#EFE8DD]/50 rounded-xl font-medium transition-colors">Resume Previous Attempt</button>
     </div>
   </section>
 
   <!-- EXAM SCREEN -->
   <section id="examScreen" class="hidden fade-in">
     <div class="mb-6">
-      <div class="flex justify-between text-sm text-[#8b6f6a] mb-2">
+      <div class="flex justify-between text-sm text-[#7A6A5D] mb-2">
         <span>Question <span id="currentQ">1</span> of <span id="totalQs">50</span></span>
         <span><span id="answeredCount">0</span>/<span id="totalQs2">50</span> answered</span>
       </div>
-      <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
-        <div id="progressBar" class="h-full bg-[#722f37] rounded-full progress-fill" style="width:2%"></div>
+      <div class="w-full h-2 bg-[#4A1F26]/10 rounded-full overflow-hidden">
+        <div id="progressBar" class="h-full bg-[#4A1F26] rounded-full progress-fill" style="width:2%"></div>
       </div>
     </div>
     <div id="navDots" class="flex flex-wrap gap-1.5 mb-6 justify-center" role="navigation"></div>
     <div class="glass rounded-2xl p-6 sm:p-8 mb-6">
       <div class="flex items-start gap-3 mb-2">
-        <span id="qCategory" class="text-xs px-2 py-1 rounded-full bg-[#1f1a1d]/60 text-[#c5a46e] whitespace-nowrap"></span>
+        <span id="qCategory" class="text-xs px-2 py-1 rounded-full bg-[#EFE8DD]/60 text-[#B08D57] whitespace-nowrap"></span>
       </div>
       <h3 id="qText" class="text-lg sm:text-xl font-medium mb-6 leading-relaxed"></h3>
       <div id="optionsContainer" class="space-y-3" role="radiogroup"></div>
     </div>
     <div class="flex justify-between items-center">
-      <button onclick="prevQuestion()" id="prevBtn" class="px-5 py-2.5 rounded-xl border border-white/[0.06] hover:bg-white/[0.03] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-wine-500">&larr; Previous</button>
-      <button onclick="submitExam()" id="submitBtn" class="hidden px-6 py-2.5 rounded-xl bg-[#722f37] hover:bg-[#8a3a44] transition-colors text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-wine-500">Submit Exam</button>
-      <button onclick="nextQuestion()" id="nextBtn" class="px-5 py-2.5 rounded-xl border border-white/[0.06] hover:bg-white/[0.03] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-wine-500">Next &rarr;</button>
+      <button onclick="prevQuestion()" id="prevBtn" class="px-5 py-2.5 rounded-xl border border-[#4A1F26]/10 hover:bg-[#4A1F26]/[0.04] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-wine-500">&larr; Previous</button>
+      <button onclick="submitExam()" id="submitBtn" class="hidden px-6 py-2.5 rounded-xl bg-[#4A1F26] hover:bg-[#5E2A31] text-[#F5F1EA] transition-colors text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-wine-500">Submit Exam</button>
+      <button onclick="nextQuestion()" id="nextBtn" class="px-5 py-2.5 rounded-xl border border-[#4A1F26]/10 hover:bg-[#4A1F26]/[0.04] transition-colors text-sm focus:outline-none focus:ring-2 focus:ring-wine-500">Next &rarr;</button>
     </div>
   </section>
 
   <!-- RESULTS SCREEN -->
   <section id="resultsScreen" class="hidden fade-in">
     <div class="text-center mb-8">
-      <h2 class="text-3xl font-bold text-[#c5a46e] brand mb-2">Exam Results</h2>
-      <div id="scoreCircle" class="w-36 h-36 mx-auto rounded-full border-4 border-[#722f37] flex flex-col items-center justify-center my-6">
-        <span id="scorePercent" class="text-4xl font-bold text-[#c5a46e]"></span>
-        <span class="text-xs text-[#8b6f6a]">score</span>
+      <h2 class="text-3xl font-bold text-[#B08D57] brand mb-2">Exam Results</h2>
+      <div id="scoreCircle" class="w-36 h-36 mx-auto rounded-full border-4 border-[#4A1F26] flex flex-col items-center justify-center my-6">
+        <span id="scorePercent" class="text-4xl font-bold text-[#B08D57]"></span>
+        <span class="text-xs text-[#7A6A5D]">score</span>
       </div>
       <div id="gradeLabel" class="text-2xl font-semibold mb-2"></div>
-      <p id="scoreDetail" class="text-[#8b6f6a]"></p>
+      <p id="scoreDetail" class="text-[#7A6A5D]"></p>
     </div>
     <div class="flex gap-3 justify-center mb-8 flex-wrap">
-      <button onclick="showReview()" class="px-6 py-2.5 rounded-xl bg-[#722f37] hover:bg-[#8a3a44] transition-colors text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-wine-500">Review All Questions</button>
-      <button onclick="restartExam()" class="px-6 py-2.5 rounded-xl border border-[#722f37] hover:bg-[#1f1a1d]/50 transition-colors text-sm font-medium focus:outline-none focus:ring-2 focus:ring-wine-500">Retake Exam</button>
-      <a href="/#tests" class="px-6 py-2.5 rounded-xl border border-white/[0.06] hover:bg-white/[0.03] transition-colors text-sm font-medium">Back to Tests</a>
+      <button onclick="showReview()" class="px-6 py-2.5 rounded-xl bg-[#4A1F26] hover:bg-[#5E2A31] text-[#F5F1EA] transition-colors text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-wine-500">Review All Questions</button>
+      <button onclick="restartExam()" class="px-6 py-2.5 rounded-xl border border-[#4A1F26] hover:bg-[#EFE8DD]/50 transition-colors text-sm font-medium focus:outline-none focus:ring-2 focus:ring-wine-500">Retake Exam</button>
+      <a href="/#tests" class="px-6 py-2.5 rounded-xl border border-[#4A1F26]/10 hover:bg-[#4A1F26]/[0.04] transition-colors text-sm font-medium">Back to Tests</a>
     </div>
     <div id="reviewContainer" class="hidden space-y-4"></div>
   </section>
 </main>
 
-<footer class="border-t border-white/[0.06] mt-16 py-6 text-center text-xs text-[#665a55]">
+<footer class="border-t border-[#4A1F26]/10 mt-16 py-6 text-center text-xs text-[#8A7A6B]">
   <p class="mb-1">wineexamprep.com</p>
   <p>Practice exam only. Questions based on publicly available WSET materials. Not affiliated with WSET.</p>
+<p class="mt-2"><a href="https://aurelier.art" target="_blank" rel="noopener" class="hover:text-[#4A1F26] transition-colors">Brought to you by <span class="brand text-[#4A1F26]">Aurelier</span></a></p>
 </footer>
 
 <!-- Timer Warning Modal -->
-<div id="timerWarning" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-[#181315]/90 backdrop-blur-sm">
+<div id="timerWarning" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-[#1A1A1A]/40 backdrop-blur-sm">
   <div class="glass rounded-2xl p-8 max-w-sm text-center">
     <div class="text-4xl mb-3">&#9200;</div>
-    <h3 class="text-xl font-semibold text-[#c5a46e] mb-2 brand">5 Minutes Remaining</h3>
-    <p class="text-[#8b6f6a] text-sm mb-4">Unanswered questions will be marked incorrect.</p>
-    <button onclick="dismissWarning()" class="px-6 py-2 bg-[#722f37] hover:bg-[#8a3a44] rounded-xl text-sm font-medium transition-colors">Continue</button>
+    <h3 class="text-xl font-semibold text-[#B08D57] mb-2 brand">5 Minutes Remaining</h3>
+    <p class="text-[#7A6A5D] text-sm mb-4">Unanswered questions will be marked incorrect.</p>
+    <button onclick="dismissWarning()" class="px-6 py-2 bg-[#4A1F26] hover:bg-[#5E2A31] text-[#F5F1EA] rounded-xl text-sm font-medium transition-colors">Continue</button>
   </div>
 </div>
 
 <!-- Confirm Submit Modal -->
-<div id="confirmModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-[#181315]/90 backdrop-blur-sm">
+<div id="confirmModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-[#1A1A1A]/40 backdrop-blur-sm">
   <div class="glass rounded-2xl p-8 max-w-sm text-center">
-    <h3 class="text-xl font-semibold text-[#c5a46e] mb-2 brand">Submit Exam?</h3>
-    <p id="confirmMsg" class="text-[#8b6f6a] text-sm mb-4"></p>
+    <h3 class="text-xl font-semibold text-[#B08D57] mb-2 brand">Submit Exam?</h3>
+    <p id="confirmMsg" class="text-[#7A6A5D] text-sm mb-4"></p>
     <div class="flex gap-3 justify-center">
-      <button onclick="closeConfirm()" class="px-5 py-2 border border-white/[0.06] hover:bg-white/[0.03] rounded-xl text-sm transition-colors">Cancel</button>
-      <button onclick="confirmSubmit()" class="px-5 py-2 bg-[#722f37] hover:bg-[#8a3a44] rounded-xl text-sm font-semibold transition-colors">Submit</button>
+      <button onclick="closeConfirm()" class="px-5 py-2 border border-[#4A1F26]/10 hover:bg-[#4A1F26]/[0.04] rounded-xl text-sm transition-colors">Cancel</button>
+      <button onclick="confirmSubmit()" class="px-5 py-2 bg-[#4A1F26] hover:bg-[#5E2A31] text-[#F5F1EA] rounded-xl text-sm font-semibold transition-colors">Submit</button>
     </div>
   </div>
 </div>
@@ -268,7 +269,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     questions = await res.json();
   } catch (err) {
     console.error('Exam load error:', err);
-    document.getElementById('loadingScreen').innerHTML = '<p class="text-red-400">Failed to load exam data. Please try again.</p>';
+    document.getElementById('loadingScreen').innerHTML = '<p class="text-[#A03A32]">Failed to load exam data. Please try again.</p>';
     return;
   }
 
@@ -286,7 +287,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 
   // Grading info
   const gradingHtml = config.grading.filter(g => g.pct > 0).map(g =>
-    `<div class="flex justify-between bg-white/5 rounded-lg px-4 py-2"><span>${g.label}</span><span class="text-wine-300">${g.pct}%+</span></div>`
+    `<div class="flex justify-between bg-[#EFE8DD] rounded-lg px-4 py-2"><span>${g.label}</span><span class="text-wine-300">${g.pct}%+</span></div>`
   ).join('');
   document.getElementById('gradingInfo').innerHTML = gradingHtml;
 
@@ -357,7 +358,7 @@ function startTimer() {
     if (state.timeRemaining === 300 && !state.warningShown) {
       state.warningShown = true;
       document.getElementById('timerWarning').classList.remove('hidden');
-      document.getElementById('timerDisplay').classList.add('timer-warning','text-red-400');
+      document.getElementById('timerDisplay').classList.add('timer-warning','text-[#A03A32]');
     }
     updateTimerDisplay();
     if (state.timeRemaining % 30 === 0) saveState();
@@ -391,10 +392,10 @@ function renderQuestion() {
   const labels = ['A','B','C','D'];
   q.options.forEach((opt, i) => {
     const btn = document.createElement('button');
-    btn.className = `option-btn w-full text-left p-4 rounded-xl border border-white/10 hover:border-wine-600/50 flex items-start gap-3 focus:outline-none focus:ring-2 focus:ring-wine-500 ${state.answers[state.currentQuestion] === i ? 'selected' : ''}`;
+    btn.className = `option-btn w-full text-left p-4 rounded-xl border border-[#4A1F26]/15 hover:border-wine-600/50 flex items-start gap-3 focus:outline-none focus:ring-2 focus:ring-wine-500 ${state.answers[state.currentQuestion] === i ? 'selected' : ''}`;
     btn.setAttribute('role','radio');
     btn.setAttribute('aria-checked', state.answers[state.currentQuestion] === i ? 'true' : 'false');
-    btn.innerHTML = `<span class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-sm font-semibold shrink-0 mt-0.5">${labels[i]}</span><span class="text-sm sm:text-base">${opt}</span>`;
+    btn.innerHTML = `<span class="w-8 h-8 rounded-full bg-[#4A1F26]/10 flex items-center justify-center text-sm font-semibold shrink-0 mt-0.5">${labels[i]}</span><span class="text-sm sm:text-base">${opt}</span>`;
     btn.onclick = () => selectAnswer(i);
     container.appendChild(btn);
   });
@@ -425,7 +426,7 @@ function buildNavDots() {
   container.innerHTML = '';
   for (let i = 0; i < questions.length; i++) {
     const dot = document.createElement('button');
-    dot.className = 'nav-dot w-7 h-7 rounded-full text-xs font-medium bg-white/5 border border-white/10 hover:border-wine-600 flex items-center justify-center focus:outline-none focus:ring-1 focus:ring-wine-500';
+    dot.className = 'nav-dot w-7 h-7 rounded-full text-xs font-medium bg-[#EFE8DD] border border-[#4A1F26]/15 hover:border-wine-600 flex items-center justify-center focus:outline-none focus:ring-1 focus:ring-wine-500';
     dot.textContent = i + 1;
     dot.setAttribute('aria-label', `Go to question ${i + 1}`);
     dot.onclick = () => goToQuestion(i);
@@ -469,12 +470,12 @@ function showResults() {
   questions.forEach((q, i) => { if (state.answers[i] === q.correct) correct++; });
   const pct = Math.round((correct / questions.length) * 100);
 
-  let grade = 'Below Pass', gradeColor = 'text-red-400', borderColor = 'border-red-500';
+  let grade = 'Below Pass', gradeColor = 'text-[#A03A32]', borderColor = 'border-[#B4453A]';
   for (const g of config.grading) {
     if (pct >= g.pct) {
       grade = g.label;
-      if (grade === 'Distinction') { gradeColor = 'text-yellow-400'; borderColor = 'border-yellow-500'; }
-      else if (grade === 'Merit') { gradeColor = 'text-emerald-400'; borderColor = 'border-emerald-500'; }
+      if (grade === 'Distinction') { gradeColor = 'text-[#B08D57]'; borderColor = 'border-[#B08D57]'; }
+      else if (grade === 'Merit') { gradeColor = 'text-[#3F6B47]'; borderColor = 'border-[#5B7C5F]'; }
       else if (grade === 'Pass') { gradeColor = 'text-wine-300'; borderColor = 'border-wine-500'; }
       break;
     }
@@ -497,16 +498,16 @@ function showReview() {
     const userAns = state.answers[i];
     const isCorrect = userAns === q.correct;
     const card = document.createElement('div');
-    card.className = `glass rounded-xl p-5 ${isCorrect ? 'border-l-4 border-l-emerald-500' : 'border-l-4 border-l-red-500'}`;
+    card.className = `glass rounded-xl p-5 ${isCorrect ? 'border-l-4 border-l-[#5B7C5F]' : 'border-l-4 border-l-[#B4453A]'}`;
     let optionsHtml = q.options.map((opt, oi) => {
       let cls = 'p-3 rounded-lg text-sm flex items-start gap-2 ';
       if (oi === q.correct) cls += 'correct ';
       if (oi === userAns && oi !== q.correct) cls += 'incorrect ';
-      if (oi !== q.correct && oi !== userAns) cls += 'bg-white/5 ';
+      if (oi !== q.correct && oi !== userAns) cls += 'bg-[#EFE8DD] ';
       const icon = oi === q.correct ? '&#10003;' : (oi === userAns ? '&#10007;' : '');
-      return `<div class="option-btn ${cls}"><span class="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center text-xs font-semibold shrink-0">${labels[oi]}</span><span>${opt}</span>${icon ? `<span class="ml-auto text-sm">${icon}</span>` : ''}</div>`;
+      return `<div class="option-btn ${cls}"><span class="w-6 h-6 rounded-full bg-[#4A1F26]/10 flex items-center justify-center text-xs font-semibold shrink-0">${labels[oi]}</span><span>${opt}</span>${icon ? `<span class="ml-auto text-sm">${icon}</span>` : ''}</div>`;
     }).join('');
-    card.innerHTML = `<div class="flex items-start gap-2 mb-3"><span class="text-xs px-2 py-0.5 rounded-full ${isCorrect ? 'bg-emerald-900/40 text-emerald-300' : 'bg-red-900/40 text-red-300'}">${isCorrect ? 'Correct' : 'Incorrect'}</span><span class="text-xs text-gray-500">${q.category}</span></div><p class="font-medium mb-3 text-sm sm:text-base">${i + 1}. ${q.text}</p><div class="space-y-2 mb-3">${optionsHtml}</div><div class="text-sm text-gray-400 bg-white/5 rounded-lg p-3"><strong class="text-wine-300">Explanation:</strong> ${q.explanation}</div>`;
+    card.innerHTML = `<div class="flex items-start gap-2 mb-3"><span class="text-xs px-2 py-0.5 rounded-full ${isCorrect ? 'bg-[#E6EDE3] text-[#3F6B47]' : 'bg-[#F6E4E0] text-[#A03A32]'}">${isCorrect ? 'Correct' : 'Incorrect'}</span><span class="text-xs text-[#8A7A6B]">${q.category}</span></div><p class="font-medium mb-3 text-sm sm:text-base">${i + 1}. ${q.text}</p><div class="space-y-2 mb-3">${optionsHtml}</div><div class="text-sm text-[#6B5D52] bg-[#EFE8DD] rounded-lg p-3"><strong class="text-wine-300">Explanation:</strong> ${q.explanation}</div>`;
     container.appendChild(card);
   });
   container.scrollIntoView({ behavior: 'smooth' });
@@ -515,7 +516,7 @@ function showReview() {
 function restartExam() {
   localStorage.removeItem(`wep_exam_${testId}`);
   document.getElementById('reviewContainer').classList.add('hidden');
-  document.getElementById('timerDisplay').classList.remove('timer-warning','text-red-400');
+  document.getElementById('timerDisplay').classList.remove('timer-warning','text-[#A03A32]');
   showScreen('welcomeScreen');
   document.getElementById('resumeBtn').classList.add('hidden');
 }
