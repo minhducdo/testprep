@@ -4,18 +4,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // Aurelier palette (light editorial)
         wine: {
-          50: '#faf5f0',
-          100: '#f0e6da',
-          200: '#e8d5c4',
-          300: '#c5a46e',
-          400: '#b08a4a',
-          500: '#8b6f6a',
-          600: '#722f37',
-          700: '#5a2530',
-          800: '#2c2528',
-          900: '#1f1a1d',
-          950: '#181315',
+          50:  '#F7F3EC',
+          100: '#EFE8DD',
+          200: '#E4D9C9',
+          300: '#B08D57', // muted gold — accents, "Pass" grade, labels
+          400: '#9A7742',
+          500: '#7A2E39', // mid oxblood — focus rings
+          600: '#4A1F26', // primary oxblood
+          700: '#3A171D',
+          800: '#2A2320', // charcoal text
+          900: '#1A1A1A',
+          950: '#141210',
         },
       },
     },
